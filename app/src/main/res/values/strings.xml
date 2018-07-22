@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zeelo Books</string>
+    <string name="add_book">New Book</string>
+    <string name="edit_book">Edit Book</string>
+    <string name="book_marked_favorite">Book marked as favorite</string>
+    <string name="book_removed_favorite">Book removed from favorites</string>
+    <string name="loading_books_error">Error while loading books</string>
+    <string name="completed_books_cleared">Completed books cleared</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_clear">Clear completed</string>
+    <string name="menu_delete_book">Delete book</string>
+    <string name="navigation_view_header_title">Books</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Enter the book name here.</string>
+    <string name="empty_book_message">Book name cannot be empty</string>
+    <string name="successfully_saved_book_message">Book saved</string>
+    <string name="list_title">Book List</string>
+    <string name="statistics_title">Statistics</string>
+    <string name="statistics_no_books">You have no books.</string>
+    <string name="statistics_active_books">Active books: %d</string>
+    <string name="statistics_completed_books">Completed books: %d</string>
+    <string name="statistics_error">Error loading statistics.</string>
+    <string name="no_data">No data</string>
+    <string name="loading">LOADING</string>
+
+    <string-array name="list_books_array">
+        <item>@string/nav_all</item>
+        <item>@string/nav_active</item>
+        <item>@string/nav_completed</item>
+    </string-array>
+    <string name="nav_all">All</string>
+    <string name="nav_active">Active</string>
+    <string name="nav_completed">Completed</string>
+    <string name="label_all">All Books</string>
+    <string name="label_active">Active Books</string>
+    <string name="label_completed">Completed Books</string>
+    <string name="no_books_all">You have no Books!</string>
+    <string name="no_books_active">You have no active Books!</string>
+    <string name="no_books_completed">You have no completed Books!</string>
+    <string name="no_books_add">Add a Book item +</string>
+    <string name="refresh">Refresh</string>
+    <string name="successfully_deleted_book_message">Book was deleted</string>
+    <string name="successfully_added_book_message">Book added</string>
+    <string name="no_data_description"/>
+
+</resources>

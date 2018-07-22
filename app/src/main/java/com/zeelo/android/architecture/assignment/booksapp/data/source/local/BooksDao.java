@@ -1,0 +1,67 @@
+
+package com.zeelo.android.architecture.assignment.booksapp.data.source.local;
+
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.OnConflictStrategy;
+import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
+
+import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+
+import java.util.List;
+
+/**
+ * Data Access Object for the books table.
+ */
+@Dao
+public interface BooksDao {
+
+    /**
+     * Select all books from the books table.
+     *
+     * @return all books.
+     */
+    @Query("SELECT * FROM Books")
+    List<Book> getBooks();
+
+    /**
+     * Select a book by id.
+     *
+     * @param bookId the book id.
+     * @return the book with bookId.
+     */
+    @Query("SELECT * FROM Books WHERE entryid = :bookId")
+    Book getBookById(String bookId);
+
+    /**
+     * Insert a book in the database. If the book already exists, replace it.
+     *
+     * @param book the book to be inserted.
+     */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertBook(Book book);
+
+    /**
+     * Update a book.
+     *
+     * @param book book to be updated
+     * @return the number of books updated. This should always be 1.
+     */
+    @Update
+    int updateBook(Book book);
+
+    /**
+     * Delete a book by id.
+     *
+     * @return the number of books deleted. This should always be 1.
+     */
+    @Query("DELETE FROM Books WHERE entryid = :bookId")
+    int deleteBookById(String bookId);
+
+    /**
+     * Delete all books.
+     */
+    @Query("DELETE FROM Books")
+    void deleteBooks();
+}

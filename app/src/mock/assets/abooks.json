@@ -1,0 +1,745 @@
+[
+  {
+    "kind": "books#volume",
+    "id": "Akha4zgQUzIC",
+    "etag": "MVF7UzGBpiY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Akha4zgQUzIC",
+    "volumeInfo": {
+      "title": "Android: Programación de dispositivos móviles a través de ejemplos",
+      "authors": [
+        "José Enrique Amaro Soriano"
+      ],
+      "publisher": "Marcombo",
+      "publishedDate": "2011-10-01",
+      "description": "Android es el sistema operativo de Google para smartphones, tablets, y otros dispositivos móviles. En este libro se presentan, de una forma práctica, comprensible y concisa, los conceptos esenciales para desarrollar sus propias aplicaciones de Android, programando en lenguaje Java. El lector aprenderá a programar interfaces de usuario, entrada y salida de datos, lectura y escritura de ficheros, herramientas gráficas, gráficos interactivos, visualización de imágenes, reproducción de sonido, temas, recursos, procesos en background, diálogos de progreso, notificaciones, animaciones gráficas y simulaciones. Se incluye un apéndice Elementos de Java para el lector que no conozca el lenguaje de programación Java. Para lectores más avanzados, el libro se complementa con otro apéndice donde se introduce una completa aplicación científica para Android. Todos los conceptos se introducen con ejemplos que consisten en programas sencillos ilustrando algún aspecto concreto de Android o de Java. Todos los ejemplos se acompañan con capturas de pantalla. Este libro está dirigido a estudiantes, profesores y en general al principiante con escasos o nulos conocimientos de Java que quiere escribir rápidamente sus propios programas. También al profesional que quiere iniciarse de forma rápida en el desarrollo de aplicaciones para Android. José Enrique Amaro Sorinano es Doctor en Ciencias Físicas y Profesor Titular de la Universidad de Granada. Desarrolla su docencia e investigación en el departamento de Física Atómica, Molecular y Nuclear. Es investigador responsable del Grupo de Física Nuclear a Energías Intermedias y miembro del Instituto Carlos I de Física Teórica y Computacional. Actualmente imparte un curso de Programación de Android para Científicos en la Escuela de Posgrado de la Universidad de Granada.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9788426717672"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "8426717675"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 268,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.2.2.0.preview.3",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Akha4zgQUzIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Akha4zgQUzIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=Akha4zgQUzIC&printsec=frontcover&dq=android&hl=&cd=1&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=Akha4zgQUzIC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_Programaci%C3%B3n_de_dispositivos_m.html?hl=&id=Akha4zgQUzIC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_Programaci%C3%B3n_de_dispositivos_m-sample-epub.acsm?id=Akha4zgQUzIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=Akha4zgQUzIC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "También al profesional que quiere iniciarse de forma rápida en el desarrollo de aplicaciones para Android. José Enrique Amaro Sorinano es Doctor en Ciencias Físicas y Profesor Titular de la Universidad de Granada."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "F63qKD7TjFgC",
+    "etag": "aIP4xaVLV/U",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/F63qKD7TjFgC",
+    "volumeInfo": {
+      "title": "Android",
+      "subtitle": "",
+      "authors": [
+        "Sylvain Hébuterne"
+      ],
+      "publisher": "Ediciones ENI",
+      "publishedDate": "2016",
+      "description": "Véritable guide d'apprentissage, ce livre accompagne le lecteur dans le développement d'applications Android pour Smartphones et Tablettes tactiles. Il s'adresse aux développeurs disposant d'un minimum de connaissances sur la programmation orientée objet, le langage Java et les environnements de développement intégrés type Eclipse ou Android Studio et couvre toutes les versions d'Android jusqu'à la 6 incluse. Le livre présente l'intégralité du processus de création d'applications, de la mise en place de l'environnement de développement Android Studio jusqu'à la publication de l'application, et décrit une large sélection de fonctionnalités proposées par le système Android. Vous découvrirez dans un premier temps la plate-forme Android, vous installerez l'environnement de développement et vous créerez sans attendre votre première application Android. Vous étudierez ensuite comment se construit l'interface utilisateur et prendrez connaissance des composants applicatifs fondamentaux. Vous apprendrez à développer des interfaces complexes qui s'adaptent aux écrans des tablettes et smartphones et à construire vos propres composants réutilisables. Puis, seront présentées la persistance des données, la programmation concurrente, la sécurité et la communication réseau, en intégrant la bibliothèque spécialisée Volley. Un chapitre vous expliquera comment intégrer les réseaux sociaux dans vos applications. Pour pouvoir proposer des applications les plus qualitatives possibles, vous découvrirez comment ajouter des traces et tester votre application en utilisant les fonctionnalités dédiées d'Android Studio. Vous serez enfin guidé pas à pas pour publier vos applications vers les utilisateurs du monde entier. L'ouvrage se termine en présentant la détermination de la géolocalisation et l'utilisation des capteurs intégrés dans les terminaux Android. Sont également traités en détail des sujets avancés tels que la création d'AppWidget, la protection des applications payantes (LVL), les achats in-app ainsi que les communications NFC et les objets connectés. à l'issue de cette lecture, vous serez capable de développer et publier des applications, de qualité, natives Android (dans ses différentes versions jusqu'à la 6 incluse) pour Smartphones et Tablettes tactiles. Enfin, en complément et pour illustrer de façon pratique les propos de l'ouvrage, l'auteur propose en téléchargement sur le site www.editions-eni.fr un ensemble de projets reprenant toutes les notions présentées dans le livre. Interface utilisateur, listes, traitements asynchrones, géolocalisation, NFC, etc. : tous les modules sont fonctionnels, directement exploitables, et fournissent une solide structure de base pour vos développements.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "2409006108"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9782409006104"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 562,
+      "printType": "BOOK",
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=F63qKD7TjFgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=F63qKD7TjFgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=F63qKD7TjFgC&printsec=frontcover&dq=android&hl=&cd=2&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=F63qKD7TjFgC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android.html?hl=&id=F63qKD7TjFgC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=F63qKD7TjFgC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "K9hnCJ_NGq4C",
+    "etag": "5aYy79i1N+c",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/K9hnCJ_NGq4C",
+    "volumeInfo": {
+      "title": "El Gran Libro de Android",
+      "authors": [
+        "Jesús Tomás Gironés"
+      ],
+      "publisher": "Marcombo",
+      "publishedDate": "2013-03-01",
+      "description": "En los últimos años, los teléfonos móviles están transformando la forma en que las personas se comunican. Los nuevos terminales ofrecen unas capacidades similares a las de un ordenador personal. Un teléfono móvil siempre está en el bolsillo del usuario, esto le convierte en el nuevo ordenador personal del siglo XXI. Android es la plataforma libre para el desarrollo de aplicaciones móviles creada por Google. En la actualidad se ha convertido en la plataforma líder frente a otras como iPhone o Windows Phone. Las aplicaciones Android están ampliando su rango de influencia a nuevos dispositivos tales como tabletas, sistemas empotrados o Google TV. Este libro pretende ser una guía para aquellos lectores que quieran introducirse en la programación en Android. Todos los capítulos son descritos por medio de sencillos ejemplos, aumentando su nivel de complejidad a medida que avanzan los capítulos. La obra está recomendada tanto para usuarios con poca experiencia, como para programadores experimentados. A lo largo del libro se desarrolla una aplicación de ejemplo, el mítico videojuego Asteroides. Comienza con una versión sencilla, que se irá completando capítulo a capítulo, para que incluya gráficos vectoriales y en mapa de bits, control mediante pantalla táctil y sensores, geo-localización, multimedia, ficheros, XML, SQL, acceso a Internet, servicios Web Así cómo publicar en el Google Play. El libro propone un aprendizaje activo, con actividades, muchas a través de Internet: -poli[Media] Más de 60 videos elaborados por el autor. -Ejercicio paso a paso: La mejor forma de aprender es practicando. -Práctica: Para afianzar lo aprendido hay que practicar. -Solución: Te será de ayuda si tienes problemas en las prácticas. -Recursos adicionales: Localiza rápidamente la información clave -Preguntas de repaso y reflexión: ¿Lo has entendido todo correctamente? Jesús Tomás es doctor en informática, profesor titular del Departamento de Comunicaciones en la Universidad Politécnica de Valencia. Trabaja en múltiples proyectos de investigación y transferencia de tecnología relacionados con inteligencia artificial. Ha publicado gran cantidad de trabajos en revistas científicas y varios libros didácticos sobre nuevas tecnologías. Tiene una amplia experiencia impartiendo cursos de formación para empresas.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9788426719973"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "842671997X"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 446,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 1,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "1.2.2.0.preview.3",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=K9hnCJ_NGq4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=K9hnCJ_NGq4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=K9hnCJ_NGq4C&pg=PT340&dq=android&hl=&cd=3&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=K9hnCJ_NGq4C&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/El_Gran_Libro_de_Android.html?hl=&id=K9hnCJ_NGq4C"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/El_Gran_Libro_de_Android-sample-epub.acsm?id=K9hnCJ_NGq4C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=K9hnCJ_NGq4C&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "_€_I&#39; <b>Android</b> Manifest Permissions Permissions [E © [E] ® A: Attributes for Uses <br>\nPermission © The uses-permission tag ... AndroidManífest.xml &#39; Añadiendo la <br>\nsiguiente linea en el fichero XML: &lt;uses-permissi on <b>android</b>: name=&quot;<b>android</b>&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "HjyuwSmQTp8C",
+    "etag": "bgS3mqAo1co",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/HjyuwSmQTp8C",
+    "volumeInfo": {
+      "title": "Android",
+      "subtitle": "Las bases para un buen inicio en el desarrollo para Smartphones y Tabletas",
+      "authors": [
+        "Sébastien Pérochon"
+      ],
+      "publisher": "Ediciones ENI",
+      "publishedDate": "2012",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "2746075172"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9782746075177"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 104,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.2.2.0.preview.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=HjyuwSmQTp8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=HjyuwSmQTp8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=HjyuwSmQTp8C&dq=android&hl=&cd=4&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=HjyuwSmQTp8C&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android.html?hl=&id=HjyuwSmQTp8C"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=HjyuwSmQTp8C&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "57douRSrO-UC",
+    "etag": "sdnE7vX6Srw",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/57douRSrO-UC",
+    "volumeInfo": {
+      "title": "Programación Android paso a paso para principiantes",
+      "authors": [
+        "Antonio Morales Carmona"
+      ],
+      "publisher": "Antonio Morales Carmona",
+      "description": "Libro de programación para principiantes (muy novatos) que se quieren aventurar en la programación Android, así como en la programación orientada a objetos. Paso a paso, con multiud de capturas y códigos fuentes 100% testados.",
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 272,
+      "printType": "BOOK",
+      "averageRating": 3,
+      "ratingsCount": 1,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=57douRSrO-UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=57douRSrO-UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=57douRSrO-UC&printsec=frontcover&dq=android&hl=&cd=5&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=57douRSrO-UC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Programaci%C3%B3n_Android_paso_a_paso_para_p.html?hl=&id=57douRSrO-UC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Programaci%C3%B3n_Android_paso_a_paso_para_p-sample-pdf.acsm?id=57douRSrO-UC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=57douRSrO-UC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Libro de programación para principiantes (muy novatos) que se quieren aventurar en la programación Android, así como en la programación orientada a objetos. Paso a paso, con multiud de capturas y códigos fuentes 100% testados."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "qKFDDAAAQBAJ",
+    "etag": "TYheRizT5yo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/qKFDDAAAQBAJ",
+    "volumeInfo": {
+      "title": "Android",
+      "authors": [
+        "P.K. Dixit"
+      ],
+      "publisher": "Vikas Publishing House",
+      "publishedDate": "2014",
+      "description": "Android is a movement that has transferred data from laptop to hand-held devices like mobiles. Though there are alternate technologies that compete with Android, but it is the front runner in mobile technology by a long distance. Good knowledge in basic Java will help you to understand and develop Android technology and apps. Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts. It includes a lot of diagrams along with explanations to facilitate better understanding by students. This book aptly concludes with a project that uses Android, which will greatly benefit students in learning the practical aspects of Android. Key Features • Instructions in designing different Android user interfaces • Thorough explanations of all activities • JSON • Android-based project to aid practical understanding",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9789325977884"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "9325977885"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 372,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=qKFDDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=qKFDDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=qKFDDAAAQBAJ&printsec=frontcover&dq=android&hl=&cd=6&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=qKFDDAAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-qKFDDAAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 428.57,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 300,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=qKFDDAAAQBAJ&rdid=book-qKFDDAAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 428570000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 300000000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android-sample-pdf.acsm?id=qKFDDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=qKFDDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "PHmbDQAAQBAJ",
+    "etag": "YnTl/enTsLM",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/PHmbDQAAQBAJ",
+    "volumeInfo": {
+      "title": "Desarrollo de aplicaciones para Android I",
+      "authors": [
+        "Robledo, David"
+      ],
+      "publisher": "Ministerio de Educación, Cultura y Deporte",
+      "description": "Android es un sistema operativo multidispositivo, inicialmente diseñado para teléfonos móviles. En la actualidad se puede encontrar también en múltiples dispositivos, como ordenadores, tabletas, GPS, televisores, discos duros multimedia, mini ordenadores, cámaras de fotos, etcétera. Incluso se ha instalado en microondas y lavadoras. Está basado en Linux, que es un núcleo de sistema operativo libre, gratuito y multipla\u00adtaforma. El objetivo de este curso avanzado es que el alumno perfeccione la programación en este sistema operativo tratando materias no estudiadas en el curso de iniciación. Así, podrá desarrollar aplicaciones más complejas utilizando contenidos multimedia, 3D, sensores del dispositivo, servicios, etcétera.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9788436956870"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "8436956877"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "printType": "BOOK",
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=PHmbDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=PHmbDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=PHmbDQAAQBAJ&printsec=frontcover&dq=android&hl=&cd=7&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=PHmbDQAAQBAJ&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Desarrollo_de_aplicaciones_para_Android.html?hl=&id=PHmbDQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Desarrollo_de_aplicaciones_para_Android-sample-pdf.acsm?id=PHmbDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=PHmbDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Android es un sistema operativo multidispositivo, inicialmente diseñado para teléfonos móviles."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "4dkuBQAAQBAJ",
+    "etag": "kQMkrxLmbC4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/4dkuBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Introducción A Android Studio. Incluye Proyectos Reales Y El Código Fuente",
+      "authors": [
+        "Barbara Hohensee"
+      ],
+      "publisher": "Babelcube Inc.",
+      "publishedDate": "2014-10-27",
+      "description": "Introducción a Android Studio El libro da una visión global de las características y posibilidades nuevas. Comienza con la instalación y configuración de Android Studio. Vas a conocer el nuevo IDE y su Editor. Aprenderás cómo crear proyectos nuevos de Android desde scratch, cómo importar proyectos de distintos tipos como una antigua App de Eclipse Android o proyectos de GitHub. El libro también incluye un vistazo al sistema de construcción Gradle con ejemplos reales. Es más, vas a registrarte, construir y ejecutar apps y prepararlas para Android Market: Capturas de pantalla Firma con Signing Wizard Firma de una apk a publicar con Gradle Crear y ejecutar proyectos de prueba en Android Studio. Hay varios ejemplos sobre dependencias y bibliotecas (Action Bar Sherlock, Admob Ads, Google Play SDK, Google Maps v2 Api) Instalar tus propios repositorios locales de Maven para construir bibliotecas .aar. Aprender sobre Product Flavors – Tipos de Construcción – Variantes de construcción y construir distintas APK de un mismo proyecto (incluye un ejemplo con 2 Flavors). Desarrollo de juegos con AndEngine y libGDX Integración de juegos de JavaScript en Proyectos de Android Studio [LIME GameEngine] Desarrollo para Google TV Plantillas de Código de Android: - Qué son las plantillas de Código de Android - Dónde se ubican las plantillas ADT - Personalizar las Plantillas de Código Android Wear – SDK nuevo para relojes inteligentes Para este libro, hay varios ejemplos de Proyectos de Android completos y ejecutables disponibles para descargar (Código Fuente).",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781633396333"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1633396339"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 1000,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=4dkuBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=4dkuBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=4dkuBQAAQBAJ&printsec=frontcover&dq=android&hl=&cd=8&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=4dkuBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-4dkuBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 205.18,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 143.63,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=4dkuBQAAQBAJ&rdid=book-4dkuBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 205180000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 143630000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": true
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=4dkuBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Introducción a Android Studio El libro da una visión global de las características y posibilidades nuevas."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "lwLXAwAAQBAJ",
+    "etag": "xzYEr8HqiXg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/lwLXAwAAQBAJ",
+    "volumeInfo": {
+      "title": "Desarrollo de aplicaciones para Android II",
+      "authors": [
+        "Robledo Fernández, David"
+      ],
+      "publisher": "Ministerio de Educación",
+      "publishedDate": "2014",
+      "description": "Android es un sistema operativo multidispositivo, inicialmente diseñado para teléfonos móviles. En la actualidad se puede encontrar también en múltiples dispositivos, como ordenadores, tabletas, GPS, televisores, discos duros multimedia, mini ordenadores, cámaras de fotos, etcétera. Incluso se ha instalado en microondas y lavadoras. Está basado en Linux, que es un núcleo de sistema operativo libre, gratuito y multiplataforma. El objetivo de este curso avanzado es que el alumno perfeccione la programación en este sistema operativo tratando materias no estudiadas en el curso de iniciación. Así, podrá desarrollar aplicaciones más complejas utilizando contenidos multimedia, 3D, sensores del dispositivo, servicios, etcétera. Las cinco unidades que lo componen son: Multimedia y gráficos en Android, interfaz de usuario avanzada, sensores y dispositivos de Android, bibliotecas, APIs y servicios de Android, y utilidades avanzadas.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9788436955415"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "8436955412"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 461,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.1.0.0.preview.1",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=lwLXAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=lwLXAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=lwLXAwAAQBAJ&printsec=frontcover&dq=android&hl=&cd=9&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=lwLXAwAAQBAJ&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Desarrollo_de_aplicaciones_para_Android.html?hl=&id=lwLXAwAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Desarrollo_de_aplicaciones_para_Android-sample-pdf.acsm?id=lwLXAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=lwLXAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Android es un sistema operativo multidispositivo, inicialmente diseñado para teléfonos móviles."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "XIcXXFlO1FgC",
+    "etag": "crP7+SHdPRk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/XIcXXFlO1FgC",
+    "volumeInfo": {
+      "title": "Android 5",
+      "subtitle": "Principios del desarrollo de aplicaciones Java",
+      "authors": [
+        "Nazim BENBOURAHLA"
+      ],
+      "publisher": "Ediciones ENI",
+      "publishedDate": "2015-10-01",
+      "description": "Este libro está dirigido a desarrolladores, incluso debutantes, que deseen conocer y dominar el desarrollo de aplicaciones Java en Android 5 (en versión 5.0.x - alias Lollipop - en el momento de su edición). Para su lectura, se requieren conocimientos básicos en programación Java y en el uso de XML pero ningún requisito particular sobre Android. Después de una presentación de la plataforma Android y de sus principios de programación específicos, aprenderá a instalar y configurar el entorno de desarrollo (Android Studio y SDK Android). A continuación, irá aprendiendo de forma gradual para conocer todos los elementos esenciales en la creación de aplicaciones Android. De este modo, aprenderá a crear interfaces cada vez más complejas (layouts, recursos,ActionBar, menús, listas, popups, webview, fragmentos, pestañas, etc.), a gestionar la navegación y la comunicación entre las distintas interfaces de una aplicación o entre varias aplicaciones y descubrirá las novedades de la versión 5 de Android (Material Design, Toolbar, CardView, Notificaciones Android Wear…). Aprenderá a crear interfaces personalizadas (gestión de temas, animaciones, tipografía) y a gestionar losdistintos eventos de usuario (clic, rotación, etc.). Aprenderá, también, a optimizar el código de la aplicación, sus interfaces y a gestionar la fragmentación de la plataforma(versiones de Android, tamaño y resolución de pantallas, diferencias en el hardware, etc.). Verá cómo recuperar los datos necesarios para el funcionamiento de una aplicación (servicios web, gestión de la conectividad, parsing Xml / Json), cómo almacenarlos (sharedPreferences, archivos, base de datos SQLite) y cómo compartirlos con otras aplicaciones (ContentProvider, Intent, etc.). Podrá crear e interactuar con mapas(Google Maps, localización, conversión posición/dirección). Por último, aprenderá a gestionar los distintos tratamientos e interacciones realizados en una aplicación y a identificar los que se deben ejecutar como tareas en segundo plano (AsyncTask, Thread, Service, Broadcast Receiver, Widget, etc.) así como los métodos de acceso a las diferentes funcionalidades de un dispositivo Android (llamadas, sms, cámara, acelerómetro, Bluetooth, etc.). Todos los ejemplos que se presentan en este libro están disponibles para su descarga en www.ediciones-eni.com. Los capítulos del libro: Prefacio – La plataforma Android – El entorno de desarrollo – Principios de programación – Mi primera aplicación: HelloAndroid – Creación de interfaces sencillas – Navegación y gestión de eventos – Depuración y gestión de errores – Personalización – Notificaciones – Creación de interfaces avanzadas – Persistencia y compartición de datos – Tratamiento en tareas en segundo plano – Google Maps y geolocalización – Telefonía y hardware – Ir más lejos",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "2746098148"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9782746098145"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 412,
+      "printType": "BOOK",
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.3.0.0.preview.1",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=XIcXXFlO1FgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=XIcXXFlO1FgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "es",
+      "previewLink": "http://books.google.com.ar/books?id=XIcXXFlO1FgC&pg=PA89&dq=android&hl=&cd=10&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=XIcXXFlO1FgC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_5.html?hl=&id=XIcXXFlO1FgC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=XIcXXFlO1FgC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "&lt;?xml version=&quot;1.0&quot; encoding= &quot;utf-8&quot;? &gt; &lt;RelativeLayout xmlns: <b>android</b>=&quot;http://<br>\nschemas. <b>android</b>. com/apk/res/<b>android</b>&quot; <b>android</b>: layout_width=&quot;fill parent&quot; <br>\n<b>android</b>: layout height=&quot;fill parent&quot; <b>android</b>: orientation=&quot;vertical&quot; &gt; &lt;EditText <br>\n<b>android</b>:&nbsp;..."
+    }
+  }
+]
