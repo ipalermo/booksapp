@@ -23,7 +23,7 @@ import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepos
  * {@link com.zeelo.android.architecture.assignment.booksapp.statistics.StatisticsViewModel} for
  * how to deal with more complex scenarios.
  */
-public class AddEditBookViewModel extends AndroidViewModel implements BooksDataSource.GetBookCallback {
+public class AddEditBookViewModel extends AndroidViewModel implements BooksDataSource.GetBookDetailsCallback {
 
     public final ObservableField<String> title = new ObservableField<>();
 
@@ -70,11 +70,11 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
         mIsNewBook = false;
         dataLoading.set(true);
 
-        mBooksRepository.getBook(bookId, this);
+        mBooksRepository.getBookDetails(bookId, this);
     }
 
     @Override
-    public void onBookLoaded(Book book) {
+    public void onBookDetailsLoaded(Book book) {
         title.set(book.getTitle());
         dataLoading.set(false);
         mIsDataLoaded = true;

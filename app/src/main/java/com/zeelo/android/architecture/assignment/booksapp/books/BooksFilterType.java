@@ -8,15 +8,15 @@ public enum BooksFilterType {
     /**
      * Do not filter books.
      */
-    ALL_TASKS,
+    ALL_BOOKS,
 
     /**
      * Filters only the active (not favorited yet) books.
      */
-    ACTIVE_TASKS,
+    NOT_FAVORITED_BOOKS,
 
     /**
      * Filters only the favorited books.
      */
-    COMPLETED_TASKS
+    FAVORITED_BOOKS
 }

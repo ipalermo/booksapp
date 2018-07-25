@@ -26,7 +26,7 @@ import static com.zeelo.android.architecture.assignment.booksapp.bookdetail.Book
  */
 public class BookDetailActivity extends AppCompatActivity implements BookDetailNavigator {
 
-    public static final String EXTRA_TASK_ID = "TASK_ID";
+    public static final String EXTRA_BOOK_ID = "BOOK_ID";
 
     public static final int DELETE_RESULT_OK = RESULT_FIRST_USER + 2;
 
@@ -55,7 +55,7 @@ public class BookDetailActivity extends AppCompatActivity implements BookDetailN
     @NonNull
     private BookDetailFragment findOrCreateViewFragment() {
         // Get the requested book id
-        String bookId = getIntent().getStringExtra(EXTRA_TASK_ID);
+        String bookId = getIntent().getStringExtra(EXTRA_BOOK_ID);
 
         BookDetailFragment bookDetailFragment = (BookDetailFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
@@ -125,9 +125,9 @@ public class BookDetailActivity extends AppCompatActivity implements BookDetailN
 
     @Override
     public void onStartEditBook() {
-        String bookId = getIntent().getStringExtra(EXTRA_TASK_ID);
+        String bookId = getIntent().getStringExtra(EXTRA_BOOK_ID);
         Intent intent = new Intent(this, AddEditBookActivity.class);
-        intent.putExtra(AddEditBookFragment.ARGUMENT_EDIT_TASK_ID, bookId);
+        intent.putExtra(AddEditBookFragment.ARGUMENT_EDIT_BOOK_ID, bookId);
         startActivityForResult(intent, REQUEST_EDIT_TASK);
     }
 

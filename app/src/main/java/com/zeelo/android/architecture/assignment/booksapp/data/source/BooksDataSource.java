@@ -4,6 +4,7 @@ package com.zeelo.android.architecture.assignment.booksapp.data.source;
 import android.support.annotation.NonNull;
 
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 
 import java.util.List;
 
@@ -12,23 +13,23 @@ import java.util.List;
  */
 public interface BooksDataSource {
 
-    interface LoadBooksCallback {
+    interface LoadBooksListCallback {
 
-        void onBooksLoaded(List<Book> books);
-
-        void onDataNotAvailable();
-    }
-
-    interface GetBookCallback {
-
-        void onBookLoaded(Book book);
+        void onBooksListLoaded(List<BookListItem> books);
 
         void onDataNotAvailable();
     }
 
-    void getBooks(@NonNull LoadBooksCallback callback);
+    interface GetBookDetailsCallback {
 
-    void getBook(@NonNull String bookId, @NonNull GetBookCallback callback);
+        void onBookDetailsLoaded(Book book);
+
+        void onDataNotAvailable();
+    }
+
+    void getBooks(@NonNull LoadBooksListCallback callback);
+
+    void getBookDetails(@NonNull String bookId, @NonNull GetBookDetailsCallback callback);
 
     void saveBook(@NonNull Book book);
     

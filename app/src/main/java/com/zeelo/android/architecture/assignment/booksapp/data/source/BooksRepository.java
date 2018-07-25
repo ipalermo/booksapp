@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.util.EspressoIdlingResource;
 
 import java.util.ArrayList;
@@ -34,13 +35,16 @@ public class BooksRepository implements BooksDataSource {
     /**
      * This variable has package local visibility so it can be accessed from tests.
      */
+    Map<String, BookListItem> mCachedListItems;
+
     Map<String, Book> mCachedBooks;
 
     /**
      * Marks the cache as invalid, to force an update the next time data is requested. This variable
      * has package local visibility so it can be accessed from tests.
      */
-    private boolean mCacheIsDirty = false;
+    private boolean mBooksCacheIsDirty = false;
+    private boolean mListItemsCacheIsDirty = false;
 
     // Prevent direct instantiation.
     private BooksRepository(@NonNull BooksDataSource booksRemoteDataSource,
@@ -80,33 +84,33 @@ public class BooksRepository implements BooksDataSource {
      * Gets books from cache, local data source (SQLite) or remote data source, whichever is
      * available first.
      * <p>
-     * Note: {@link LoadBooksCallback#onDataNotAvailable()} is fired if all data sources fail to
+     * Note: {@link LoadBooksListCallback#onDataNotAvailable()} is fired if all data sources fail to
      * get the data.
      */
     @Override
-    public void getBooks(@NonNull final LoadBooksCallback callback) {
+    public void getBooks(@NonNull final LoadBooksListCallback callback) {
         checkNotNull(callback);
 
         // Respond immediately with cache if available and not dirty
-        if (mCachedBooks != null && !mCacheIsDirty) {
-            callback.onBooksLoaded(new ArrayList<>(mCachedBooks.values()));
+        if (mCachedListItems != null && !mListItemsCacheIsDirty) {
+            callback.onBooksListLoaded(new ArrayList<>(mCachedListItems.values()));
             return;
         }
 
         EspressoIdlingResource.increment(); // App is busy until further notice
 
-        if (mCacheIsDirty) {
+        if (mListItemsCacheIsDirty) {
             // If the cache is dirty we need to fetch new data from the network.
             getBooksFromRemoteDataSource(callback);
         } else {
             // Query the local storage if available. If not, query the network.
-            mBooksLocalDataSource.getBooks(new LoadBooksCallback() {
+            mBooksLocalDataSource.getBooks(new LoadBooksListCallback() {
                 @Override
-                public void onBooksLoaded(List<Book> books) {
-                    refreshCache(books);
+                public void onBooksListLoaded(List<BookListItem> bookItems) {
+                    refreshListItemsCache(bookItems);
 
                     EspressoIdlingResource.decrement(); // Set app as idle.
-                    callback.onBooksLoaded(new ArrayList<>(mCachedBooks.values()));
+                    callback.onBooksListLoaded(bookItems);
                 }
 
                 @Override
@@ -124,21 +128,30 @@ public class BooksRepository implements BooksDataSource {
         mBooksLocalDataSource.saveBook(book);
 
         // Do in memory cache update to keep the app UI up to date
+        saveToBookToCache(book);
+    }
+
+    private void saveToBookToCache(Book book) {
         if (mCachedBooks == null) {
             mCachedBooks = new LinkedHashMap<>();
         }
         mCachedBooks.put(book.getId(), book);
+
+        if (mCachedListItems == null) {
+            mCachedListItems = new LinkedHashMap<>();
+        }
+        mCachedListItems.put(book.getId(), new BookListItem(book.getTitle(), book.getId()));
     }
 
     /**
      * Gets books from local data source (sqlite) unless the table is new or empty. In that case it
      * uses the network data source. This is done to simplify the sample.
      * <p>
-     * Note: {@link GetBookCallback#onDataNotAvailable()} is fired if both data sources fail to
+     * Note: {@link GetBookDetailsCallback#onDataNotAvailable()} is fired if both data sources fail to
      * get the data.
      */
     @Override
-    public void getBook(@NonNull final String bookId, @NonNull final GetBookCallback callback) {
+    public void getBookDetails(@NonNull final String bookId, @NonNull final GetBookDetailsCallback callback) {
         checkNotNull(bookId);
         checkNotNull(callback);
 
@@ -146,7 +159,7 @@ public class BooksRepository implements BooksDataSource {
 
         // Respond immediately with cache if available
         if (cachedBook != null) {
-            callback.onBookLoaded(cachedBook);
+            callback.onBookDetailsLoaded(cachedBook);
             return;
         }
 
@@ -155,37 +168,32 @@ public class BooksRepository implements BooksDataSource {
         // Load from server/persisted if needed.
 
         // Is the book in the local data source? If not, query the network.
-        mBooksLocalDataSource.getBook(bookId, new GetBookCallback() {
+        mBooksLocalDataSource.getBookDetails(bookId, new GetBookDetailsCallback() {
             @Override
-            public void onBookLoaded(Book book) {
+            public void onBookDetailsLoaded(Book book) {
                 // Do in memory cache update to keep the app UI up to date
-                if (mCachedBooks == null) {
-                    mCachedBooks = new LinkedHashMap<>();
-                }
-                mCachedBooks.put(book.getId(), book);
+                saveToBookToCache(book);
 
                 EspressoIdlingResource.decrement(); // Set app as idle.
 
-                callback.onBookLoaded(book);
+                callback.onBookDetailsLoaded(book);
             }
 
             @Override
             public void onDataNotAvailable() {
-                mBooksRemoteDataSource.getBook(bookId, new GetBookCallback() {
+                mBooksRemoteDataSource.getBookDetails(bookId, new GetBookDetailsCallback() {
                     @Override
-                    public void onBookLoaded(Book book) {
+                    public void onBookDetailsLoaded(Book book) {
                         if (book == null) {
                             onDataNotAvailable();
                             return;
                         }
                         // Do in memory cache update to keep the app UI up to date
-                        if (mCachedBooks == null) {
-                            mCachedBooks = new LinkedHashMap<>();
-                        }
-                        mCachedBooks.put(book.getId(), book);
+                        saveToBookToCache(book);
+
                         EspressoIdlingResource.decrement(); // Set app as idle.
 
-                        callback.onBookLoaded(book);
+                        callback.onBookDetailsLoaded(book);
                     }
 
                     @Override
@@ -201,7 +209,7 @@ public class BooksRepository implements BooksDataSource {
 
     @Override
     public void refreshBook() {
-        mCacheIsDirty = true;
+        mBooksCacheIsDirty = true;
     }
 
     @Override
@@ -209,10 +217,10 @@ public class BooksRepository implements BooksDataSource {
         mBooksRemoteDataSource.deleteAllBooks();
         mBooksLocalDataSource.deleteAllBooks();
 
-        if (mCachedBooks == null) {
-            mCachedBooks = new LinkedHashMap<>();
+        if (mCachedListItems == null) {
+            mCachedListItems = new LinkedHashMap<>();
         }
-        mCachedBooks.clear();
+        mCachedListItems.clear();
     }
 
     @Override
@@ -220,18 +228,17 @@ public class BooksRepository implements BooksDataSource {
         mBooksRemoteDataSource.deleteBook(checkNotNull(bookId));
         mBooksLocalDataSource.deleteBook(checkNotNull(bookId));
 
-        mCachedBooks.remove(bookId);
+        mCachedListItems.remove(bookId);
     }
 
-    private void getBooksFromRemoteDataSource(@NonNull final LoadBooksCallback callback) {
-        mBooksRemoteDataSource.getBooks(new LoadBooksCallback() {
+    private void getBooksFromRemoteDataSource(@NonNull final LoadBooksListCallback callback) {
+        mBooksRemoteDataSource.getBooks(new LoadBooksListCallback() {
             @Override
-            public void onBooksLoaded(List<Book> books) {
-                refreshCache(books);
-                refreshLocalDataSource(books);
+            public void onBooksListLoaded(List<BookListItem> bookItems) {
+                refreshListItemsCache(bookItems);
 
                 EspressoIdlingResource.decrement(); // Set app as idle.
-                callback.onBooksLoaded(new ArrayList<>(mCachedBooks.values()));
+                callback.onBooksListLoaded(new ArrayList<>(mCachedListItems.values()));
             }
 
             @Override
@@ -243,22 +250,26 @@ public class BooksRepository implements BooksDataSource {
         });
     }
 
-    private void refreshCache(List<Book> books) {
+    private void refreshBooksCache(List<Book> books) {
         if (mCachedBooks == null) {
             mCachedBooks = new LinkedHashMap<>();
         }
         mCachedBooks.clear();
         for (Book book : books) {
-            mCachedBooks.put(book.getId(), book);
+            saveToBookToCache(book);
         }
-        mCacheIsDirty = false;
+        mBooksCacheIsDirty = false;
     }
 
-    private void refreshLocalDataSource(List<Book> books) {
-        mBooksLocalDataSource.deleteAllBooks();
-        for (Book book : books) {
-            mBooksLocalDataSource.saveBook(book);
+    private void refreshListItemsCache(List<BookListItem> bookItems) {
+        if (mCachedListItems == null) {
+            mCachedListItems = new LinkedHashMap<>();
         }
+        mCachedListItems.clear();
+        for (BookListItem bookItem : bookItems) {
+            mCachedListItems.put(bookItem.getId(), bookItem);
+        }
+        mListItemsCacheIsDirty = false;
     }
 
     @Nullable

@@ -12,6 +12,7 @@ import android.support.test.runner.AndroidJUnit4;
 import com.zeelo.android.architecture.assignment.booksapp.Injection;
 import com.zeelo.android.architecture.assignment.booksapp.TestUtils;
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.FakeBooksRemoteDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 import com.zeelo.android.architecture.assignment.booksapp.util.EspressoIdlingResource;
@@ -22,7 +23,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import booksapp.R;
+import com.zeelo.android.architecture.assignment.booksapp.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -87,7 +88,7 @@ public class BookDetailScreenTest {
      * the service API. This is a great way to make your tests more reliable and faster at the same
      * time, since they are isolated from any outside dependencies.
      */
-    private void startActivityWithWithStubbedBook(Book book) {
+    private void startActivityWithWithStubbedBook(BookListItem book) {
         // Add a book stub to the fake service api layer.
         BooksRepository booksRepository = Injection.provideBooksRepository(InstrumentationRegistry.getTargetContext());
         booksRepository.deleteAllBooks();
@@ -95,7 +96,7 @@ public class BookDetailScreenTest {
 
         // Lazily start the Activity from the ActivityTestRule this time to inject the start Intent
         Intent startIntent = new Intent();
-        startIntent.putExtra(BookDetailActivity.EXTRA_TASK_ID, book.getId());
+        startIntent.putExtra(BookDetailActivity.EXTRA_BOOK_ID, book.getId());
         mBookDetailActivityTestRule.launchActivity(startIntent);
     }
 

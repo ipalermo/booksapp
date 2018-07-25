@@ -11,7 +11,7 @@ import android.support.test.runner.AndroidJUnit4;
 import com.zeelo.android.architecture.assignment.booksapp.Injection;
 import com.zeelo.android.architecture.assignment.booksapp.ViewModelFactory;
 import com.zeelo.android.architecture.assignment.booksapp.bookdetail.BookDetailActivity;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 import com.zeelo.android.architecture.assignment.booksapp.util.EspressoIdlingResource;
 
@@ -21,7 +21,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import booksapp.R;
+import com.zeelo.android.architecture.assignment.booksapp.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -63,8 +63,8 @@ public class StatisticsScreenTest {
         BooksRepository booksRepository = Injection.provideBooksRepository(
                 InstrumentationRegistry.getTargetContext());
         booksRepository.deleteAllBooks();
-        booksRepository.saveBook(new Book("Title1", "", false));
-        booksRepository.saveBook(new Book("Title2", "", true));
+        booksRepository.saveBook(new BookListItem("Title1", "", false));
+        booksRepository.saveBook(new BookListItem("Title2", "", true));
 
         // Lazily start the Activity from the ActivityTestRule
         Intent startIntent = new Intent();

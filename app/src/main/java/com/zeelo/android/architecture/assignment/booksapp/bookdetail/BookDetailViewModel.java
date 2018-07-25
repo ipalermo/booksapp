@@ -3,11 +3,14 @@ package com.zeelo.android.architecture.assignment.booksapp.bookdetail;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.MutableLiveData;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 
+import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.SingleLiveEvent;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
 import com.zeelo.android.architecture.assignment.booksapp.books.BooksFragment;
@@ -20,7 +23,9 @@ import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepos
  * Listens to user actions from the list item in ({@link BooksFragment}) and redirects them to the
  * Fragment's actions listener.
  */
-public class BookDetailViewModel extends AndroidViewModel implements BooksDataSource.GetBookCallback {
+public class BookDetailViewModel extends AndroidViewModel implements BooksDataSource.GetBookDetailsCallback {
+
+    private final MutableLiveData<Book> mObservableBook = new MutableLiveData<>();
 
     public final ObservableField<Book> book = new ObservableField<>();
 
@@ -64,24 +69,28 @@ public class BookDetailViewModel extends AndroidViewModel implements BooksDataSo
         return mDeleteBookCommand;
     }
 
+    public LiveData<Book> getObservableBook() {
+        return mObservableBook;
+    }
+
     public void setFavorited(boolean favorited) {
-//        if (mIsDataLoading) {
-//            return;
-//        }
+        if (mIsDataLoading) {
+            return;
+        }
 //        Book book = this.book.get();
-//        if (favorited) {
+        if (favorited) {
 //            mBooksRepository.favoriteBook(book);
-//            showSnackbarMessage(R.string.book_marked_favorite);
-//        } else {
+            showSnackbarMessage(R.string.book_marked_favorite);
+        } else {
 //            mBooksRepository.unFavoriteBook(book);
-//            showSnackbarMessage(R.string.book_removed_favorite);
-//        }
+            showSnackbarMessage(R.string.book_removed_favorite);
+        }
     }
 
     public void start(String bookId) {
         if (bookId != null) {
             mIsDataLoading = true;
-            mBooksRepository.getBook(bookId, this);
+            mBooksRepository.getBookDetails(bookId, this);
         }
     }
 
@@ -98,8 +107,9 @@ public class BookDetailViewModel extends AndroidViewModel implements BooksDataSo
     }
 
     @Override
-    public void onBookLoaded(Book book) {
+    public void onBookDetailsLoaded(Book book) {
         setBook(book);
+        this.mObservableBook.setValue(book);
         mIsDataLoading = false;
     }
 
@@ -118,6 +128,14 @@ public class BookDetailViewModel extends AndroidViewModel implements BooksDataSo
     @Nullable
     protected String getBookId() {
         return book.get().getId();
+    }
+
+    @Nullable
+    public String getAuthor() {
+        if (book.get().getVolumeInfo() != null && book.get().getVolumeInfo().getAuthors() != null) {
+            return book.get().getVolumeInfo().getAuthors().get(0);
+        }
+        return null;
     }
 
     private void showSnackbarMessage(@StringRes Integer message) {

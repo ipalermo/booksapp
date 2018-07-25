@@ -8,6 +8,7 @@ import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 
 import java.util.List;
 
@@ -22,7 +23,7 @@ public interface BooksDao {
      *
      * @return all books.
      */
-    @Query("SELECT * FROM Books")
+    @Query("SELECT * FROM Book")
     List<Book> getBooks();
 
     /**
@@ -31,7 +32,7 @@ public interface BooksDao {
      * @param bookId the book id.
      * @return the book with bookId.
      */
-    @Query("SELECT * FROM Books WHERE entryid = :bookId")
+    @Query("SELECT * FROM Book WHERE id = :bookId")
     Book getBookById(String bookId);
 
     /**
@@ -41,6 +42,14 @@ public interface BooksDao {
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertBook(Book book);
+
+    /**
+     * Insert a BookListItem in the database. If the BookListItem already exists, replace it.
+     *
+     * @param bookListItem the book list item to be inserted.
+     */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertBookListItem(BookListItem bookListItem);
 
     /**
      * Update a book.
@@ -56,12 +65,12 @@ public interface BooksDao {
      *
      * @return the number of books deleted. This should always be 1.
      */
-    @Query("DELETE FROM Books WHERE entryid = :bookId")
+    @Query("DELETE FROM Book WHERE id = :bookId")
     int deleteBookById(String bookId);
 
     /**
      * Delete all books.
      */
-    @Query("DELETE FROM Books")
+    @Query("DELETE FROM Book")
     void deleteBooks();
 }

@@ -5,8 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.bumptech.glide.RequestManager;
+import com.bumptech.glide.request.RequestOptions;
+import com.zeelo.android.architecture.assignment.booksapp.R;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.databinding.BookItemBinding;
 
 import java.util.List;
@@ -16,27 +20,31 @@ public class BooksAdapter extends BaseAdapter {
 
     private final BooksViewModel mBooksViewModel;
 
-    private List<Book> mBooks;
+    private List<BookListItem> mBookItems;
 
-    public BooksAdapter(List<Book> books,
-                        BooksViewModel booksViewModel) {
+    private final RequestManager glide;
+
+    public BooksAdapter(List<BookListItem> books,
+                        BooksViewModel booksViewModel,
+                        RequestManager glide) {
         mBooksViewModel = booksViewModel;
+        this.glide = glide;
         setList(books);
 
     }
 
-    public void replaceData(List<Book> books) {
+    public void replaceData(List<BookListItem> books) {
         setList(books);
     }
 
     @Override
     public int getCount() {
-        return mBooks != null ? mBooks.size() : 0;
+        return mBookItems != null ? mBookItems.size() : 0;
     }
 
     @Override
-    public Book getItem(int position) {
-        return mBooks.get(position);
+    public BookListItem getItem(int position) {
+        return mBookItems.get(position);
     }
 
     @Override
@@ -61,12 +69,17 @@ public class BooksAdapter extends BaseAdapter {
         BookItemUserActionsListener userActionsListener = new BookItemUserActionsListener() {
 
             @Override
-            public void onBookClicked(Book book) {
+            public void onBookClicked(BookListItem book) {
                 mBooksViewModel.getOpenBookEvent().setValue(book.getId());
             }
         };
 
-        binding.setBook(mBooks.get(position));
+        binding.setBook(mBookItems.get(position));
+
+        BookListItem.VolumeInfo volumeInfo = mBookItems.get(position).getVolumeInfo();
+        if (volumeInfo != null && volumeInfo.getImageLinks() != null) {
+            loadThumbnail(volumeInfo.getImageLinks().getThumbnail(), binding.bookThumbnail);
+        }
 
         binding.setListener(userActionsListener);
 
@@ -74,9 +87,18 @@ public class BooksAdapter extends BaseAdapter {
         return binding.getRoot();
     }
 
+    private void loadThumbnail(String url, ImageView imageView) {
+        RequestOptions requestOptions = new RequestOptions();
+        requestOptions.placeholder(R.drawable.loadingBookBackground);
+        requestOptions.error(R.drawable.logo);
+        requestOptions.centerInside();
+        glide.load(url)
+                .apply(requestOptions)
+                .into(imageView);
+    }
 
-    private void setList(List<Book> books) {
-        mBooks = books;
+    private void setList(List<BookListItem> books) {
+        mBookItems = books;
         notifyDataSetChanged();
     }
 }

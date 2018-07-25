@@ -9,7 +9,7 @@ import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
 
 import com.zeelo.android.architecture.assignment.booksapp.R;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -59,9 +59,9 @@ public class StatisticsViewModel extends AndroidViewModel {
     public void loadStatistics() {
         dataLoading.set(true);
 
-        mBooksRepository.getBooks(new BooksDataSource.LoadBooksCallback() {
+        mBooksRepository.getBooks(new BooksDataSource.LoadBooksListCallback() {
             @Override
-            public void onBooksLoaded(List<Book> books) {
+            public void onBooksListLoaded(List<BookListItem> books) {
                 error.set(false);
                 computeStats(books);
             }
@@ -79,7 +79,7 @@ public class StatisticsViewModel extends AndroidViewModel {
     /**
      * Called when new data is ready.
      */
-    private void computeStats(List<Book> books) {
+    private void computeStats(List<BookListItem> books) {
     }
 
     private void updateDataBindingObservables() {

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.zeelo.android.architecture.assignment.booksapp.Injection;
+import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.TestUtils;
 import com.zeelo.android.architecture.assignment.booksapp.ViewModelFactory;
 
@@ -21,8 +22,6 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import booksapp.R;
 
 import static android.support.test.InstrumentationRegistry.getTargetContext;
 import static android.support.test.espresso.Espresso.onView;

@@ -3,10 +3,10 @@ package com.zeelo.android.architecture.assignment.booksapp.statistics;
 
 
 import android.app.Application;
-import android.arch.core.executor.testing.InstantBookExecutorRule;
+import android.arch.core.executor.testing.InstantTaskExecutorRule;
 
 import com.google.common.collect.Lists;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -33,15 +33,15 @@ public class StatisticsViewModelTest {
 
     // Executes each book synchronously using Architecture Components.
     @Rule
-    public InstantBookExecutorRule instantExecutorRule = new InstantBookExecutorRule();
+    public InstantTaskExecutorRule instantExecutorRule = new InstantTaskExecutorRule();
 
-    private static List<Book> BOOKS;
+    private static List<BookListItem> BOOKS;
 
     @Mock
     private BooksRepository mBooksRepository;
 
     @Captor
-    private ArgumentCaptor<BooksDataSource.LoadBooksCallback> mLoadBooksCallbackCaptor;
+    private ArgumentCaptor<BooksDataSource.LoadBooksListCallback> mLoadBooksCallbackCaptor;
 
     private StatisticsViewModel mStatisticsViewModel;
 
@@ -55,8 +55,8 @@ public class StatisticsViewModelTest {
         mStatisticsViewModel = new StatisticsViewModel(mock(Application.class), mBooksRepository);
 
         // We initialise the books to 3, with one active and two favorited
-        BOOKS = Lists.newArrayList(new Book("Title1", "Description1"),
-                new Book("Title2", "Description2", true), new Book("Title3", "Description3", true));
+        BOOKS = Lists.newArrayList(new BookListItem("Title1", "Description1"),
+                new BookListItem("Title2", "Description2", true), new BookListItem("Title3", "Description3", true));
     }
 
     @Test
@@ -69,7 +69,7 @@ public class StatisticsViewModelTest {
 
         // Callback is captured and invoked with stubbed books
         verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksLoaded(BOOKS);
+        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
 
         // Then the results are empty
         assertThat(mStatisticsViewModel.empty.get(), is(true));
@@ -82,7 +82,7 @@ public class StatisticsViewModelTest {
 
         // Callback is captured and invoked with stubbed books
         verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksLoaded(BOOKS);
+        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
 
         // Then the results are empty
         assertThat(mStatisticsViewModel.empty.get(), is(false));

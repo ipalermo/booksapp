@@ -8,12 +8,13 @@ import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.local.converter.StringListConverter;
 
 /**
- * The Room Database that contains the Book table.
+ * The Room Database that contains the BookListItem table.
  */
-@Database(entities = {Book.class}, version = 1)
+@Database(entities = {BookListItem.class, Book.class}, version = 1)
 @TypeConverters({StringListConverter.class})
 public abstract class BooksDatabase extends RoomDatabase {
 
@@ -27,7 +28,7 @@ public abstract class BooksDatabase extends RoomDatabase {
         synchronized (sLock) {
             if (INSTANCE == null) {
                 INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                        BooksDatabase.class, "Books.db")
+                        BooksDatabase.class, "books.db")
                         .build();
             }
             return INSTANCE;

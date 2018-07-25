@@ -16,17 +16,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.bumptech.glide.Glide;
 import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.ScrollChildSwipeRefreshLayout;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.databinding.BooksFragBinding;
 import com.zeelo.android.architecture.assignment.booksapp.util.SnackbarUtils;
 
 import java.util.ArrayList;
 
 /**
- * Display a grid of {@link Book}s. User can choose to view all, active or favorited books.
+ * Display a grid of {@link BookListItem}s. User can choose to view all, active or favorited books.
  */
 public class BooksFragment extends Fragment {
 
@@ -65,21 +66,18 @@ public class BooksFragment extends Fragment {
         return mBooksFragBinding.getRoot();
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.menu_clear:
-//                mBooksViewModel.clearCompletedBooks();
-//                break;
-//            case R.id.menu_filter:
-//                showFilteringPopUpMenu();
-//                break;
-//            case R.id.menu_refresh:
-//                mBooksViewModel.loadBooks(true);
-//                break;
-//        }
-//        return true;
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_filter:
+                showFilteringPopUpMenu();
+                break;
+            case R.id.menu_refresh:
+                mBooksViewModel.loadBooks(true);
+                break;
+        }
+        return true;
+    }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -116,13 +114,13 @@ public class BooksFragment extends Fragment {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.active:
-                        mBooksViewModel.setFiltering(BooksFilterType.ACTIVE_TASKS);
+                        mBooksViewModel.setFiltering(BooksFilterType.NOT_FAVORITED_BOOKS);
                         break;
                     case R.id.completed:
-                        mBooksViewModel.setFiltering(BooksFilterType.COMPLETED_TASKS);
+                        mBooksViewModel.setFiltering(BooksFilterType.FAVORITED_BOOKS);
                         break;
                     default:
-                        mBooksViewModel.setFiltering(BooksFilterType.ALL_TASKS);
+                        mBooksViewModel.setFiltering(BooksFilterType.ALL_BOOKS);
                         break;
                 }
                 mBooksViewModel.loadBooks(false);
@@ -150,8 +148,9 @@ public class BooksFragment extends Fragment {
         ListView listView =  mBooksFragBinding.booksList;
 
         mListAdapter = new BooksAdapter(
-                new ArrayList<Book>(0),
-                mBooksViewModel
+                new ArrayList<BookListItem>(0),
+                mBooksViewModel,
+                Glide.with(this)
         );
         listView.setAdapter(mListAdapter);
     }

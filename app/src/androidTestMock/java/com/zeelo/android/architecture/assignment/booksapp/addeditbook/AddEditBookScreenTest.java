@@ -14,6 +14,7 @@ import android.support.test.runner.AndroidJUnit4;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.TestUtils;
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
 import com.zeelo.android.architecture.assignment.booksapp.data.FakeBooksRemoteDataSource;
@@ -28,7 +29,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import booksapp.R;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.clearText;
@@ -45,7 +45,7 @@ import static com.zeelo.android.architecture.assignment.booksapp.R.id.toolbar;
 @LargeTest
 public class AddEditBookScreenTest {
 
-    private static final String TASK_ID = "1";
+    private static final String BOOK_ID = "1";
 
     /**
      * {@link IntentsTestRule} is an {@link ActivityTestRule} which inits and releases Espresso
@@ -112,8 +112,9 @@ public class AddEditBookScreenTest {
     public void toolbarTitle_editBook_persistsRotation() {
         // Put a book in the repository and start the activity to edit it
         BooksRepository.destroyInstance();
-        FakeBooksRemoteDataSource.getInstance().addBooks(new Book("Title1", "", TASK_ID, false));
-        launchNewBookActivity(TASK_ID);
+        FakeBooksRemoteDataSource.getInstance(InstrumentationRegistry.getInstrumentation()
+                .getTargetContext()).addBooks(new Book("Title1", BOOK_ID, ));
+        launchNewBookActivity(BOOK_ID);
 
         // Check that the toolbar shows the correct title
         onView(withId(toolbar)).check(matches(withToolbarTitle(R.string.edit_book)));
@@ -132,7 +133,7 @@ public class AddEditBookScreenTest {
         Intent intent = new Intent(InstrumentationRegistry.getInstrumentation()
                 .getTargetContext(), AddEditBookActivity.class);
 
-        intent.putExtra(AddEditBookFragment.ARGUMENT_EDIT_TASK_ID, bookId);
+        intent.putExtra(AddEditBookFragment.ARGUMENT_EDIT_BOOK_ID, bookId);
         mActivityTestRule.launchActivity(intent);
     }
 

@@ -76,6 +76,8 @@ dependencies {
     compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
     compile "com.google.guava:guava:$rootProject.guavaVersion"
     compile "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
 
     // Architecture Components
     compile "android.arch.persistence.room:runtime:$rootProject.roomVersion"

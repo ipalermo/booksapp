@@ -8,6 +8,6 @@
         android:title="@string/list_title" />
     <item
         android:id="@+id/statistics_navigation_menu_item"
-        android:icon="@drawable/ic_statistics"
+        android:icon="@android:drawable/ic_menu_help"
         android:title="@string/statistics_title" />
 </menu>

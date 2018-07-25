@@ -35,6 +35,7 @@ ext {
     supportLibraryVersion = '27.1.1'
     guavaVersion = '22.0-android'
     gsonVersion = '2.8.0'
+    glideVersion = '4.7.1'
     junitVersion = '4.12'
     mockitoVersion = '1.10.19'
     powerMockito = '1.6.2'

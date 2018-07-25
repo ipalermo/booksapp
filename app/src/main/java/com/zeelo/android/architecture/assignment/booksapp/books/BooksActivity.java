@@ -92,7 +92,7 @@ public class BooksActivity extends AppCompatActivity implements BookItemNavigato
 
     private void setupNavigationDrawer() {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerLayout.setStatusBarBackground(R.color.colorPrimaryDark);
+        mDrawerLayout.setStatusBarBackground(R.color.colorPrimary);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
@@ -143,7 +143,8 @@ public class BooksActivity extends AppCompatActivity implements BookItemNavigato
     @Override
     public void openBookDetails(String bookId) {
         Intent intent = new Intent(this, BookDetailActivity.class);
-        intent.putExtra(BookDetailActivity.EXTRA_TASK_ID, bookId);
+        intent.putExtra(BookDetailActivity.EXTRA_BOOK_ID, bookId);
+        intent.putExtra(BookDetailActivity.EXTRA_BOOK_ID, bookId);
         startActivityForResult(intent, AddEditBookActivity.REQUEST_CODE);
 
     }

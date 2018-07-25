@@ -1,6 +1,7 @@
 
 package com.zeelo.android.architecture.assignment.booksapp.bookdetail;
 
+import android.arch.lifecycle.Observer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -13,9 +14,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
+import com.zeelo.android.architecture.assignment.booksapp.data.Book;
 import com.zeelo.android.architecture.assignment.booksapp.databinding.BookdetailFragBinding;
 import com.zeelo.android.architecture.assignment.booksapp.util.SnackbarUtils;
 
@@ -25,7 +30,7 @@ import com.zeelo.android.architecture.assignment.booksapp.util.SnackbarUtils;
  */
 public class BookDetailFragment extends Fragment {
 
-    public static final String ARGUMENT_TASK_ID = "TASK_ID";
+    public static final String ARGUMENT_BOOK_ID = "BOOK_ID";
 
     public static final int REQUEST_EDIT_TASK = 1;
 
@@ -33,7 +38,7 @@ public class BookDetailFragment extends Fragment {
 
     public static BookDetailFragment newInstance(String bookId) {
         Bundle arguments = new Bundle();
-        arguments.putString(ARGUMENT_TASK_ID, bookId);
+        arguments.putString(ARGUMENT_BOOK_ID, bookId);
         BookDetailFragment fragment = new BookDetailFragment();
         fragment.setArguments(arguments);
         return fragment;
@@ -73,7 +78,7 @@ public class BookDetailFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        mViewModel.start(getArguments().getString(ARGUMENT_TASK_ID));
+        mViewModel.start(getArguments().getString(ARGUMENT_BOOK_ID));
     }
 
     @Nullable
@@ -93,9 +98,46 @@ public class BookDetailFragment extends Fragment {
 
         viewDataBinding.setListener(actionsListener);
 
+        subscribeToModel(mViewModel);
+
         setHasOptionsMenu(true);
 
         return view;
+    }
+
+    private void subscribeToModel(final BookDetailViewModel model) {
+
+        // Observe book details data
+        model.getObservableBook().observe(this, new Observer<Book>() {
+            @Override
+            public void onChanged(@Nullable Book book) {
+                model.setBook(book);
+
+                updateBookLargeThumbnail(book);
+            }
+        });
+    }
+
+    private void updateBookLargeThumbnail(Book book) {
+        ImageView appBarImage = getActivity().findViewById(R.id.book_large_thumbnail);
+        ImageView bookImage = getActivity().findViewById(R.id.book_small_thumbnail);
+        Book.VolumeInfo volumeInfo = book.getVolumeInfo();
+        if (volumeInfo != null && volumeInfo.getImageLinks() != null) {
+            loadThumbnail(volumeInfo.getImageLinks().getThumbnail(), appBarImage);
+            loadThumbnail(volumeInfo.getImageLinks().getThumbnail(), bookImage);
+        }
+    }
+
+    private void loadThumbnail(String url, ImageView imageView) {
+        RequestOptions requestOptions = new RequestOptions()
+            .placeholder(R.drawable.loadingBookBackground)
+            .error(R.drawable.logo)
+            .fitCenter();
+
+        Glide.with(this)
+                .load(url)
+                .apply(requestOptions)
+                .into(imageView);
     }
 
     private BookDetailUserActionsListener getBookDetailUserActionsListener() {

@@ -1,7 +1,7 @@
 
 package com.zeelo.android.architecture.assignment.booksapp;
 
-import android.arch.core.executor.testing.InstantBookExecutorRule;
+import android.arch.core.executor.testing.InstantTaskExecutorRule;
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.LifecycleRegistry;
@@ -24,7 +24,7 @@ public class SingleLiveEventTest {
 
     // Execute books synchronously
     @Rule
-    public InstantBookExecutorRule instantExecutorRule = new InstantBookExecutorRule();
+    public InstantTaskExecutorRule instantExecutorRule = new InstantTaskExecutorRule();
 
     // The class that has the lifecycle
     @Mock

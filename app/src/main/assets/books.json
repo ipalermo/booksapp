@@ -1,0 +1,3419 @@
+[
+  {
+    "kind": "books#volume",
+    "id": "qKFDDAAAQBAJ",
+    "etag": "AD04WS4tZ9M",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/qKFDDAAAQBAJ",
+    "volumeInfo": {
+      "title": "Android",
+      "authors": [
+        "P.K. Dixit"
+      ],
+      "publisher": "Vikas Publishing House",
+      "publishedDate": "2014",
+      "description": "Android is a movement that has transferred data from laptop to hand-held devices like mobiles. Though there are alternate technologies that compete with Android, but it is the front runner in mobile technology by a long distance. Good knowledge in basic Java will help you to understand and develop Android technology and apps. Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts. It includes a lot of diagrams along with explanations to facilitate better understanding by students. This book aptly concludes with a project that uses Android, which will greatly benefit students in learning the practical aspects of Android. Key Features • Instructions in designing different Android user interfaces • Thorough explanations of all activities • JSON • Android-based project to aid practical understanding",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9789325977884"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "9325977885"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 372,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=qKFDDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=qKFDDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=qKFDDAAAQBAJ&printsec=frontcover&dq=android&hl=&cd=1&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=qKFDDAAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-qKFDDAAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 428.57,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 300,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=qKFDDAAAQBAJ&rdid=book-qKFDDAAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 428570000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 300000000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android-sample-pdf.acsm?id=qKFDDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=qKFDDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Many universities in India and across the world are now teaching Android in their syllabus, which shows the importance of this subject. This book can be read by anyone who knows Java and XML concepts."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "2XeNswkT_2YC",
+    "etag": "FQ1UAEOVwbE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/2XeNswkT_2YC",
+    "volumeInfo": {
+      "title": "Beginning Android 2",
+      "authors": [
+        "Mark Murphy"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2010-03-19",
+      "description": "The Android development platform, created by Google and the Open Handset Alliance, is a platform in its truest sense, encompassing hundreds of classes beyond the traditional Java classes and open source components that ship with the SDK. With Beginning Android 2, you’ll learn how to develop applications for Android 2.x mobile devices, using simple examples that are ready to run with your copy of the software development kit. Author, Android columnist, writer, developer, and community advocate Mark L. Murphy will show you what you need to know to get started programming Android applications, including how to craft graphical user interfaces, use GPS, and access web services. What you’ll learn Discover Android and how to use it to build Java-based mobile applications for a wide range of phones and other devices. Create user interfaces using both the Android widget framework and the built-in WebKit-powered Web browser components. Utilize the distinctive capabilities of the Android engine, including location tracking, maps, and Internet access. Use and create Android applications incorporating activities, services, content providers, and broadcast receivers. Support Android 1.5, 1.6, and 2.0 devices, including dealing with multiple Android OS versions, multiple screen sizes, and other device-specific characteristics. Who this book is for This book is aimed at people new to mobile development, but with some knowledge of Java. Table of Contents The Big Picture Projects & Targets Creating a Skeleton Application Using XML-Based Layouts Employing Basic Widgets Working with Containers Using Selection Widgets Getting Fancy With Lists Employing Fancy Widgets and Containers The Input Method Framework Applying Menus Fonts Embedding the WebKit Browser Showing Pop-Up Messages Dealing with Threads Handling Activity Lifecycle Events Creating Intent Filters Launching Activities and Sub-Activities Handling Rotation Working with Resources Using Preferences Managing and Accessing Local Databases Accessing Files Leveraging Java Libraries Communicating via the Internet Using a Content Provider Building a Content Provider Requesting and Requiring Permissions Creating a Service Invoking a Service Alerting Users Via Notifications Accessing Location-Based Services Mapping with MapView and MapActivity Handling Telephone Calls Development Tools Handling Multiple Screen Sizes Dealing with Devices Handling Platform Changes Where Do We Go From Here?",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430226291"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430226293"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 416,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 2,
+      "ratingsCount": 2,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "1.3.3.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=2XeNswkT_2YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=2XeNswkT_2YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=2XeNswkT_2YC&pg=PA180&dq=android&hl=&cd=2&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=2XeNswkT_2YC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Android_2.html?hl=&id=2XeNswkT_2YC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_2-sample-epub.acsm?id=2XeNswkT_2YC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_2-sample-pdf.acsm?id=2XeNswkT_2YC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=2XeNswkT_2YC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>android</b> :layout_weight=&quot;l&quot; /&gt; &lt;EditText <b>android</b> :id=&quot;@+id/lon&quot; <b>android</b> : <br>\nlayout_width=&quot;f ill_parent &quot; <b>android</b> : layout_height=&quot;wrap_content&quot; <b>android</b> :<br>\ncursorVisible= &quot;true&quot; <b>android</b> :editable=&quot;true&quot; <b>android</b> : singlel_ine=&quot;true&quot; <b>android</b><br>\n&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "1Y7jY06XNF4C",
+    "etag": "m2BKfVW/F30",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/1Y7jY06XNF4C",
+    "volumeInfo": {
+      "title": "Android",
+      "authors": [
+        "J. F. DiMarzio"
+      ],
+      "publisher": "Tata McGraw-Hill Education",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0071070591"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780071070591"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "printType": "BOOK",
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.0.1.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1Y7jY06XNF4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1Y7jY06XNF4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=1Y7jY06XNF4C&dq=android&hl=&cd=3&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=1Y7jY06XNF4C&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android.html?hl=&id=1Y7jY06XNF4C"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=1Y7jY06XNF4C&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "Bam8K5SIiTkC",
+    "etag": "I1ctSF/FSiQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Bam8K5SIiTkC",
+    "volumeInfo": {
+      "title": "Pro Android 2",
+      "authors": [
+        "Sayed Hashimi",
+        "Satya Komatineni",
+        "Dave MacLean"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2010-03-15",
+      "description": "Pro Android 2 shows how to build real-world and fun mobile applications using Google’s latest Android software development kit. This new edition is updated for Android 2, covering everything from the fundamentals of building applications for embedded devices to advanced concepts such as custom 3D components, OpenGL, and touchscreens including gestures. While other Android development guides simply discuss topics, Pro Android 2 offers the combination of expert insight and real sample applications that work. Discover the design and architecture of the Android SDK through practical examples, and how to build mobile applications using the Android SDK. Explore and use the Android APIs, including those for media and Wi-Fi. Learn about Android 2’s integrated local and web search, handwriting gesture UI, Google Translate, and text-to-speech features. Pro Android 2 dives deep, providing you with all the knowledge and techniques you need to build mobile applications ranging from games to Google apps, including add-ons to Google Docs. You’ll be able to extend and run the new Google Chrome APIs on the G1, the G2, and other next-generation Google phones and Android-enabled devices. What you’ll learn How to use Android to build Java-based mobile applications for Google phones with a touch screen or keyboard (thanks to Cupcake’s inclusion as of Android 1.5) How to design and architect using Google’s latest Android SDK How to use the Android SDK to write mobile applications for embedded devices How to create 3D graphics with OpenGL and custom components How to build multimedia and game apps using Android’s Media APIs and OpenGL How to use Android’s location-based services, networking (Wi-Fi APIs), and security How to create and allow for more integrated local and web searches How to build handwriting gesture UIs How to incorporate Google Translate into your Android applications Who this book is for This book is for professional software engineers/programmers looking to move their ideas and applications into the mobile space with Android. It assumes that readers have a passable understanding of Java, including being able to write classes and handle basic inheritance structures. This book also targets hobbyists. Table of Contents Introducing the Android Computing Platform Getting Your Feet Wet Using Resources, Content Providers, and Intents Building User Interfaces and Using Controls Working with Menus and Dialogs Unveiling 2D Animation Exploring Security and Location-Based Services Building and Consuming Services Using the Media Framework and Telephony APIs Programming 3D Graphics with OpenGL Managing and Organizing Preferences Exploring Live Folders Home Screen Widgets Android Search Exploring Text to Speech and Translate APIs Touchscreens Titanium Mobile: A WebKit-Based Approach to Android Development Working with Android Market Outlook and Resources",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430226598"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430226595"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 736,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 2.5,
+      "ratingsCount": 6,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.2.1.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=Bam8K5SIiTkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=Bam8K5SIiTkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=Bam8K5SIiTkC&pg=PA217&dq=android&hl=&cd=4&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=Bam8K5SIiTkC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Pro_Android_2.html?hl=&id=Bam8K5SIiTkC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_2-sample-epub.acsm?id=Bam8K5SIiTkC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_2-sample-pdf.acsm?id=Bam8K5SIiTkC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=Bam8K5SIiTkC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "The previous chapters gave you a broad introduction to UI programming in <br>\n<b>Android</b>. In this chapter, we would like to further strengthen your ability to create <br>\nintuitive and appealing applications on the <b>Android</b> Platform by covering the <br>\nanimation&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "xlp6NE2NWecC",
+    "etag": "LK4hvu5tQqw",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/xlp6NE2NWecC",
+    "volumeInfo": {
+      "title": "Android",
+      "subtitle": "Earth Book One of the Android Saga",
+      "authors": [
+        "Paul J. Ward"
+      ],
+      "publisher": "Strategic Book Publishing",
+      "publishedDate": "2012-11-01",
+      "description": "Humans and androids are learning to co-exist as equals, but there are many opposers who seek to subvert their own creations and rule with absolute power ...Humans, with their android creations loyally at their side, have colonised the Moon and Mars. The Earth and Colonies Defence Service (ECDS) keeps the colonies and space lanes safe. On Earth, the Android Protectorate League, led by the enigmatic android leader Traviod Selius, campaign for android rights legislation. However, they are strongly opposed by the Anti-Android Faction (AAF). Following the approval of the Human and Android Cohabitation Act, ECDS Chief of Operations Nakaar Bacvor and co-conspirators form the military wing of the AAF. The AAF attack the Moon and Mars colonies, but are repulsed by ECDS forces. On Earth, with the AAF seemingly defeated, humans and androids unite to create the city of Utopia. Threats from a reformed, more powerful AAF emerges and the crew of the ECDS flagship Harmonia must formulate a defence. The mysterious Evolved Androids appear on Earth with a sytoid child called Eirini, who has strange powers. Utopian Enforcement officer Rul Calibra becomes her unlikely guardian and protector.Humankind's destiny hangs in the balance in the first series installment ANDROID: Earth - Book One of the ANDROID Saga. Paul J. Ward was born in 1969 in Lincolnshire, England, on the day of the historic Apollo 11 moon landing. He has been fascinated by space exploration and technological developments his whole life. This is his first novel. Publisher's website: http: //sbpra.com/PaulJWar",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781618971241"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1618971247"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 446,
+      "printType": "BOOK",
+      "categories": [
+        "Fiction"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=xlp6NE2NWecC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=xlp6NE2NWecC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=xlp6NE2NWecC&printsec=frontcover&dq=android&hl=&cd=5&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=xlp6NE2NWecC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android.html?hl=&id=xlp6NE2NWecC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=xlp6NE2NWecC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Paul J. Ward was born in 1969 in Lincolnshire, England, on the day of the historic Apollo 11 moon landing. He has been fascinated by space exploration and technological developments his whole life. This is his first novel."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "zmnhDAAAQBAJ",
+    "etag": "7UESqeBJxJo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/zmnhDAAAQBAJ",
+    "volumeInfo": {
+      "title": "Android App Development",
+      "subtitle": "A Complete Tutorial For Beginners",
+      "authors": [
+        "Padmini"
+      ],
+      "publisher": "Educreation Publishing",
+      "publishedDate": "2016-08-25",
+      "description": "This book is a complete tutorial for the beginners in Android development. It can be read by the students of Btech in Computer science or Information Technology, Bachelors in Computer Application, Masters in Computer application. All the topics of this book are explained in reader’s digest version. At the end of this book, there is a small project.",
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 264,
+      "printType": "BOOK",
+      "categories": [
+        "Self-Help"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "1.0.0.0.preview.1",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=zmnhDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=zmnhDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=zmnhDAAAQBAJ&printsec=frontcover&dq=android&hl=&cd=6&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=zmnhDAAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-zmnhDAAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 42,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 31.5,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=zmnhDAAAQBAJ&rdid=book-zmnhDAAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 42000000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 31500000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_App_Development-sample-pdf.acsm?id=zmnhDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=zmnhDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "All the topics of this book are explained in reader’s digest version. At the end of this book, there is a small project."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "ScuYAgAAQBAJ",
+    "etag": "dXC1tI8F2Vc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ScuYAgAAQBAJ",
+    "volumeInfo": {
+      "title": "Beginning NFC",
+      "subtitle": "Near Field Communication with Arduino, Android, and PhoneGap",
+      "authors": [
+        "Tom Igoe",
+        "Don Coleman",
+        "Brian Jepson"
+      ],
+      "publisher": "\"O'Reilly Media, Inc.\"",
+      "publishedDate": "2014-01-14",
+      "description": "Jump into the world of Near Field Communications (NFC), the fast-growing technology that lets devices in close proximity exchange data, using radio signals. With lots of examples, sample code, exercises, and step-by-step projects, this hands-on guide shows you how to build NFC applications for Android, the Arduino microcontroller, and embedded Linux devices. You’ll learn how to write apps using the NFC Data Exchange Format (NDEF) in PhoneGap, Arduino, and node.js that help devices read messages from passive NFC tags and exchange data with other NFC-enabled devices. If you know HTML and JavaScript, you’re ready to start with NFC. Dig into NFC’s architecture, and learn how it’s related to RFID Write sample apps for Android with PhoneGap and its NFC plugin Dive into NDEF: examine existing tag-writer apps and build your own Listen for and filter NDEF messages, using PhoneGap event listeners Build a full Android app to control lights and music in your home Create a hotel registration app with Arduino, from check-in to door lock Write peer-to-peer NFC messages between two Android devices Explore embedded Linux applications, using examples on Raspberry Pi and BeagleBone",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781449324124"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1449324126"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 246,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.1.0.0.preview.1",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=ScuYAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=ScuYAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=ScuYAgAAQBAJ&printsec=frontcover&dq=android&hl=&cd=7&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=ScuYAgAAQBAJ&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_NFC.html?hl=&id=ScuYAgAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=ScuYAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "With lots of examples, sample code, exercises, and step-by-step projects, this hands-on guide shows you how to build NFC applications for Android, the Arduino microcontroller, and embedded Linux devices."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "NetBrvVEe3cC",
+    "etag": "OQgY8zUgnww",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/NetBrvVEe3cC",
+    "volumeInfo": {
+      "title": "Beginning Android Games",
+      "authors": [
+        "Mario Zechner"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2011-04-21",
+      "description": "Beginning Android Games offers everything you need to join the ranks of successful Android game developers. You'll start with game design fundamentals and programming basics, and then progress towards creating your own basic game engine and playable games. This will give you everything you need to branch out and write your own Android games. The potential user base and the wide array of available high-performance devices makes Android an attractive target for aspiring game developers. Do you have an awesome idea for the next break-through mobile gaming title? Beginning Android Games will help you kick-start your project. The book will guide you through the process of making several example games for the Android platform, and involves a wide range of topics: The fundamentals of game development The Android platform basics to apply those fundamentals in the context of making a game The design of 2D and 3D games and their successful implementation on the Android platform For those looking to learn about Android tablet game app development or want Android 4 SDK specific coverage, check out Beginning Android 4 Games Development, now available from Apress. What you’ll learn How to set up and use the development tools for developing your first Android application The fundamentals of game programming in the context of the Android platform How to use the Android's APIs for graphics (Canvas, OpenGL ES 1.0/1.1), audio, and user input to reflect those fundamentals How to develop two 2D games from scratch, based on the Canvas API and OpenGL ES. How to create a full-featured 3D game How to publish your games, get crash reports, and support your users How to complete your own playable 2D OpenGL games Who this book is for This book is for people with a basic knowledge of Java who want to write games on the Android platform. It also offers information for experienced game developers about the pitfalls and peculiarities of the platform. Table of Contents Android, the New Kid on the Block First Steps with the Android SDK Game Development 101 Android for Game Developers An Android Game Development Framework Mr. Nom Invades Android OpenGL ES: A Gentle Introduction 2D Game Programming Tricks Super Jumper: A 2D OpenGL ES Game OpenGL ES: Going 3D 3D Programming Tricks Droid Invaders: the Grand Finale Publishing Your Game What’s Next?",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430230427"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430230428"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 688,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 3.5,
+      "ratingsCount": 18,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.4.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=NetBrvVEe3cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=NetBrvVEe3cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=NetBrvVEe3cC&pg=PA185&dq=android&hl=&cd=8&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=NetBrvVEe3cC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Android_Games.html?hl=&id=NetBrvVEe3cC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_Games-sample-epub.acsm?id=NetBrvVEe3cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_Games-sample-pdf.acsm?id=NetBrvVEe3cC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=NetBrvVEe3cC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b>. Game. Development. Framework. We&#39;ve been through four chapters <br>\nalready and haven&#39;t written a single line of game code. The reason I&#39;ve put you <br>\nthrough all this boring theory and let you implement silly little test programs is <br>\nsimple:&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "6tLAyQLSzG0C",
+    "etag": "gVmV1w1nXwI",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/6tLAyQLSzG0C",
+    "volumeInfo": {
+      "title": "Android for Work",
+      "subtitle": "Productivity for Professionals",
+      "authors": [
+        "Marziah Karch"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2010-09-01",
+      "description": "Android is new, Android is open, and Android is fun. It’s also serious about business. Android for Work shows you how to harness the power of Android to stay productive and take your office on the road. This book also sheds light on the often daunting task of finding the right Android phone for the business user. Whether this is your first smartphone, your first Android smartphone, or your first attempt to make your phone into a productivity tool, Android for Work gets you started. You’ll learn how to manage email and tasks, but you’ll also learn how to weed through the sea of games to find specialized productivity tools for a variety of professions. For those that are more interested in an enterprise wide deployment, the book includes an appendix of information on administering Android phones, creating custom interfaces, and creating specialized apps for your enterprise. You’ll also learn more about integrating Android with other Google Apps for enterprise. What you’ll learn Select the Android phone that is right for you Integrate your work email and calendar tools Navigate business trips and meetings with ease Find specialized apps for your profession Collaborate with coworkers in large and small groups Harness the power of Android customization Who this book is for This book is for anyone who is considering an Android phone or who has recently purchased one. Whether you are a web designer, writer, medical professional, lawyer, or educator, an Android phone can help you be more productive and finally find a reason for having a phone with a data plan. Table of Contents Buying and Activating an Android Phone Using Your Phone for the First Time Going Online with Android Android Calling Managing Texting Wrangling Your E-mail The Calendar Android in a Microsoft World Photos and Video Web Browsing Social Media and Work Maps and Mobile The Remaining Android Apps The Android Market General Business Applications Specialized Apps for Professionals Advanced Customization and Troubleshooting Resources for Managing Enterprise-Wide Android Deployment Resources for Developing Android Apps",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430230007"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430230002"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 312,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 3.5,
+      "ratingsCount": 18,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.1.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=6tLAyQLSzG0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=6tLAyQLSzG0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=6tLAyQLSzG0C&pg=PA272&dq=android&hl=&cd=9&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=6tLAyQLSzG0C&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_for_Work.html?hl=&id=6tLAyQLSzG0C"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_for_Work-sample-epub.acsm?id=6tLAyQLSzG0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_for_Work-sample-pdf.acsm?id=6tLAyQLSzG0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=6tLAyQLSzG0C&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Pro <b>Android</b> 2, by Satya Komatineni, Sayed Hashimi, and Dave MacLean: This <br>\nbook shows you how to build fun, real-world mobile applications using Google&#39;s <br>\n<b>Android</b> SDK. It covers everything from the fundamentals of building applications<br>\n&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "VwFwDQAAQBAJ",
+    "etag": "aKYENJ2gv6Y",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/VwFwDQAAQBAJ",
+    "volumeInfo": {
+      "title": "Android Studio 2 Essentials",
+      "authors": [
+        "Belen Cruz Zapata"
+      ],
+      "publisher": "Packt Publishing Ltd",
+      "publishedDate": "2016-06-28",
+      "description": "A fast-paced guide to get you up and running with Android application development using Android Studio 2 About This Book Configure, build, and run Android projects with Android Studio 2 Test your apps using the Android emulator and learn how to manage virtual devices Explore how Android Studio 2 can be made a part of your workflow to reduce the overall development time Who This Book Is For If you are an Android developer looking to quickly take advantage of Android Studio 2 and add it to your workflow, then this book is for you. It is assumed that you are familiar with the OOP paradigm and Java. You are recommended to have prior knowledge of the main characteristics of the Android mobile system to get the most out of this book. What You Will Learn Install Android Studio on your system and configure the Android Software Development Kit Create your first project and explore its structure Manage a project in Android Studio 2 with Gradle Improve your productivity while programming by getting the best of the code editor Design the user interface using layouts and see how to handle various user events Integrate Google Play services into your project efficiently Monitor your app while it's running and constantly improve its performance In Detail Android Studio 2, the official IDE for Android application development, dramatically improves your workflow by letting you quickly see changes running on your device or emulator. It gives developers a unique platform by making app builds and deployment faster. This book will get you up and running with all the essential features of Android Studio 2 to optimize your development workflow. Starting off with the basic installation and configuration of Android Studio 2, this book will help you build a new project by showing you how to create a custom launcher icon and guiding you to choose your project. You will then gain an insight into the additional tools provided in Android Studio, namely the Software Development Kit (SDK) Manager, Android Virtual Device (AVD) Manager, and Javadoc. You'll also see how to integrate Google Play Services in an Android project. Finally, you'll become familiar with the Help section in Android Studio, which will enable you to search for support you might require in different scenarios. Style and approach A comprehensive and practical guide that will give you the essential skills required to develop Android applications quickly using Android Studio. With the help of a real-world project, this book will show how to make Android Studio a part of your development process and optimize it.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781786460219"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1786460211"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 172,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "2.2.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=VwFwDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=VwFwDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=VwFwDQAAQBAJ&printsec=frontcover&dq=android&hl=&cd=10&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=VwFwDQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-VwFwDQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 224.06,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 156.84,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=VwFwDQAAQBAJ&rdid=book-VwFwDQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 224060000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 156840000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": true
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=VwFwDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "A fast-paced guide to get you up and running with Android application development using Android Studio 2 About This Book Configure, build, and run Android projects with Android Studio 2 Test your apps using the Android emulator and learn ..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "-1eQ71mLj2cC",
+    "etag": "MOIiDWl4Yz4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/-1eQ71mLj2cC",
+    "volumeInfo": {
+      "title": "Pro Android Games",
+      "authors": [
+        "Vladimir Silva"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2009-12-28",
+      "description": "Do you remember landmark games like Wolfenstein 3D, Doom, and Asteroids? Well, here’s an exciting opportunity to build and/or port these games to one of the hottest mobile and netbooks platforms today: Google’s Android. Pro Android Games teaches you how to build cool games like Space Blaster and the classic Asteroids from scratch on the latest Android platform. This book also shows you how to port other classic freeware/shareware games like Doom and Wolfenstein 3D from C using the Java Native Interface (JNI) for Android. This book is all about a unique perspective in Android game development: a well-balanced, powerful combination of pure Java and hybrid game development, mixing Java and C. By combining the elegant object-oriented features of Java and the raw power of C, there is no limit to the types of games that you can build for the platform. With actionable real-world source code in hand, this book allows you to dive right into games development on Android. You’ll definitely have fun, and perhaps you’ll even make some money. Enjoy! What you’ll learn How to write/port advanced 3D games for any Android device. How to setup a Linux system for hybrid game compilation. How to combine Java and C code in an elegant manner by building a simple Java application on top of a native library. How to tackle pure Java gaming with two practical games: Space Blaster and the arcade classic Asteroids. How to mix OpenGL API calls in Java and C for high performance 3D graphics using the 3D cubes sample by Google. How to bring two of the greatest PC 3D shooters to the Android platform: Wolfenstein 3D and Doom using Java and C. Who this book is for This book is for Google Android developers interested in game application development in Java or porting existing C-based games via JNI into Android and developing/deploying from there. It is targeted to developers who already know such basics of Android development as activity, view, and layout. Additionally, it assumes that you are a seasoned game developer in Java and C, and have a basic knowledge of Linux and Shell Scripting. Table of Contents Welcome to Android Gaming Compiling Native Code in Android Building a Java Game from Scratch Java Games Continued: Fun with Polygons Hybrid 3D Graphics with OpenGL and JNI 3D Shooters Episode I: Wolfenstein 3D for Android 3D Shooters Episode II: Doom for Android",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430226475"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430226471"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 300,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.6.6.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=-1eQ71mLj2cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=-1eQ71mLj2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=-1eQ71mLj2cC&pg=PR16&dq=android&hl=&cd=11&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=-1eQ71mLj2cC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Pro_Android_Games.html?hl=&id=-1eQ71mLj2cC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Games-sample-epub.acsm?id=-1eQ71mLj2cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Games-sample-pdf.acsm?id=-1eQ71mLj2cC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=-1eQ71mLj2cC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Here it brings the godfather of all PC 3D shooters to the <b>Android</b> platform—<br>\nWolfenstein 3D. Who would have thought that a PC game like this one could be <br>\nbrought to an <b>Android</b> mobile device with minimal effort? This chapter <br>\ndemonstrates&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "hlygR8lJTzUC",
+    "etag": "AXdEtyRqpPE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/hlygR8lJTzUC",
+    "volumeInfo": {
+      "title": "Beginning Android Application Development",
+      "authors": [
+        "Wei-Meng Lee"
+      ],
+      "publisher": "John Wiley & Sons",
+      "publishedDate": "2011-03-10",
+      "description": "Create must-have applications for the latest Android OS The Android OS is a popular and flexible platform for many of today's most in-demand mobile devices. This full-color guide offers you a hands-on introduction to creating Android applications for the latest mobile devices. Veteran author Wei Meng Lee accompanies each lesson with real-world examples to drive home the content he covers. Beginning with an overview of core Android features and tools, he moves at a steady pace while teaching everything you need to know to successfully develop your own Android applications. Explains what an activity is and reviews its lifecycle Zeroes in on customizing activities by applying styles and themes Looks at the components of a screen, including LinearLayout, AbsoluteLayout, and RelativeLayout, among others Details ways to adapt to different screen sizes and adjust display orientation Reviews the variety of views such as TextView, ProgressBar, TimePicker, and more Beginning Android Application Development pares down the most essential steps you need to know so you can start creating Android applications today.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "1118087801"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9781118087800"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 448,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 2.5,
+      "ratingsCount": 4,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.10.5.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=hlygR8lJTzUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=hlygR8lJTzUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=hlygR8lJTzUC&pg=PA2&dq=android&hl=&cd=12&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=hlygR8lJTzUC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-hlygR8lJTzUC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 702.56,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 491.79,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=hlygR8lJTzUC&rdid=book-hlygR8lJTzUC&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 702560000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 491790000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_Application_Developmen-sample-epub.acsm?id=hlygR8lJTzUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_Application_Developmen-sample-pdf.acsm?id=hlygR8lJTzUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=hlygR8lJTzUC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b> is a mobile operating system that is based on a modified version of Linux<br>\n. It was originally developed by a startup of the same name, <b>Android</b>, Inc. In 2005, <br>\nas part of its strategy to enter the mobile space, Google purchased <b>Android</b> and&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "pz4uDwAAQBAJ",
+    "etag": "0ezqw0/1/5s",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/pz4uDwAAQBAJ",
+    "volumeInfo": {
+      "title": "Getting Started with Android Things for Raspberry Pi 3",
+      "subtitle": "",
+      "authors": [
+        "Agus Kurniawan"
+      ],
+      "publisher": "PE Press",
+      "publishedDate": "2017-07-27",
+      "readingModes": {
+        "text": true,
+        "image": false
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "1.1.1.0.preview.2",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=pz4uDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=pz4uDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=pz4uDwAAQBAJ&printsec=frontcover&dq=android&hl=&cd=13&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=pz4uDwAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-pz4uDwAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 47.71,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 35.78,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=pz4uDwAAQBAJ&rdid=book-pz4uDwAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 47710000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 35780000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Getting_Started_with_Android_Things_for-sample-epub.acsm?id=pz4uDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=pz4uDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "zWndz5OpUzgC",
+    "etag": "O8UJvRizrPE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/zWndz5OpUzgC",
+    "volumeInfo": {
+      "title": "Building Android Apps with HTML, CSS, and JavaScript",
+      "subtitle": "Making Native Apps with Standards-Based Web Tools",
+      "authors": [
+        "Jonathan Stark",
+        "Brian Jepson",
+        "Brian MacDonald"
+      ],
+      "publisher": "\"O'Reilly Media, Inc.\"",
+      "publishedDate": "2012-01-13",
+      "description": "If you know HTML, CSS, and JavaScript, you already have the tools you need to develop Android applications. Now updated for HTML5, the second edition of this hands-on guide shows you how to use open source web standards to design and build apps that can be adapted for any Android device. You’ll learn how to create an Android-friendly web app on the platform of your choice, and then use Adobe’s free PhoneGap framework to convert it to a native Android app. Discover why device-agnostic mobile apps are the wave of the future, and start building apps that offer greater flexibility and a much broader reach. Convert a website into a web application, complete with progress indicators and other features Add animation with JQTouch to make your web app look and feel like a native Android app Make use of client-side data storage with apps that run when the Android device is offline Use PhoneGap to hook into advanced Android features, including the accelerometer, geolocation, and alerts Test and debug your app on the Web with real users, and submit the finished product to the Android Market",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781449327934"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1449327931"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 178,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.2.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=zWndz5OpUzgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=zWndz5OpUzgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=zWndz5OpUzgC&printsec=frontcover&dq=android&hl=&cd=14&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=zWndz5OpUzgC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-zWndz5OpUzgC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 203.02,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 142.11,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=zWndz5OpUzgC&rdid=book-zWndz5OpUzgC&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 203020000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 142110000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": true
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=zWndz5OpUzgC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Now updated for HTML5, the second edition of this hands-on guide shows you how to use open source web standards to design and build apps that can be adapted for any Android device."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "1C3yNgqZnUkC",
+    "etag": "8cWrGr2rrso",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/1C3yNgqZnUkC",
+    "volumeInfo": {
+      "title": "Android Application Development For Dummies",
+      "authors": [
+        "Donn Felker"
+      ],
+      "publisher": "John Wiley & Sons",
+      "publishedDate": "2010-11-17",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "1118005155"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9781118005156"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 360,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 3,
+      "ratingsCount": 39,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.1.3.0.preview.3",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=1C3yNgqZnUkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=1C3yNgqZnUkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=1C3yNgqZnUkC&pg=PA22&dq=android&hl=&cd=15&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=1C3yNgqZnUkC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_Application_Development_For_Dumm.html?hl=&id=1C3yNgqZnUkC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_Application_Development_For_Dumm-sample-epub.acsm?id=1C3yNgqZnUkC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_Application_Development_For_Dumm-sample-pdf.acsm?id=1C3yNgqZnUkC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=1C3yNgqZnUkC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b> allows your apps to do a lot! Imagine if someone released an app that <br>\nwent through the contact list and sent the entire list to a server somewhere for <br>\nmalicious purposes. This is why most of the functions that modify the user&#39;s <br>\ndevice or&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "eyHZ0-wRGQAC",
+    "etag": "54I4aUt5dB4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/eyHZ0-wRGQAC",
+    "volumeInfo": {
+      "title": "Pro Android 4",
+      "authors": [
+        "Satya Komatineni",
+        "Dave MacLean"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2012-03-06",
+      "description": "Pro Android 4 shows you how to build real-world and fun mobile apps using the new Android SDK 4 (Ice Cream Sandwich), which unifies Gingerbread for smartphones, Honeycomb for tablets and augments further with Google TV and more. This Android 4 book updates the best selling Pro Android 3 and covers everything from the fundamentals of building apps for embedded devices, smartphones, and tablets to advanced concepts such as custom 3D components, multi-tasking, sensors/augmented reality, better accessories support and much more. Using the tutorials and expert advice, you'll quickly be able to build cool mobile apps and run them on dozens of Android-based smartphones. You'll explore and use the Android APIs, including those for media and sensors. And you'll check out what's new with Android 4, including the improved user interface across all Android platforms, integration with services, and more. After reading this definitive tutorial and reference, you gain the knowledge and experience to create stunning, cutting-edge Android 4 apps that can make you money, while keeping you agile enough to respond to changes in the future. What you’ll learn How to use Android 4 to build Java-based mobile apps for Android smartphones and tablets How to build irresistible standard and custom User Interfaces and User Experiences (UI and UX) across Android devices How to populate your application with data from data sources, using Content Providers How to build multimedia and game apps using Android's media APIs How to use Android's location-based services, network-based services, and security How to use new Android features, such as Fragments and the ActionBar Who this book is for This book is for professional software engineers and programmers looking to move their ideas and applications into the mobile space with Android. It assumes a passable understanding of Java, including how to write classes and handle basic inheritance structures. Table of Contents Introducing the Android Computing Platform Setting up Your Development Environment Understanding Resources Understanding Content Providers Understanding Intents Building User Interfaces and Using Controls Adding Menus Fragments Dialogs: Regular and Fragment Action Bar Advanced Debugging and Analysis Responding to Configuration Changes Working with Preferences and Saving State Security and Permissions Working with Services Exploring Packages, Processes, and Library Projects Exploring Processes, Components, Threads, and Handlers Advanced Async Task Exploring Broadcast Receivers and Long Running Services Exploring the Alarm Manager Unveiling 2D Animation Exploring Maps and Location Services Using the Telephony APIs Understanding the Media Frameworks Home Screen Widgets Home Screen List Widgets Android Search User Experience Drag and Drop Using Sensors Understanding the Contacts API Deploying your Application: Android Market and Beyond",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430239307"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430239301"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 1020,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 2,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "1.3.4.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=eyHZ0-wRGQAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=eyHZ0-wRGQAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=eyHZ0-wRGQAC&pg=PA640&dq=android&hl=&cd=16&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=eyHZ0-wRGQAC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Pro_Android_4.html?hl=&id=eyHZ0-wRGQAC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_4-sample-epub.acsm?id=eyHZ0-wRGQAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_4-sample-pdf.acsm?id=eyHZ0-wRGQAC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=eyHZ0-wRGQAC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Many <b>Android</b> devices are smartphones, but so far, we haven&#39;t talked about how <br>\nto program applications that use phone features. In this chapter, we will show you <br>\nhow to send and receive Short Message Service (SMS) messages. We will also&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "WLrAqVo4HzcC",
+    "etag": "SxwFcjkyy9c",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/WLrAqVo4HzcC",
+    "volumeInfo": {
+      "title": "Beginning Android Tablet Application Development",
+      "authors": [
+        "Wei-Meng Lee"
+      ],
+      "publisher": "John Wiley & Sons",
+      "publishedDate": "2011-07-13",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "1118150759"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9781118150757"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 256,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "3.4.1.0.preview.1",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=WLrAqVo4HzcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=WLrAqVo4HzcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=WLrAqVo4HzcC&pg=PA89&dq=android&hl=&cd=17&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=WLrAqVo4HzcC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Beginning_Android_Tablet_Application_Dev.html?hl=&id=WLrAqVo4HzcC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Beginning_Android_Tablet_Application_Dev-sample-pdf.acsm?id=WLrAqVo4HzcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=WLrAqVo4HzcC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "2. Press F11 to debug the project on the <b>Android</b> emulator. ... OnClickListener() <br>\ncodefile ListFragmentExample.zip available for download at Wrox.com <b>android</b>:<br>\ntitle=”Checkbox” <b>android</b>:defaultValue=”false” <b>android</b>:summary=”True."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "zDibrpXTfxMC",
+    "etag": "WgSgMxJkY3I",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/zDibrpXTfxMC",
+    "volumeInfo": {
+      "title": "Android Forensics",
+      "subtitle": "Investigation, Analysis, and Mobile Security for Google Android",
+      "authors": [
+        "Andrew Hoog"
+      ],
+      "publisher": "Elsevier",
+      "publishedDate": "2011",
+      "description": "The open source nature of the platform has not only established a new direction for the industry, but enables a developer or forensic analyst to understand the device at the most fundamental level. Android Forensics covers an open source mobile device platform based on the Linux 2.6 kernel and managed by the Open Handset Alliance. The Android platform is a major source of digital forensic investigation and analysis. This book provides a thorough review of the Android platform including supported hardware devices, the structure of the Android development project and implementation of core services (wireless communication, data storage and other low-level functions). Finally, it will focus on teaching readers how to apply actual forensic techniques to recover data. Ability to forensically acquire Android devices using the techniques outlined in the book Detailed information about Android applications needed for forensics investigations Important information about SQLite, a file based structured data storage relevant for both Android and many other platforms.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781597496513"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1597496510"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 372,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=zDibrpXTfxMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=zDibrpXTfxMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=zDibrpXTfxMC&pg=PA344&dq=android&hl=&cd=18&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=zDibrpXTfxMC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_Forensics.html?hl=&id=zDibrpXTfxMC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=zDibrpXTfxMC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Investigation, Analysis, and Mobile Security for Google <b>Android</b> Andrew Hoog. <br>\ncom . quant serve . sol data syndication directory I flash directory I InsertWidget . <br>\nswf directory I wbx.sol data wbx_cookie . sol data f lashapps . if g . net directory&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "m16ccm8jAFUC",
+    "etag": "h2LUtkBxhdQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/m16ccm8jAFUC",
+    "volumeInfo": {
+      "title": "The Complete Android Guide",
+      "authors": [
+        "Kevin Purdy"
+      ],
+      "publisher": "3ones Inc",
+      "publishedDate": "2011-04-01",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780982592625"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0982592620"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": false
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.0.2.0.preview.2",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=m16ccm8jAFUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=m16ccm8jAFUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=m16ccm8jAFUC&pg=PA93&dq=android&hl=&cd=19&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=m16ccm8jAFUC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/The_Complete_Android_Guide.html?hl=&id=m16ccm8jAFUC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=m16ccm8jAFUC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Your <b>Android</b> phone can do all kinds of neat things with its almost ubiquitous <br>\naccess to the web, and browsing the web is one of its core abilities. Here&#39;s how to <br>\nmake the most of your browser—the app labeled, helpfully, &quot;Browser.&quot;&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "72CHDQAAQBAJ",
+    "etag": "OtSL9GNRVXc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/72CHDQAAQBAJ",
+    "volumeInfo": {
+      "title": "Android App Development",
+      "authors": [
+        "Hervé J. Franceschi"
+      ],
+      "publisher": "Jones & Bartlett Learning",
+      "publishedDate": "2016-12-29",
+      "description": "Android App Development is written for the Android programming course and takes a building block approach, presenting a real app from start to finish in each chapter. Each chapter is broken down into manageable topics, demonstrating a topic and then a working app.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781284092127"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1284092127"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": true
+      },
+      "pageCount": 682,
+      "printType": "BOOK",
+      "categories": [
+        "Medical"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "preview-1.0.0",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=72CHDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=72CHDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=72CHDQAAQBAJ&printsec=frontcover&dq=android&hl=&cd=20&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=72CHDQAAQBAJ&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Android_App_Development.html?hl=&id=72CHDQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=72CHDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Android App Development Includes Navigate 2 Advantage Access"
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "XqlMCZZjkjsC",
+    "etag": "oxOMlTRSH4k",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/XqlMCZZjkjsC",
+    "volumeInfo": {
+      "title": "Android Wireless Application Development, Portable Documents",
+      "authors": [
+        "Shane Conder",
+        "Lauren Darcey"
+      ],
+      "publisher": "Pearson Education",
+      "publishedDate": "2010-12-15",
+      "description": "The start-to-finish guide to Android application development: massively updated for the newest SDKs and developer techniques! This book delivers all the up-to-date information, tested code, and best practices you need to create and market successful mobile apps with the latest versions of Android. Drawing on their extensive experience with mobile and wireless development, Lauren Darcey and Shane Conder cover every step: concept, design, coding, testing, packaging, and delivery. The authors introduce the Android platform, explain the principles of effective Android application design, and present today’s best practices for crafting effective user interfaces. Next, they offer detailed coverage of each key Android API, including data storage, networking, telephony, location-based services, multimedia, 3D graphics, and hardware. Every chapter of this edition has been updated for the newest Android SDKs, tools, utilities, and hardware. All sample code has been overhauled and tested on leading devices from multiple companies, including HTC, Motorola, and ARCHOS. Many new examples have been added, including complete new applications. This new edition also adds Nine new chapters covering web APIs, the Android NDK, extending application reach, managing users, data synchronization, backups, advanced user input, and more Greatly expanded coverage of Android manifest files, content providers, app design, and testing New coverage of hot topics like Bluetooth, gestures, voice recognition, App Widgets, live folders, live wallpapers, and global search Updated 3D graphics programming coverage reflecting OpenGL ES 2.0 An all-new chapter on tackling cross-device compatibility issues, from designing for the smallest phones to the big new tablets hitting the market Even more tips and tricks to help you design, develop, and test applications for different devices A new appendix full of Eclipse tips and tricks This book is an indispensable resource for every member of the Android development team: software developers with all levels of mobile experience, team leaders and project managers, testers and QA specialists, software architects, and even marketers.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0132481766"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780132481762"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 750,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 4,
+      "ratingsCount": 5,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.7.5.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=XqlMCZZjkjsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=XqlMCZZjkjsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=XqlMCZZjkjsC&pg=PA32&dq=android&hl=&cd=21&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=XqlMCZZjkjsC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-XqlMCZZjkjsC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 431.01,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 301.71,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=XqlMCZZjkjsC&rdid=book-XqlMCZZjkjsC&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 431010000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 301710000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=XqlMCZZjkjsC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Because the <b>Android</b> SDK is constantly under active development, you might <br>\ncome across problems with the SDK. If you think you&#39;ve found a problem, you can <br>\nfind a list of open issues and their status at the <b>Android</b> project Issue Tracker&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "AT57D8FOuCkC",
+    "etag": "bwhMlbbSUjo",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/AT57D8FOuCkC",
+    "volumeInfo": {
+      "title": "Making Money with Android",
+      "authors": [
+        "Richard Harris"
+      ],
+      "publisher": "Moonbeam Development LLC",
+      "publishedDate": "2011-05-03",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780615485683"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0615485685"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 3,
+      "ratingsCount": 1,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.0.3.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=AT57D8FOuCkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=AT57D8FOuCkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=AT57D8FOuCkC&pg=PA2&dq=android&hl=&cd=22&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=AT57D8FOuCkC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Making_Money_with_Android.html?hl=&id=AT57D8FOuCkC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Making_Money_with_Android-sample-epub.acsm?id=AT57D8FOuCkC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Making_Money_with_Android-sample-pdf.acsm?id=AT57D8FOuCkC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=AT57D8FOuCkC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Prefix This book is likely going to appear more as a self-portrait behind <br>\nMoonbeam Development&#39;s success in the <b>Android</b> market rather than just a <br>\ncookie-cutter guide on how you can make money in the market yourself. I plan to <br>\ntell you&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tsRhkvo80iUC",
+    "etag": "uhhATb+UHpE",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tsRhkvo80iUC",
+    "volumeInfo": {
+      "title": "The Android Invasion",
+      "authors": [
+        "Christopher Black"
+      ],
+      "publisher": "Yearling",
+      "publishedDate": "1984-06-01",
+      "description": "In this multiple plot adventure, readers and their robot companion must stop armies of attacking androids before they conquer the galaxy.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_10",
+          "identifier": "0440400813"
+        },
+        {
+          "type": "ISBN_13",
+          "identifier": "9780440400813"
+        }
+      ],
+      "readingModes": {
+        "text": false,
+        "image": false
+      },
+      "pageCount": 117,
+      "printType": "BOOK",
+      "categories": [
+        "Androids"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": false,
+      "contentVersion": "0.0.1.0.preview.0",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tsRhkvo80iUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tsRhkvo80iUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tsRhkvo80iUC&q=android&dq=android&hl=&cd=23&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=tsRhkvo80iUC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/The_Android_Invasion.html?hl=&id=tsRhkvo80iUC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "NO_PAGES",
+      "embeddable": false,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tsRhkvo80iUC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "NONE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "In this multiple plot adventure, readers and their robot companion must stop armies of attacking androids before they conquer the galaxy."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "7GKMAgAAQBAJ",
+    "etag": "3BfMlRaYw0o",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/7GKMAgAAQBAJ",
+    "volumeInfo": {
+      "title": "Learning Android",
+      "subtitle": "Develop Mobile Apps Using Java and Eclipse",
+      "authors": [
+        "Marko Gargenta",
+        "Masumi Nakamura"
+      ],
+      "publisher": "\"O'Reilly Media, Inc.\"",
+      "publishedDate": "2014-01-09",
+      "description": "Want to build apps for Android devices? This book is the perfect way to master the fundamentals. Written by experts who have taught this mobile platform to hundreds of developers in large organizations and startups alike, this gentle introduction shows experienced object-oriented programmers how to use Android’s basic building blocks to create user interfaces, store data, connect to the network, and more. Throughout the book, you’ll build a Twitter-like application, adding new features with each chapter. You’ll also create your own toolbox of code patterns to help you program any type of Android application with ease. Become familiar with the Android platform and how it fits into the mobile ecosystem Dive into the Android stack, including its application framework and the APK application package Learn Android’s building blocks: Activities, Intents, Services, Content Providers, and Broadcast Receivers Create basic Android user interfaces and organize UI elements in Views and Layouts Build a service that uses a background process to update data in your application",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781449336257"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1449336256"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 286,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.5.6.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=7GKMAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=7GKMAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=7GKMAgAAQBAJ&pg=PT169&dq=android&hl=&cd=24&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=7GKMAgAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-7GKMAgAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 236.62,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 165.63,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=7GKMAgAAQBAJ&rdid=book-7GKMAgAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 236620000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 165630000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": true
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=7GKMAgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b> provides many different listeners for various events, such as touch and <br>\nclick. In this case, we&#39;re going to use TextWatcher to watch for text changes in the <br>\nedit text field. Steps for this listener are similar to the steps for OnClickListener&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "ydwVQ4xX-4YC",
+    "etag": "hpXkamOFFCA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ydwVQ4xX-4YC",
+    "volumeInfo": {
+      "title": "Android: The Unofficial Handbook",
+      "authors": [
+        "Minute Help Guides Staff"
+      ],
+      "publisher": "Minute Help Press",
+      "publishedDate": "2010-06-22",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781610420792"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1610420799"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": false
+      },
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.0.3.0.preview.2",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=ydwVQ4xX-4YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=ydwVQ4xX-4YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=ydwVQ4xX-4YC&pg=PT6&dq=android&hl=&cd=25&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=ydwVQ4xX-4YC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-ydwVQ4xX-4YC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 33.94,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 25.46,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=ydwVQ4xX-4YC&rdid=book-ydwVQ4xX-4YC&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 33940000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 25460000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_The_Unofficial_Handbook-sample-epub.acsm?id=ydwVQ4xX-4YC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=ydwVQ4xX-4YC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b> brings to its users a continuous history of updates and enhancements. <br>\nThe software is all free, and its source is available to all developers. However, the <br>\nbasic features remain the same, with new features being added in new versions."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "pZlF7lQY5SQC",
+    "etag": "JphJaMiZwBQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/pZlF7lQY5SQC",
+    "volumeInfo": {
+      "title": "Pro Android Web Apps",
+      "subtitle": "Develop for Android using HTML5, CSS3 & JavaScript",
+      "authors": [
+        "Damon Oehlman",
+        "Sébastien Blanc"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2011-02-22",
+      "description": "Developing applications for Android and other mobile devices using web technologies is now well within reach. When the capabilities of HTML5 are combined with CSS3 and JavaScript, web application developers have an opportunity to develop compelling mobile applications using familiar tools. Not only is it possible to build mobile web apps that feel as good as native apps, but to also write an application once and have it run a variety of different devices. While the HTML5 specification is still evolving, there is a lot that can be used right now to build mobile web apps. Mobile web apps are now starting to provide many of the features that were once only available to native-language-based apps in Java, Objective-C, etc. Pro Android Web Apps teaches developers already familiar with web application development, how to code and structure a web app for use on the Android mobile platform. Understand both the why and how of mobile web app development, focusing on the Android platform. Learn how to structure mobile web apps through a number of practical, real-world application examples. Discover what cloud platforms such as Google AppEngine have to offer Android web apps, for both hosting web apps and providing device to cloud data synchronization solutions. Get a real picture of the status of HTML5 on Android and other mobile devices, including some things to watch out for when building your own applications. Understand the capabilities of the web application stack, and how to complement those with native bridging frameworks such as PhoneGap to access native features of the device. Gain an understanding of the different UI frameworks that are available for building mobile web apps. Learn how to include mapping and leverage location-based services in mobile web apps to create engaging mobile experiences. Enable social integration with your Android web app and gain access to millions of potential users. After reading this book, you will not only have a greater understanding of the world of web apps on Android, but also how to leverage additional tools and frameworks to increase the reach of your mobile web apps. Additionally, through the practical samples in the book you will have been given solid exposure of where both the opportunities and challenges lie when building mobile apps the web way. What you’ll learn What Android web apps can do, and when to use web development rather than native development to create an application. How to use existing JavaScript and CSS frameworks to create rich mobile user interfaces. When to use HTML5 and when to use a native bridging framework to access native Android functionality. Connext with cloud services and APIs to build engaging location based services and games. Enable social integration with your Android web app and gain access to millions of potential users. Who this book is for This book is targeted at web developers looking to transfer their skills over to mobile application development. Readers will understand that Android is continuing to gain momentum in the marketplace and will want to build an application specifically for that platform. They will have a strong desire to use web technologies rather than the native tools to build applications, either due to personal taste or to gain cross-platform mobile portability for the majority of their application code. Table of Contents Getting Started Building a Mobile HTML Entry Form HTML5 Storage APIs Constructing a Multipage App Synchronizing with the Cloud Competing with Native Apps Exploring Interactivity Location Based Services and Mobile Mapping Native Bridging with PhoneGap Integrating with Social APIs Mobile UI Frameworks Compared Polishing and Packaging an App for Release The Future of Mobile Computing Appendix: Debugging Android Web Apps",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430232766"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430232765"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 392,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "0.5.1.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=pZlF7lQY5SQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=pZlF7lQY5SQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=pZlF7lQY5SQC&pg=PA4&dq=android&hl=&cd=26&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=pZlF7lQY5SQC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Pro_Android_Web_Apps.html?hl=&id=pZlF7lQY5SQC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Web_Apps-sample-epub.acsm?id=pZlF7lQY5SQC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Web_Apps-sample-pdf.acsm?id=pZlF7lQY5SQC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=pZlF7lQY5SQC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Develop for <b>Android</b> using HTML5, CSS3 &amp; JavaScript Damon Oehlman, <br>\nSébastien Blanc. we can also access location information directly in the browser, <br>\nwithout the need for a bridging framework. This is done by using the HTML5&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "CsK7ec8tX2EC",
+    "etag": "Aq9IPTc9RIs",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/CsK7ec8tX2EC",
+    "volumeInfo": {
+      "title": "Pro Android Media",
+      "subtitle": "Developing Graphics, Music, Video, and Rich Media Apps for Smartphones and Tablets",
+      "authors": [
+        "Shawn Van Every"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2011-07-29",
+      "description": "Mobile devices have evolved to focus on rich media production and consumption. Developers of mobile applications are able to create applications that allow people to play, capture, and share media in a variety of new ways on mobile devices. The popularity of Android has soared in part because the platform offers developers a rich set of capabilities including access to media capturing and playback functions. Pro Android Media provides concise and clear instruction on how to utilize the media APIs made available through Android to create dynamic apps. It takes you from a simple means to gain access to the camera to complex video capture and sharing examples. It also covers sound, graphics, painting, and more—everything you need to make your app come \"alive.\" After reading this book, the app you create will showcase the best of multimedia that Android has to offer.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781430232681"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1430232684"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 320,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.5.4.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=CsK7ec8tX2EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=CsK7ec8tX2EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=CsK7ec8tX2EC&pg=PA132&dq=android&hl=&cd=27&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=CsK7ec8tX2EC&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-CsK7ec8tX2EC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 970.84,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 679.59,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=CsK7ec8tX2EC&rdid=book-CsK7ec8tX2EC&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 970840000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 679590000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Media-sample-epub.acsm?id=CsK7ec8tX2EC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Pro_Android_Media-sample-pdf.acsm?id=CsK7ec8tX2EC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=CsK7ec8tX2EC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>android</b>:layout_width=&quot;fill_parent&quot; <b>android</b>:layout_height=&quot;wrap_content&quot; <b>android</b><br>\n:text=&quot;Background Audio Player&quot; /&gt; &lt;Button ... <b>android</b>:layout_height=&quot;<br>\nwrap_content&quot;&gt;&lt;/Button&gt; &lt;Button <b>android</b>:text=&quot;Stop Playback&quot; <b>android</b>:id=&quot;&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "bKo_1uED72EC",
+    "etag": "GCNI9+DJNwY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/bKo_1uED72EC",
+    "volumeInfo": {
+      "title": "Programming Android",
+      "authors": [
+        "Zigurd Mednieks",
+        "Laird Dornin",
+        "G. Blake Meike",
+        "Masumi Nakamura"
+      ],
+      "publisher": "\"O'Reilly Media, Inc.\"",
+      "publishedDate": "2011-07-15",
+      "description": "What does it take to build well-engineered Android applications? Explore Android's core building blocks and APIs in depth with this authoritative guide, and learn how to create compelling apps that work on a full range of Android devices. You'll work with proven approaches to app design and implementation—including application frameworks that you can use as a starting point for your own projects. Delve into sensors, native development, 3D graphics, and many other topics, and discover how to build apps on the platform of your choice. If you're an intermediate to advanced programmer, you'll learn how to make great Android apps. Learn how to use the Android SDK with the Eclipse IDE Apply advanced Java concepts regardless of your experience with the language Create an Android user interface that's captivating and easy to navigate Use the Fragment API for tablet user interfaces Make your application compatible with Honeycomb and earlier versions Understand Android's unique database design issues and the role of SQLite Use sensors and gestures to expand your app's input beyond just tapping and scrolling Explore Android APIs for multimedia, location, communication, NFC, and other applications",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781449313005"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1449313000"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 504,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 1,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "3.6.2.0.preview.3",
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=bKo_1uED72EC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=bKo_1uED72EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=bKo_1uED72EC&pg=PA398&dq=android&hl=&cd=28&source=gbs_api",
+      "infoLink": "http://books.google.com.ar/books?id=bKo_1uED72EC&dq=android&hl=&source=gbs_api",
+      "canonicalVolumeLink": "https://books.google.com/books/about/Programming_Android.html?hl=&id=bKo_1uED72EC"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "NOT_FOR_SALE",
+      "isEbook": false
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true
+      },
+      "pdf": {
+        "isAvailable": true
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=bKo_1uED72EC&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "If the NdefRecord is URI, Smart Poster, or MIME data, the system then checks for <br>\nan Activity registered for the ACTION_NDEF_ DISCOVERED intent (<b>android</b>.nfc.<br>\naction.NDEF_DISCOVERED) with that type of data. If this exists, the Activity that&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "oN7CgX/v8CA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA30&dq=android&hl=&cd=29&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Listing 2-5 Mapping.txt com.example.<b>android</b>.sip.IncomingCallReceiver -&gt; com.<br>\nexample.<b>android</b>.sip.IncomingCallReceiver: void onReceive(<b>android</b>.content.<br>\nContext,<b>android</b>.content.Intent) -&gt; onReceive com.example.<b>android</b>.sip."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "h4FuBAAAQBAJ",
+    "etag": "blH+Yt60zh8",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/h4FuBAAAQBAJ",
+    "volumeInfo": {
+      "title": "Android Apps for Absolute Beginners",
+      "authors": [
+        "Wallace Jackson"
+      ],
+      "publisher": "Apress",
+      "publishedDate": "2014-08-28",
+      "description": "Anybody can start building multimedia apps for the Android platform, and this book will show you how! Now updated to include both Android 4.4 and the new Android L, Android Apps for Absolute Beginners, Third Edition takes you through the process of getting your first Android apps up and running using plain English and practical examples. If you have a great idea for an Android app, but have never programmed before, then this book is for you. This book cuts through the fog of jargon and mystery that surrounds Android apps development, and gives you simple, step-by-step instructions to get you started. Teaches Android application development in language anyone can understand, giving you the best possible start in Android development Provides simple, step-by-step examples that make learning easy, allowing you to pick up the concepts without fuss Offers clear code descriptions and layout so that you can get your apps running as soon as possible This book covers both Android 4.4 (KitKat) and Android L, but is also backwards compatible to cover the previous Android releases since Android 1.5.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9781484200193"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "1484200195"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 712,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "averageRating": 5,
+      "ratingsCount": 1,
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.6.5.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=h4FuBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=h4FuBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=h4FuBAAAQBAJ&pg=PA250&dq=android&hl=&cd=30&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=h4FuBAAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-h4FuBAAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 866.27,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 606.39,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=h4FuBAAAQBAJ&rdid=book-h4FuBAAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 866270000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 606390000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED",
+      "epub": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_Apps_for_Absolute_Beginners-sample-epub.acsm?id=h4FuBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "pdf": {
+        "isAvailable": true,
+        "acsTokenLink": "http://books.google.com.ar/books/download/Android_Apps_for_Absolute_Beginners-sample-pdf.acsm?id=h4FuBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=h4FuBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "The XML markup looks like this: <b>android</b>:background=&quot;Qdrawable/<br>\neditgalaxyscreen&quot; As you can see in Figure 7–33, using the Graphical Layout <br>\nEditor tab as a preview utility, the background image looks great, but causes <br>\ncontrast issues with&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "5j06QTdlm+Q",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA159&dq=android&hl=&cd=31&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "toString (). matches (&quot;&quot;)) { return true; } return false; The <b>Android</b> Manifest.xml file (<br>\nsee Listing 7–3), just like Crittercism, adds the INTERNET permission as well as <br>\nan API key on line 27. Listing 7-3 <b>Android</b> Manifest.xml &lt;?xml version=&quot;1.0&quot;&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "gQiMkBQDN7Y",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA30&dq=android&hl=&cd=32&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Listing 2-5 Mapping.txt com.example.<b>android</b>.sip.IncomingCallReceiver -&gt; com.<br>\nexample.<b>android</b>.sip.IncomingCallReceiver: void onReceive(<b>android</b>.content.<br>\nContext,<b>android</b>.content.Intent) -&gt; onReceive com.example.<b>android</b>.sip."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "y7GV7LRcSPk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA183&dq=android&hl=&cd=33&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b> knows that it should pass the control to the IntentReceiverActivity given <br>\nthat it&#39;s the default category Intent as well as the only other Intent in the file: &lt;<br>\nintent-filter&gt; &lt;action <b>android</b>:name=&quot;com.riis.login.IntentReceiverActivity&quot; /&gt; &lt;<br>\ncategory&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "0bR6leY6aD0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA75&dq=android&hl=&cd=34&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Listing 3-8 Decompiled LVL code package com.hpys.crackmes; import <b>android</b>.<br>\napp.Activity; import <b>android</b>.app.AlertDialog.Builder; import <b>android</b>.app.Dialog; <br>\nimport <b>android</b>.content.DialogInterface; import <b>android</b>.content.DialogInterface."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "d8t69qzAzCg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA31&dq=android&hl=&cd=35&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "com.example.<b>android</b>.sip.WalkieTalkieActivity$4 -&gt; com.example.<b>android</b>.sip.e: <br>\ncom.example.<b>android</b>.sip.WalkieTalkieActivity this$0 -&gt; a <b>android</b>.view.View val$<br>\ntextBoxView -&gt; b void onClick(<b>android</b>.content.DialogInterface,int) -&gt; onClick&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "4NP/wku14kg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA79&dq=android&hl=&cd=36&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Click on Settings and Add Platform and chose <b>Android</b> as your platform. 5. <br>\nFacebook requires a hash key for the machine that the app is created on using <br>\nthe Java keytool command. 6. To run the following command you&#39;re also going to <br>\nneed&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "9IctsyVfs38",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA195&dq=android&hl=&cd=37&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Numbers 010 hex editor, xviii 37signals, OAuth support, 77 A Abe (<b>Android</b> <br>\nBackup Extractor), xviii Access control authentication best practices, 54–55 <br>\nfunction-level, 147 gaining superuser access, 102–103 Index <b>Android</b> apps. See <br>\nApps&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "dt8kuQtzp8o",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA1&dq=android&hl=&cd=38&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "<b>Android</b>. Security. Issues. Chapter. 1 provides an introduction to the security <br>\nissues on the <b>Android</b> platform. We show you how to decompile an <b>Android</b> APK <br>\nand look at some of the industry standard guidelines for securing the <b>Android</b>&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "1p5YQcZpAew",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PA116&dq=android&hl=&cd=39&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "Practical Advice for Building Secure Apps Godfrey Nolan. &lt;uses-sdk <b>android</b>:<br>\nminSdkVersion=&quot;16&quot; <b>android</b>:targetSdkVersion=&quot;16&quot; /&gt; &lt;application <b>android</b>:<br>\nallowBackup=&quot;false&quot;&nbsp;..."
+    }
+  },
+  {
+    "kind": "books#volume",
+    "id": "tOSNBQAAQBAJ",
+    "etag": "EB0LXV4ECko",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/tOSNBQAAQBAJ",
+    "volumeInfo": {
+      "title": "Bulletproof Android",
+      "subtitle": "Practical Advice for Building Secure Apps",
+      "authors": [
+        "Godfrey Nolan"
+      ],
+      "publisher": "Addison-Wesley Professional",
+      "publishedDate": "2014-11-18",
+      "description": "Battle-Tested Best Practices for Securing Android Apps throughout the Development Lifecycle Android’s immense popularity has made it today’s #1 target for attack: high-profile victims include eHarmony, Facebook, and Delta Airlines, just to name a few. Today, every Android app needs to resist aggressive attacks and protect data, and in Bulletproof Android™, Godfrey Nolan shows you how. Unlike “black hat/gray hat” books, which focus on breaking code, this guide brings together complete best practices for hardening code throughout the entire development lifecycle. Using detailed examples from hundreds of apps he has personally audited, Nolan identifies common “anti-patterns” that expose apps to attack, and then demonstrates more secure solutions. Nolan covers authentication, networking, databases, server attacks, libraries, hardware, and more. He illuminates each technique with code examples, offering expert advice on implementation and trade-offs. Each topic is supported with a complete sample app, which demonstrates real security problems and solutions. Learn how to Apply core practices for securing the platform Protect code, algorithms, and business rules from reverse engineering Eliminate hardcoding of keys, APIs, and other static data Eradicate extraneous data from production APKs Overcome the unique challenges of mobile authentication and login Transmit information securely using SSL Prevent man-in-the-middle attacks Safely store data in SQLite databases Prevent attacks against web servers and services Avoid side-channel data leakage through third-party libraries Secure APKs running on diverse devices and Android versions Achieve HIPAA or FIPS compliance Harden devices with encryption, SELinux, Knox, and MDM Preview emerging attacks and countermeasures This guide is a perfect complement to Nolan’s Android™ Security Essentials LiveLessons (video training; ISBN-13: 978-0-13-382904-4) and reflects new risks that have been identified since the LiveLessons were released.",
+      "industryIdentifiers": [
+        {
+          "type": "ISBN_13",
+          "identifier": "9780133995084"
+        },
+        {
+          "type": "ISBN_10",
+          "identifier": "0133995089"
+        }
+      ],
+      "readingModes": {
+        "text": true,
+        "image": true
+      },
+      "pageCount": 240,
+      "printType": "BOOK",
+      "categories": [
+        "Computers"
+      ],
+      "maturityRating": "NOT_MATURE",
+      "allowAnonLogging": true,
+      "contentVersion": "2.3.2.0.preview.3",
+      "panelizationSummary": {
+        "containsEpubBubbles": false,
+        "containsImageBubbles": false
+      },
+      "imageLinks": {
+        "smallThumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "http://books.google.com/books/content?id=tOSNBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+      },
+      "language": "en",
+      "previewLink": "http://books.google.com.ar/books?id=tOSNBQAAQBAJ&pg=PR13&dq=android&hl=&cd=40&source=gbs_api",
+      "infoLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&source=gbs_api",
+      "canonicalVolumeLink": "https://market.android.com/details?id=book-tOSNBQAAQBAJ"
+    },
+    "saleInfo": {
+      "country": "AR",
+      "saleability": "FOR_SALE",
+      "isEbook": true,
+      "listPrice": {
+        "amount": 392.98,
+        "currencyCode": "ARS"
+      },
+      "retailPrice": {
+        "amount": 275.34,
+        "currencyCode": "ARS"
+      },
+      "buyLink": "https://play.google.com/store/books/details?id=tOSNBQAAQBAJ&rdid=book-tOSNBQAAQBAJ&rdot=1&source=gbs_api",
+      "offers": [
+        {
+          "finskyOfferType": 1,
+          "listPrice": {
+            "amountInMicros": 392980000,
+            "currencyCode": "ARS"
+          },
+          "retailPrice": {
+            "amountInMicros": 275340000,
+            "currencyCode": "ARS"
+          }
+        }
+      ]
+    },
+    "accessInfo": {
+      "country": "AR",
+      "viewability": "PARTIAL",
+      "embeddable": true,
+      "publicDomain": false,
+      "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+      "epub": {
+        "isAvailable": false
+      },
+      "pdf": {
+        "isAvailable": false
+      },
+      "webReaderLink": "http://play.google.com/books/reader?id=tOSNBQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+      "accessViewStatus": "SAMPLE",
+      "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+      "textSnippet": "another <b>Android</b> security book? Right now I know of a half dozen books or so <br>\nabout hacking <b>Android</b>. I personally wrote one a few years ago called <br>\nDecompiling <b>Android</b>. In the world of hacking we use the term white hat for <br>\nsomeone who is&nbsp;..."
+    }
+  }
+]

@@ -7,11 +7,12 @@ import android.arch.lifecycle.Observer;
 import android.content.res.Resources;
 
 import com.google.common.collect.Lists;
+import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.TestUtils;
 import com.zeelo.android.architecture.assignment.booksapp.addeditbook.AddEditBookActivity;
 import com.zeelo.android.architecture.assignment.booksapp.bookdetail.BookDetailActivity;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
-import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource.LoadBooksCallback;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
+import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource.LoadBooksListCallback;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
 import org.junit.Before;
@@ -23,8 +24,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.util.List;
-
-import booksapp.R;
 
 import static com.zeelo.android.architecture.assignment.booksapp.R.string.successfully_deleted_book_message;
 import static org.hamcrest.CoreMatchers.is;
@@ -45,7 +44,7 @@ public class BooksViewModelTest {
     @Rule
     public InstantTaskExecutorRule instantExecutorRule = new InstantTaskExecutorRule();
 
-    private static List<Book> BOOKS;
+    private static List<BookListItem> BOOKS;
 
     @Mock
     private BooksRepository mBooksRepository;
@@ -54,7 +53,7 @@ public class BooksViewModelTest {
     private Application mContext;
 
     @Captor
-    private ArgumentCaptor<LoadBooksCallback> mLoadBooksCallbackCaptor;
+    private ArgumentCaptor<LoadBooksListCallback> mLoadBooksCallbackCaptor;
 
     private BooksViewModel mBooksViewModel;
 
@@ -70,8 +69,8 @@ public class BooksViewModelTest {
         mBooksViewModel = new BooksViewModel(mContext, mBooksRepository);
 
         // We initialise the books to 3, with one active and two favorited
-        BOOKS = Lists.newArrayList(new Book("Title1", "Description1"),
-                new Book("Title2", "Description2", true), new Book("Title3", "Description3", true));
+        BOOKS = Lists.newArrayList(new BookListItem("Title1", "Description1"),
+                new BookListItem("Title2", "Description2", true), new BookListItem("Title3", "Description3", true));
 
         mBooksViewModel.getSnackbarMessage().removeObservers(TestUtils.TEST_OBSERVER);
 
@@ -93,7 +92,7 @@ public class BooksViewModelTest {
     public void loadAllBooksFromRepository_dataLoaded() {
         // Given an initialized BooksViewModel with initialized books
         // When loading of Books is requested
-        mBooksViewModel.setFiltering(BooksFilterType.ALL_TASKS);
+        mBooksViewModel.setFiltering(BooksFilterType.ALL_BOOKS);
         mBooksViewModel.loadBooks(true);
 
         // Callback is captured and invoked with stubbed books
@@ -102,7 +101,7 @@ public class BooksViewModelTest {
 
         // Then progress indicator is shown
         assertTrue(mBooksViewModel.dataLoading.get());
-        mLoadBooksCallbackCaptor.getValue().onBooksLoaded(BOOKS);
+        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
 
         // Then progress indicator is hidden
         assertFalse(mBooksViewModel.dataLoading.get());
@@ -116,12 +115,12 @@ public class BooksViewModelTest {
     public void loadActiveBooksFromRepositoryAndLoadIntoView() {
         // Given an initialized BooksViewModel with initialized books
         // When loading of Books is requested
-        mBooksViewModel.setFiltering(BooksFilterType.ACTIVE_TASKS);
+        mBooksViewModel.setFiltering(BooksFilterType.NOT_FAVORITED_BOOKS);
         mBooksViewModel.loadBooks(true);
 
         // Callback is captured and invoked with stubbed books
         verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksLoaded(BOOKS);
+        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
 
         // Then progress indicator is hidden
         assertFalse(mBooksViewModel.dataLoading.get());
@@ -135,12 +134,12 @@ public class BooksViewModelTest {
     public void loadCompletedBooksFromRepositoryAndLoadIntoView() {
         // Given an initialized BooksViewModel with initialized books
         // When loading of Books is requested
-        mBooksViewModel.setFiltering(BooksFilterType.COMPLETED_TASKS);
+        mBooksViewModel.setFiltering(BooksFilterType.FAVORITED_BOOKS);
         mBooksViewModel.loadBooks(true);
 
         // Callback is captured and invoked with stubbed books
         verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksLoaded(BOOKS);
+        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
 
         // Then progress indicator is hidden
         assertFalse(mBooksViewModel.dataLoading.get());
@@ -171,7 +170,7 @@ public class BooksViewModelTest {
 
         // Then repository is called and the view is notified
         verify(mBooksRepository).clearCompletedBooks();
-        verify(mBooksRepository).getBooks(any(LoadBooksCallback.class));
+        verify(mBooksRepository).getBooks(any(LoadBooksListCallback.class));
     }
 
     @Test
@@ -220,8 +219,8 @@ public class BooksViewModelTest {
 
     @Test
     public void getBooksAddViewVisible() {
-        // When the filter type is ALL_TASKS
-        mBooksViewModel.setFiltering(BooksFilterType.ALL_TASKS);
+        // When the filter type is ALL_BOOKS
+        mBooksViewModel.setFiltering(BooksFilterType.ALL_BOOKS);
 
         // Then the "Add book" action is visible
         assertThat(mBooksViewModel.booksAddViewVisible.get(), is(true));

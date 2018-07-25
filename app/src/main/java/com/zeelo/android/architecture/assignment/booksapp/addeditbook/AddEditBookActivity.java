@@ -86,8 +86,8 @@ public class AddEditBookActivity extends AppCompatActivity implements AddEditBoo
 
             // Send the book ID to the fragment
             Bundle bundle = new Bundle();
-            bundle.putString(AddEditBookFragment.ARGUMENT_EDIT_TASK_ID,
-                    getIntent().getStringExtra(AddEditBookFragment.ARGUMENT_EDIT_TASK_ID));
+            bundle.putString(AddEditBookFragment.ARGUMENT_EDIT_BOOK_ID,
+                    getIntent().getStringExtra(AddEditBookFragment.ARGUMENT_EDIT_BOOK_ID));
             addEditBookFragment.setArguments(bundle);
         }
         return addEditBookFragment;

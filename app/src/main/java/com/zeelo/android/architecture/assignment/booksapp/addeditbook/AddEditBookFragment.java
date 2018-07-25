@@ -22,7 +22,7 @@ import com.zeelo.android.architecture.assignment.booksapp.util.SnackbarUtils;
  */
 public class AddEditBookFragment extends Fragment {
 
-    public static final String ARGUMENT_EDIT_TASK_ID = "EDIT_TASK_ID";
+    public static final String ARGUMENT_EDIT_BOOK_ID = "EDIT_BOOK_ID";
 
     private AddEditBookViewModel mViewModel;
 
@@ -52,7 +52,7 @@ public class AddEditBookFragment extends Fragment {
     private void loadData() {
         // Add or edit an existing book?
         if (getArguments() != null) {
-            mViewModel.start(getArguments().getString(ARGUMENT_EDIT_TASK_ID));
+            mViewModel.start(getArguments().getString(ARGUMENT_EDIT_BOOK_ID));
         } else {
             mViewModel.start(null);
         }
@@ -102,7 +102,7 @@ public class AddEditBookFragment extends Fragment {
         if (actionBar == null) {
             return;
         }
-        if (getArguments() != null && getArguments().get(ARGUMENT_EDIT_TASK_ID) != null) {
+        if (getArguments() != null && getArguments().get(ARGUMENT_EDIT_BOOK_ID) != null) {
             actionBar.setTitle(R.string.edit_book);
         } else {
             actionBar.setTitle(R.string.add_book);

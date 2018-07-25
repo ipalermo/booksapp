@@ -5,12 +5,15 @@ import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.util.AppExecutors;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
+import static com.zeelo.android.architecture.assignment.booksapp.data.source.remote.BooksRemoteDataSource.BOOK_DETAILS_API_PATH;
 
 
 /**
@@ -44,23 +47,26 @@ public class BooksLocalDataSource implements BooksDataSource {
     }
 
     /**
-     * Note: {@link LoadBooksCallback#onDataNotAvailable()} is fired if the database doesn't exist
+     * Note: {@link LoadBooksListCallback#onDataNotAvailable()} is fired if the database doesn't exist
      * or the table is empty.
      */
     @Override
-    public void getBooks(@NonNull final LoadBooksCallback callback) {
+    public void getBooks(@NonNull final LoadBooksListCallback callback) {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                final List<Book> books = mBooksDao.getBooks();
+                final List<BookListItem> booksListItems = new ArrayList<>();
+                for (Book book : mBooksDao.getBooks()) {
+                    booksListItems.add(new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
+                }
                 mAppExecutors.mainThread().execute(new Runnable() {
                     @Override
                     public void run() {
-                        if (books.isEmpty()) {
+                        if (booksListItems.isEmpty()) {
                             // This will be called if the table is new or just empty.
                             callback.onDataNotAvailable();
                         } else {
-                            callback.onBooksLoaded(books);
+                            callback.onBooksListLoaded(booksListItems);
                         }
                     }
                 });
@@ -71,11 +77,11 @@ public class BooksLocalDataSource implements BooksDataSource {
     }
 
     /**
-     * Note: {@link GetBookCallback#onDataNotAvailable()} is fired if the {@link Book} isn't
+     * Note: {@link GetBookDetailsCallback#onDataNotAvailable()} is fired if the {@link BookListItem} isn't
      * found.
      */
     @Override
-    public void getBook(@NonNull final String bookId, @NonNull final GetBookCallback callback) {
+    public void getBookDetails(@NonNull final String bookId, @NonNull final GetBookDetailsCallback callback) {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -85,7 +91,7 @@ public class BooksLocalDataSource implements BooksDataSource {
                     @Override
                     public void run() {
                         if (book != null) {
-                            callback.onBookLoaded(book);
+                            callback.onBookDetailsLoaded(book);
                         } else {
                             callback.onDataNotAvailable();
                         }
@@ -103,6 +109,7 @@ public class BooksLocalDataSource implements BooksDataSource {
         Runnable saveRunnable = new Runnable() {
             @Override
             public void run() {
+                mBooksDao.insertBookListItem(new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
                 mBooksDao.insertBook(book);
             }
         };

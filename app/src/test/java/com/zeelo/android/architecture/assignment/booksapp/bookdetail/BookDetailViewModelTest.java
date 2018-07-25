@@ -3,11 +3,12 @@ package com.zeelo.android.architecture.assignment.booksapp.bookdetail;
 
 
 import android.app.Application;
-import android.arch.core.executor.testing.InstantBookExecutorRule;
+import android.arch.core.executor.testing.InstantTaskExecutorRule;
 import android.content.res.Resources;
 
+import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -18,8 +19,6 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
-import booksapp.R;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
@@ -38,7 +37,7 @@ public class BookDetailViewModelTest {
 
     // Executes each book synchronously using Architecture Components.
     @Rule
-    public InstantBookExecutorRule instantExecutorRule = new InstantBookExecutorRule();
+    public InstantTaskExecutorRule instantExecutorRule = new InstantTaskExecutorRule();
 
     private static final String TITLE_TEST = "title";
 
@@ -55,17 +54,17 @@ public class BookDetailViewModelTest {
     private Application mContext;
 
     @Mock
-    private BooksDataSource.GetBookCallback mRepositoryCallback;
+    private BooksDataSource.GetBookDetailsCallback mRepositoryCallback;
 
     @Mock
-    private BooksDataSource.GetBookCallback mViewModelCallback;
+    private BooksDataSource.GetBookDetailsCallback mViewModelCallback;
 
     @Captor
-    private ArgumentCaptor<BooksDataSource.GetBookCallback> mGetBookCallbackCaptor;
+    private ArgumentCaptor<BooksDataSource.GetBookDetailsCallback> mGetBookCallbackCaptor;
 
     private BookDetailViewModel mBookDetailViewModel;
 
-    private Book mBook;
+    private BookListItem mBook;
 
     @Before
     public void setupBooksViewModel() {
@@ -75,7 +74,7 @@ public class BookDetailViewModelTest {
 
         setupContext();
 
-        mBook = new Book(TITLE_TEST, DESCRIPTION_TEST);
+        mBook = new BookListItem(TITLE_TEST, DESCRIPTION_TEST);
 
         // Get a reference to the class under test
         mBookDetailViewModel = new BookDetailViewModel(mContext, mBooksRepository);
@@ -137,12 +136,12 @@ public class BookDetailViewModelTest {
     @Test
     public void BookDetailViewModel_repositoryError() {
         // Given an initialized ViewModel with an active book
-        mViewModelCallback = mock(BooksDataSource.GetBookCallback.class);
+        mViewModelCallback = mock(BooksDataSource.GetBookDetailsCallback.class);
 
         mBookDetailViewModel.start(mBook.getId());
 
         // Use a captor to get a reference for the callback.
-        verify(mBooksRepository).getBook(eq(mBook.getId()), mGetBookCallbackCaptor.capture());
+        verify(mBooksRepository).getBookDetails(eq(mBook.getId()), mGetBookCallbackCaptor.capture());
 
         // When the repository returns an error
         mGetBookCallbackCaptor.getValue().onDataNotAvailable(); // Trigger callback error
@@ -156,7 +155,7 @@ public class BookDetailViewModelTest {
         setupViewModelRepositoryCallback();
 
         // When the repository returns a null book
-        mGetBookCallbackCaptor.getValue().onBookLoaded(null); // Trigger callback error
+        mGetBookCallbackCaptor.getValue().onBookDetailsLoaded(null); // Trigger callback error
 
         // Then verify that data is not available
         assertFalse(mBookDetailViewModel.isDataAvailable());
@@ -167,14 +166,14 @@ public class BookDetailViewModelTest {
 
     private void setupViewModelRepositoryCallback() {
         // Given an initialized ViewModel with an active book
-        mViewModelCallback = mock(BooksDataSource.GetBookCallback.class);
+        mViewModelCallback = mock(BooksDataSource.GetBookDetailsCallback.class);
 
         mBookDetailViewModel.start(mBook.getId());
 
         // Use a captor to get a reference for the callback.
-        verify(mBooksRepository).getBook(eq(mBook.getId()), mGetBookCallbackCaptor.capture());
+        verify(mBooksRepository).getBookDetails(eq(mBook.getId()), mGetBookCallbackCaptor.capture());
 
-        mGetBookCallbackCaptor.getValue().onBookLoaded(mBook); // Trigger callback
+        mGetBookCallbackCaptor.getValue().onBookDetailsLoaded(mBook); // Trigger callback
     }
 
     @Test

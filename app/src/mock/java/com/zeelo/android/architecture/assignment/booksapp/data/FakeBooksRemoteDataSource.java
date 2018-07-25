@@ -25,15 +25,23 @@ public class FakeBooksRemoteDataSource implements BooksDataSource {
 
     private static FakeBooksRemoteDataSource INSTANCE;
 
-    private static final Map<String, Book> BOOKS_SERVICE_DATA = new LinkedHashMap<>();
+    private static final Map<String, BookListItem> BOOKS_LIST_SERVICE_DATA = new LinkedHashMap<>();
+    private static final Map<String, Book> BOOK_SERVICE_DATA = new LinkedHashMap<>();
 
     // Prevent direct instantiation.
     private FakeBooksRemoteDataSource(Context context) {
         String booksJson = getJSONString(context, "books.json");
-        Type listType = new TypeToken<ArrayList<Book>>(){}.getType();
-        List<Book> bookItems = new Gson().fromJson(booksJson, listType);
-        for (Book book : bookItems) {
-            BOOKS_SERVICE_DATA.put(book.getId(), book);
+        Type itemListType = new TypeToken<ArrayList<BookListItem>>(){}.getType();
+        List<BookListItem> bookListItems = new Gson().fromJson(booksJson, itemListType);
+
+        Type bookListType = new TypeToken<ArrayList<Book>>(){}.getType();
+        List<Book> books = new Gson().fromJson(booksJson, bookListType);
+
+        for (BookListItem item : bookListItems) {
+            BOOKS_LIST_SERVICE_DATA.put(item.getId(), item);
+        }
+        for (Book book : books) {
+            BOOK_SERVICE_DATA.put(book.getId(), book);
         }
     }
 
@@ -45,19 +53,20 @@ public class FakeBooksRemoteDataSource implements BooksDataSource {
     }
 
     @Override
-    public void getBooks(@NonNull LoadBooksCallback callback) {
-        callback.onBooksLoaded(Lists.newArrayList(BOOKS_SERVICE_DATA.values()));
+    public void getBooks(@NonNull LoadBooksListCallback callback) {
+        callback.onBooksListLoaded(Lists.newArrayList(BOOKS_LIST_SERVICE_DATA.values()));
     }
 
     @Override
-    public void getBook(@NonNull String bookId, @NonNull GetBookCallback callback) {
-        Book book = BOOKS_SERVICE_DATA.get(bookId);
-        callback.onBookLoaded(book);
+    public void getBookDetails(@NonNull String bookId, @NonNull GetBookDetailsCallback callback) {
+        Book book = BOOK_SERVICE_DATA.get(bookId);
+        callback.onBookDetailsLoaded(book);
     }
 
     @Override
     public void saveBook(@NonNull Book book) {
-        BOOKS_SERVICE_DATA.put(book.getId(), book);
+        BOOK_SERVICE_DATA.put(book.getId(), book);
+        BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
     }
 
     public void refreshBook() {
@@ -67,19 +76,22 @@ public class FakeBooksRemoteDataSource implements BooksDataSource {
 
     @Override
     public void deleteBook(@NonNull String bookId) {
-        BOOKS_SERVICE_DATA.remove(bookId);
+        BOOK_SERVICE_DATA.remove(bookId);
+        BOOKS_LIST_SERVICE_DATA.remove(bookId);
     }
 
     @Override
     public void deleteAllBooks() {
-        BOOKS_SERVICE_DATA.clear();
+        BOOK_SERVICE_DATA.clear();
+        BOOKS_LIST_SERVICE_DATA.clear();
     }
 
     @VisibleForTesting
     public void addBooks(Book... books) {
         if (books != null) {
             for (Book book : books) {
-                BOOKS_SERVICE_DATA.put(book.getId(), book);
+                BOOK_SERVICE_DATA.put(book.getId(), book);
+                BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
             }
         }
     }

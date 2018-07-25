@@ -17,7 +17,7 @@ import com.zeelo.android.architecture.assignment.booksapp.SingleLiveEvent;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
 import com.zeelo.android.architecture.assignment.booksapp.addeditbook.AddEditBookActivity;
 import com.zeelo.android.architecture.assignment.booksapp.bookdetail.BookDetailActivity;
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -34,7 +34,7 @@ import java.util.List;
 public class BooksViewModel extends AndroidViewModel {
 
     // These observable fields will update Views automatically
-    public final ObservableList<Book> items = new ObservableArrayList<>();
+    public final ObservableList<BookListItem> items = new ObservableArrayList<>();
 
     public final ObservableBoolean dataLoading = new ObservableBoolean(false);
 
@@ -50,7 +50,7 @@ public class BooksViewModel extends AndroidViewModel {
 
     private final SnackbarMessage mSnackbarText = new SnackbarMessage();
 
-    private BooksFilterType mCurrentFiltering = BooksFilterType.ALL_TASKS;
+    private BooksFilterType mCurrentFiltering = BooksFilterType.ALL_BOOKS;
 
     private final BooksRepository mBooksRepository;
 
@@ -70,7 +70,7 @@ public class BooksViewModel extends AndroidViewModel {
         mBooksRepository = repository;
 
         // Set initial state
-        setFiltering(BooksFilterType.ALL_TASKS);
+        setFiltering(BooksFilterType.ALL_BOOKS);
     }
 
     public void start() {
@@ -84,30 +84,30 @@ public class BooksViewModel extends AndroidViewModel {
     /**
      * Sets the current book filtering type.
      *
-     * @param requestType Can be {@link BooksFilterType#ALL_TASKS},
-     *                    {@link BooksFilterType#COMPLETED_TASKS}, or
-     *                    {@link BooksFilterType#ACTIVE_TASKS}
+     * @param requestType Can be {@link BooksFilterType#ALL_BOOKS},
+     *                    {@link BooksFilterType#FAVORITED_BOOKS}, or
+     *                    {@link BooksFilterType#NOT_FAVORITED_BOOKS}
      */
     public void setFiltering(BooksFilterType requestType) {
         mCurrentFiltering = requestType;
 
         // Depending on the filter type, set the filtering label, icon drawables, etc.
         switch (requestType) {
-            case ALL_TASKS:
+            case ALL_BOOKS:
                 currentFilteringLabel.set(mContext.getString(R.string.label_all));
                 noBooksLabel.set(mContext.getResources().getString(R.string.no_books_all));
                 noBookIconRes.set(mContext.getResources().getDrawable(
                         R.drawable.ic_assignment_turned_in_24dp));
                 booksAddViewVisible.set(true);
                 break;
-            case ACTIVE_TASKS:
+            case NOT_FAVORITED_BOOKS:
                 currentFilteringLabel.set(mContext.getString(R.string.label_active));
                 noBooksLabel.set(mContext.getResources().getString(R.string.no_books_active));
                 noBookIconRes.set(mContext.getResources().getDrawable(
                         R.drawable.ic_check_circle_24dp));
                 booksAddViewVisible.set(false);
                 break;
-            case COMPLETED_TASKS:
+            case FAVORITED_BOOKS:
                 currentFilteringLabel.set(mContext.getString(R.string.label_completed));
                 noBooksLabel.set(mContext.getResources().getString(R.string.no_books_completed));
                 noBookIconRes.set(mContext.getResources().getDrawable(
@@ -169,9 +169,9 @@ public class BooksViewModel extends AndroidViewModel {
             mBooksRepository.refreshBook();
         }
 
-        mBooksRepository.getBooks(new BooksDataSource.LoadBooksCallback() {
+        mBooksRepository.getBooks(new BooksDataSource.LoadBooksListCallback() {
             @Override
-            public void onBooksLoaded(List<Book> books) {
+            public void onBooksListLoaded(List<BookListItem> books) {
                 if (showLoadingUI) {
                     dataLoading.set(false);
                 }

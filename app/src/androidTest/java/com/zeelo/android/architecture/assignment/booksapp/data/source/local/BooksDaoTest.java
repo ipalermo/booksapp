@@ -5,7 +5,7 @@ import android.arch.persistence.room.Room;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 
 import org.junit.After;
 import org.junit.Before;
@@ -21,7 +21,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @RunWith(AndroidJUnit4.class)
 public class BooksDaoTest {
 
-    private static final Book BOOK = new Book("title", "link", "id", true);
+    private static final BookListItem BOOK = new BookListItem("title", "link", "id", true);
 
     private BooksDatabase mDatabase;
 
@@ -44,7 +44,7 @@ public class BooksDaoTest {
         mDatabase.bookDao().insertBook(BOOK);
 
         // When getting the book by id from the database
-        Book loaded = mDatabase.bookDao().getBookById(BOOK.getId());
+        BookListItem loaded = mDatabase.bookDao().getBookById(BOOK.getId());
 
         // The loaded data contains the expected values
         assertBook(loaded, "id", "title", "link", true);
@@ -56,10 +56,10 @@ public class BooksDaoTest {
         mDatabase.bookDao().insertBook(BOOK);
 
         // When a book with the same id is inserted
-        Book newBook = new Book("title2", "description2", "id", true);
+        BookListItem newBook = new BookListItem("title2", "description2", "id", true);
         mDatabase.bookDao().insertBook(newBook);
         // When getting the book by id from the database
-        Book loaded = mDatabase.bookDao().getBookById(BOOK.getId());
+        BookListItem loaded = mDatabase.bookDao().getBookById(BOOK.getId());
 
         // The loaded data contains the expected values
         assertBook(loaded, "id", "title2", "description2", true);
@@ -71,7 +71,7 @@ public class BooksDaoTest {
         mDatabase.bookDao().insertBook(BOOK);
 
         // When getting the books from the database
-        List<Book> books = mDatabase.bookDao().getBooks();
+        List<BookListItem> books = mDatabase.bookDao().getBooks();
 
         // There is only 1 book in the database
         assertThat(books.size(), is(1));
@@ -85,11 +85,11 @@ public class BooksDaoTest {
         mDatabase.bookDao().insertBook(BOOK);
 
         // When the book is updated
-        Book updatedBook = new Book("title2", "description2", "id", true);
+        BookListItem updatedBook = new BookListItem("title2", "description2", "id", true);
         mDatabase.bookDao().updateBook(updatedBook);
 
         // When getting the book by id from the database
-        Book loaded = mDatabase.bookDao().getBookById("id");
+        BookListItem loaded = mDatabase.bookDao().getBookById("id");
 
         // The loaded data contains the expected values
         assertBook(loaded, "id", "title2", "description2", true);
@@ -104,7 +104,7 @@ public class BooksDaoTest {
         mDatabase.bookDao().updateCompleted(BOOK.getId(), false);
 
         // When getting the book by id from the database
-        Book loaded = mDatabase.bookDao().getBookById("id");
+        BookListItem loaded = mDatabase.bookDao().getBookById("id");
 
         // The loaded data contains the expected values
         assertBook(loaded, BOOK.getId(), BOOK.getTitle(), BOOK.getDescription(), false);
@@ -119,7 +119,7 @@ public class BooksDaoTest {
         mDatabase.bookDao().deleteBookById(BOOK.getId());
 
         //When getting the books
-        List<Book> books = mDatabase.bookDao().getBooks();
+        List<BookListItem> books = mDatabase.bookDao().getBooks();
         // The list is empty
         assertThat(books.size(), is(0));
     }
@@ -133,7 +133,7 @@ public class BooksDaoTest {
         mDatabase.bookDao().deleteBooks();
 
         //When getting the books
-        List<Book> books = mDatabase.bookDao().getBooks();
+        List<BookListItem> books = mDatabase.bookDao().getBooks();
         // The list is empty
         assertThat(books.size(), is(0));
     }
@@ -147,12 +147,12 @@ public class BooksDaoTest {
         mDatabase.bookDao().deleteCompletedBooks();
 
         //When getting the books
-        List<Book> books = mDatabase.bookDao().getBooks();
+        List<BookListItem> books = mDatabase.bookDao().getBooks();
         // The list is empty
         assertThat(books.size(), is(0));
     }
 
-    private void assertBook(Book book, String id, String title,
+    private void assertBook(BookListItem book, String id, String title,
                             String description, boolean completed) {
         assertThat(book, notNullValue());
         assertThat(book.getId(), is(id));

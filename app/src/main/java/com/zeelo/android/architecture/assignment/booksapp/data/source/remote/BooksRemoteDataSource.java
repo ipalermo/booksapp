@@ -1,117 +1,120 @@
 
 package com.zeelo.android.architecture.assignment.booksapp.data.source.remote;
 
-import android.os.Handler;
+import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.annotation.VisibleForTesting;
 
 import com.google.common.collect.Lists;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.zeelo.android.architecture.assignment.booksapp.data.Book;
+import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
+
 /**
- * Implementation of the data source that adds a latency simulating network.
+ * Implementation of a remote data source with static access to the data for easy testing.
  */
 public class BooksRemoteDataSource implements BooksDataSource {
 
     private static BooksRemoteDataSource INSTANCE;
 
-    private static final int SERVICE_LATENCY_IN_MILLIS = 2000;
+    private static final Map<String, BookListItem> BOOKS_LIST_SERVICE_DATA = new LinkedHashMap<>();
+    private static final Map<String, Book> BOOK_SERVICE_DATA = new LinkedHashMap<>();
 
-    private final static Map<String, Book> TASKS_SERVICE_DATA;
+    public static final String BOOK_DETAILS_API_PATH = "/api/v1/items/";
 
-    static {
-        TASKS_SERVICE_DATA = new LinkedHashMap<>(2);
-        addBook("Build tower in Pisa", "Ground looks good, no foundation work required.", "0");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "1");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "2");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "3");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "4");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "5");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "6");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "7");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "8");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "12");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "13");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "14");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "15");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "16");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "17");
-        addBook("Finish bridge in Tacoma", "Found awesome girders at half the cost!", "18");
+    // Prevent direct instantiation.
+    private BooksRemoteDataSource(Context context) {
+        String booksJson = getJSONString(context, "books.json");
+        Type itemListType = new TypeToken<ArrayList<BookListItem>>(){}.getType();
+        List<BookListItem> bookListItems = new Gson().fromJson(booksJson, itemListType);
+
+        Type bookListType = new TypeToken<ArrayList<Book>>(){}.getType();
+        List<Book> books = new Gson().fromJson(booksJson, bookListType);
+
+        for (BookListItem item : bookListItems) {
+            BOOKS_LIST_SERVICE_DATA.put(item.getId(), item);
+        }
+        for (Book book : books) {
+            BOOK_SERVICE_DATA.put(book.getId(), book);
+        }
     }
 
-    public static BooksRemoteDataSource getInstance() {
+    public static BooksRemoteDataSource getInstance(Context context) {
         if (INSTANCE == null) {
-            INSTANCE = new BooksRemoteDataSource();
+            INSTANCE = new BooksRemoteDataSource(context);
         }
         return INSTANCE;
     }
 
-    // Prevent direct instantiation.
-    private BooksRemoteDataSource() {}
-
-    private static void addBook(String title, String description, String id) {
-        Book newBook = new Book(title, description, id);
-        TASKS_SERVICE_DATA.put(newBook.getId(), newBook);
+    @Override
+    public void getBooks(@NonNull LoadBooksListCallback callback) {
+        callback.onBooksListLoaded(Lists.newArrayList(BOOKS_LIST_SERVICE_DATA.values()));
     }
 
-    /**
-     * Note: {@link LoadBooksCallback#onDataNotAvailable()} is never fired. In a real remote data
-     * source implementation, this would be fired if the server can't be contacted or the server
-     * returns an error.
-     */
     @Override
-    public void getBooks(final @NonNull LoadBooksCallback callback) {
-        // Simulate network by delaying the execution.
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                callback.onBooksLoaded(Lists.newArrayList(TASKS_SERVICE_DATA.values()));
-            }
-        }, SERVICE_LATENCY_IN_MILLIS);
-    }
-
-    /**
-     * Note: {@link GetBookCallback#onDataNotAvailable()} is never fired. In a real remote data
-     * source implementation, this would be fired if the server can't be contacted or the server
-     * returns an error.
-     */
-    @Override
-    public void getBook(@NonNull String bookId, final @NonNull GetBookCallback callback) {
-        final Book book = TASKS_SERVICE_DATA.get(bookId);
-
-        // Simulate network by delaying the execution.
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                callback.onBookLoaded(book);
-            }
-        }, SERVICE_LATENCY_IN_MILLIS);
+    public void getBookDetails(@NonNull String bookId, @NonNull GetBookDetailsCallback callback) {
+        Book book = BOOK_SERVICE_DATA.get(bookId);
+        callback.onBookDetailsLoaded(book);
     }
 
     @Override
     public void saveBook(@NonNull Book book) {
-        TASKS_SERVICE_DATA.put(book.getId(), book);
+        BOOK_SERVICE_DATA.put(book.getId(), book);
+        BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
     }
 
-
-    @Override
     public void refreshBook() {
         // Not required because the {@link BooksRepository} handles the logic of refreshing the
         // books from all the available data sources.
     }
 
     @Override
-    public void deleteAllBooks() {
-        TASKS_SERVICE_DATA.clear();
+    public void deleteBook(@NonNull String bookId) {
+        BOOK_SERVICE_DATA.remove(bookId);
+        BOOKS_LIST_SERVICE_DATA.remove(bookId);
     }
 
     @Override
-    public void deleteBook(@NonNull String bookId) {
-        TASKS_SERVICE_DATA.remove(bookId);
+    public void deleteAllBooks() {
+        BOOK_SERVICE_DATA.clear();
+        BOOKS_LIST_SERVICE_DATA.clear();
+    }
+
+    @VisibleForTesting
+    public void addBooks(Book... books) {
+        if (books != null) {
+            for (Book book : books) {
+                BOOK_SERVICE_DATA.put(book.getId(), book);
+                BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
+            }
+        }
+    }
+
+    public String getJSONString(Context context, String fileName) {
+        String json = null;
+        try {
+            InputStream inputStream = context.getAssets().open(fileName);
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            inputStream.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return json;
     }
 }

@@ -3,7 +3,6 @@ package com.zeelo.android.architecture.assignment.booksapp.data;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Embedded;
 import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
@@ -15,17 +14,13 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import static com.zeelo.android.architecture.assignment.booksapp.data.source.remote.BooksRemoteDataSource.BOOK_DETAILS_API_PATH;
+
 /**
- * Immutable model class for a Book.
+ * Immutable model class for a BookListItem.
  */
-@Entity(tableName = "book",
-        foreignKeys = {
-                @ForeignKey(entity = BookListItem.class,
-                        parentColumns = "id",
-                        childColumns = "id",
-                        onDelete = ForeignKey.CASCADE)
-        })
-public final class Book {
+@Entity(tableName = "bookslist")
+public final class BookListItem {
 
     @PrimaryKey
     @NonNull
@@ -33,21 +28,30 @@ public final class Book {
     private String id;
 
     @Nullable
+    private String link;
+
+    @Nullable
     @Embedded
     @SerializedName("volumeInfo")
     private VolumeInfo volumeInfo;
 
-    public Book(){}
+    public BookListItem(){}
 
     /**
-     * Use this constructor to create a new Book.
+     * Use this constructor to create a new BookListItem.
      *
      * @param title title of the book
-     * @param link  link to the book details
      */
     @Ignore
-    public Book(@Nullable String title, @Nullable String link) {
-        this(title, UUID.randomUUID().toString(), link);
+    public BookListItem(@Nullable String title) {
+        this(title, UUID.randomUUID().toString());
+    }
+
+    @Ignore
+    public BookListItem(@Nullable String title, @NonNull String id) {
+        this.id = id;
+        this.volumeInfo = new VolumeInfo(title);
+        this.link = BOOK_DETAILS_API_PATH + this.id;
     }
 
     /**
@@ -58,9 +62,10 @@ public final class Book {
      * @param id    id of the book
      * @param link  link to the book details
      */
-    public Book(@Nullable String title, @NonNull String id, @Nullable String link) {
+    public BookListItem(@Nullable String title, @NonNull String id, @Nullable String link) {
         this.id = id;
         this.volumeInfo = new VolumeInfo(title);
+        this.link = link;
     }
 
     @NonNull
@@ -82,6 +87,15 @@ public final class Book {
     }
 
     @Nullable
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    @Nullable
     public VolumeInfo getVolumeInfo() {
         return volumeInfo;
     }
@@ -94,7 +108,7 @@ public final class Book {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
+        BookListItem book = (BookListItem) o;
         return Objects.equal(id, book.id) &&
                 Objects.equal(volumeInfo.title, book.volumeInfo.title);
     }
@@ -118,10 +132,6 @@ public final class Book {
         @Nullable
         @ColumnInfo(name = "authors")
         private ArrayList<String> authors;
-
-        @Nullable
-        @SerializedName("description")
-        private String description;
 
         @Nullable
         @Embedded
@@ -154,15 +164,6 @@ public final class Book {
 
         public void setAuthors(@Nullable ArrayList<String> authors) {
             this.authors = authors;
-        }
-
-        @Nullable
-        public String getDescription() {
-            return description;
-        }
-
-        public void setDescription(@Nullable String description) {
-            this.description = description;
         }
 
         @Nullable
