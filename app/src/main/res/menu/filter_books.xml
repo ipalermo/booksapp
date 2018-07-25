@@ -4,9 +4,9 @@
         android:id="@+id/all"
         android:title="@string/nav_all" />
     <item
-        android:id="@+id/active"
-        android:title="@string/nav_active" />
+        android:id="@+id/not_fav"
+        android:title="@string/nav_not_fav" />
     <item
-        android:id="@+id/completed"
-        android:title="@string/nav_completed" />
+        android:id="@+id/favorite"
+        android:title="@string/nav_favorite" />
 </menu>

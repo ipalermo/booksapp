@@ -71,7 +71,14 @@ public class BooksRemoteDataSource implements BooksDataSource {
     @Override
     public void saveBook(@NonNull Book book) {
         BOOK_SERVICE_DATA.put(book.getId(), book);
-        BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
+        BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId()));
+    }
+
+    @Override
+    public void saveBooksListItems(@NonNull List<BookListItem> booksListItems) {
+        for (BookListItem bookListItem : booksListItems) {
+            BOOKS_LIST_SERVICE_DATA.put(bookListItem.getId(), bookListItem);
+        }
     }
 
     public void refreshBook() {

@@ -29,6 +29,8 @@ public interface BooksDataSource {
 
     void getBooks(@NonNull LoadBooksListCallback callback);
 
+    void saveBooksListItems(@NonNull List<BookListItem> booksListItems);
+
     void getBookDetails(@NonNull String bookId, @NonNull GetBookDetailsCallback callback);
 
     void saveBook(@NonNull Book book);

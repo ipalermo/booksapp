@@ -84,9 +84,9 @@ public class StatisticsViewModel extends AndroidViewModel {
 
     private void updateDataBindingObservables() {
         numberOfCompletedBooks.set(
-                mContext.getString(R.string.statistics_completed_books, mNumberOfCompletedBooks));
+                mContext.getString(R.string.statistics_favorite_books, mNumberOfCompletedBooks));
         numberOfActiveBooks.set(
-                mContext.getString(R.string.statistics_active_books, mNumberOfActiveBooks));
+                mContext.getString(R.string.statistics_not_fav_books, mNumberOfActiveBooks));
         empty.set(mNumberOfActiveBooks + mNumberOfCompletedBooks == 0);
         dataLoading.set(false);
 

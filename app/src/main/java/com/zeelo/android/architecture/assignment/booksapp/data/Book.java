@@ -43,11 +43,11 @@ public final class Book {
      * Use this constructor to create a new Book.
      *
      * @param title title of the book
-     * @param link  link to the book details
+     * @param description  description of the book
      */
     @Ignore
-    public Book(@Nullable String title, @Nullable String link) {
-        this(title, UUID.randomUUID().toString(), link);
+    public Book(@Nullable String title, @Nullable String description) {
+        this(title, UUID.randomUUID().toString(), description);
     }
 
     /**
@@ -56,11 +56,12 @@ public final class Book {
      *
      * @param title title of the book
      * @param id    id of the book
-     * @param link  link to the book details
+     * @param description  description of the book
      */
-    public Book(@Nullable String title, @NonNull String id, @Nullable String link) {
+    public Book(@Nullable String title, @NonNull String id, @Nullable String description) {
         this.id = id;
         this.volumeInfo = new VolumeInfo(title);
+        this.volumeInfo.setDescription(description);
     }
 
     @NonNull

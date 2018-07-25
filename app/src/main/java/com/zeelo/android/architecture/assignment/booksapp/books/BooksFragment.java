@@ -113,10 +113,10 @@ public class BooksFragment extends Fragment {
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.active:
+                    case R.id.not_fav:
                         mBooksViewModel.setFiltering(BooksFilterType.NOT_FAVORITED_BOOKS);
                         break;
-                    case R.id.completed:
+                    case R.id.favorite:
                         mBooksViewModel.setFiltering(BooksFilterType.FAVORITED_BOOKS);
                         break;
                     default:

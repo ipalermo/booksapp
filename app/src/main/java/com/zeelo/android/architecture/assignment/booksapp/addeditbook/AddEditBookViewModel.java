@@ -26,8 +26,7 @@ import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepos
 public class AddEditBookViewModel extends AndroidViewModel implements BooksDataSource.GetBookDetailsCallback {
 
     public final ObservableField<String> title = new ObservableField<>();
-
-    public final ObservableField<String> link = new ObservableField<>();
+    public final ObservableField<String> description = new ObservableField<>();
 
     public final ObservableBoolean dataLoading = new ObservableBoolean(false);
 
@@ -76,6 +75,10 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
     @Override
     public void onBookDetailsLoaded(Book book) {
         title.set(book.getTitle());
+        if (book.getVolumeInfo() != null) {
+            description.set(book.getVolumeInfo().getDescription());
+        }
+
         dataLoading.set(false);
         mIsDataLoaded = true;
 
@@ -90,7 +93,7 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
 
     // Called when clicking on fab.
     void saveBook() {
-        Book book = new Book(title.get(), link.get());
+        Book book = new Book(title.get(), description.get());
         if (Strings.isNullOrEmpty(book.getTitle())) {
             mSnackbarText.setValue(R.string.empty_book_message);
             return;
@@ -98,7 +101,7 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
         if (isNewBook() || mBookId == null) {
             createBook(book);
         } else {
-            book = new Book(title.get(), mBookId, link.get());
+            book = new Book(title.get(), mBookId, description.get());
             updateBook(book);
         }
     }

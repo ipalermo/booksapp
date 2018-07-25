@@ -48,7 +48,7 @@
                     android:layout_height="350dp"
                     android:gravity="top"
                     android:hint="@string/description_hint"
-                    android:text="@={viewmodel.title}"/>
+                    android:text="@={viewmodel.description}"/>
 
             </LinearLayout>
         </ScrollView>

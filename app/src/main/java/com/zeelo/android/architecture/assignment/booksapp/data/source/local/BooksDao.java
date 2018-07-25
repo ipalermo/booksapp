@@ -27,6 +27,14 @@ public interface BooksDao {
     List<Book> getBooks();
 
     /**
+     * Select all books from the books list table.
+     *
+     * @return all books.
+     */
+    @Query("SELECT * FROM bookslist")
+    List<BookListItem> getBookListItems();
+
+    /**
      * Select a book by id.
      *
      * @param bookId the book id.
@@ -50,6 +58,14 @@ public interface BooksDao {
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertBookListItem(BookListItem bookListItem);
+
+    /**
+     * Insert a list of BookListItems in the database. If a BookListItem already exists, replace it.
+     *
+     * @param booksListItems the book list items to be inserted.
+     */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertBookListItems(List<BookListItem> booksListItems);
 
     /**
      * Update a book.

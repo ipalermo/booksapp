@@ -122,6 +122,12 @@ public class BooksRepository implements BooksDataSource {
     }
 
     @Override
+    public void saveBooksListItems(@NonNull List<BookListItem> booksListItems) {
+        checkNotNull(booksListItems);
+        mBooksLocalDataSource.saveBooksListItems(booksListItems);
+    }
+
+    @Override
     public void saveBook(@NonNull Book book) {
         checkNotNull(book);
         mBooksRemoteDataSource.saveBook(book);
@@ -236,6 +242,8 @@ public class BooksRepository implements BooksDataSource {
             @Override
             public void onBooksListLoaded(List<BookListItem> bookItems) {
                 refreshListItemsCache(bookItems);
+
+                mBooksLocalDataSource.saveBooksListItems(bookItems);
 
                 EspressoIdlingResource.decrement(); // Set app as idle.
                 callback.onBooksListLoaded(new ArrayList<>(mCachedListItems.values()));

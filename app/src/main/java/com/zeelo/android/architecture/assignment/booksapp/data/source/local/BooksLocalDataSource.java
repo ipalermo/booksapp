@@ -9,7 +9,6 @@ import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.util.AppExecutors;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -55,10 +54,7 @@ public class BooksLocalDataSource implements BooksDataSource {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                final List<BookListItem> booksListItems = new ArrayList<>();
-                for (Book book : mBooksDao.getBooks()) {
-                    booksListItems.add(new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
-                }
+                final List<BookListItem> booksListItems = mBooksDao.getBookListItems();
                 mAppExecutors.mainThread().execute(new Runnable() {
                     @Override
                     public void run() {
@@ -70,6 +66,18 @@ public class BooksLocalDataSource implements BooksDataSource {
                         }
                     }
                 });
+            }
+        };
+
+        mAppExecutors.diskIO().execute(runnable);
+    }
+
+    @Override
+    public void saveBooksListItems(@NonNull final List<BookListItem> booksListItems) {
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                mBooksDao.insertBookListItems(booksListItems);
             }
         };
 

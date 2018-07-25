@@ -101,15 +101,15 @@ public class BooksViewModel extends AndroidViewModel {
                 booksAddViewVisible.set(true);
                 break;
             case NOT_FAVORITED_BOOKS:
-                currentFilteringLabel.set(mContext.getString(R.string.label_active));
-                noBooksLabel.set(mContext.getResources().getString(R.string.no_books_active));
+                currentFilteringLabel.set(mContext.getString(R.string.label_not_fav));
+                noBooksLabel.set(mContext.getResources().getString(R.string.no_books_not_fav));
                 noBookIconRes.set(mContext.getResources().getDrawable(
                         R.drawable.ic_check_circle_24dp));
                 booksAddViewVisible.set(false);
                 break;
             case FAVORITED_BOOKS:
-                currentFilteringLabel.set(mContext.getString(R.string.label_completed));
-                noBooksLabel.set(mContext.getResources().getString(R.string.no_books_completed));
+                currentFilteringLabel.set(mContext.getString(R.string.label_favorite));
+                noBooksLabel.set(mContext.getResources().getString(R.string.no_books_not_fav));
                 noBookIconRes.set(mContext.getResources().getDrawable(
                         R.drawable.ic_verified_user_24dp));
                 booksAddViewVisible.set(false);
