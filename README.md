@@ -34,7 +34,7 @@ The data is stored locally in a SQLite database, using [Room](https://developer.
 This app uses fragments, and this is for two reasons:
 
 * The use of both [activities](https://developer.android.com/guide/components/activities/index.html) and [fragments](https://developer.android.com/guide/components/fragments.html) allows for a better separation of concerns which complements this implementation of MVP. In this version of the app, the Activity is the overall controller which creates and connects views and presenters.
-* The use of fragments supports tablet layouts or UI screens with multiple views.
+* The uses of fragments supports tablet layouts or UI screens with multiple views.
 
 The app includes a number of unit tests which cover presenters, repositories, and data sources. Also includes UI tests, that rely on fake data, and are facilitated by dependency injection to provide fake modules. For more information on using dependency injection to facilitate testing, see Leveraging product flavors in Android Studio for hermetic testing.
 
@@ -75,3 +75,6 @@ For simplicity, the repository does not use LiveData to expose its data(hopefull
 
 ### Caching Strategy and paging
 For time constraints, the app deos not take advantage of the latest Android Paging Architecture Component which helps to implement efficient paging from cache and network.
+
+### Dependency Injection
+The app uses a simple dependency injection to use fake repository implementations to make ui tests more robust, but ideally in the future [Dagger2](https://github.com/google/dagger) should be used across the app to inject modules without adding tight relations between them.
