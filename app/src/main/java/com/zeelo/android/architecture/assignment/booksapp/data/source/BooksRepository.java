@@ -137,6 +137,41 @@ public class BooksRepository implements BooksDataSource {
         saveToBookToCache(book);
     }
 
+    @Override
+    public void favoriteBook(@NonNull Book book) {
+        checkNotNull(book);
+        mBooksRemoteDataSource.favoriteBook(book);
+        mBooksLocalDataSource.favoriteBook(book);
+
+        Book favoriteBook = new Book(book.getTitle(), book.getId(), book.getVolumeInfo().getDescription(), true);
+
+        // Do in memory cache update to keep the app UI up to date
+        saveToBookToCache(favoriteBook);
+    }
+
+    @Override
+    public void favoriteBook(@NonNull String bookId) {
+        checkNotNull(bookId);
+        favoriteBook(getBookWithId(bookId));
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull Book book) {
+        checkNotNull(book);
+        mBooksRemoteDataSource.unFavoriteBook(book);
+        mBooksLocalDataSource.unFavoriteBook(book);
+
+        Book notFavoriteBook = new Book(book.getTitle(), book.getId(), book.getVolumeInfo().getDescription(), false);
+
+        saveToBookToCache(notFavoriteBook);
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull String bookId) {
+        checkNotNull(bookId);
+        unFavoriteBook(getBookWithId(bookId));
+    }
+
     private void saveToBookToCache(Book book) {
         if (mCachedBooks == null) {
             mCachedBooks = new LinkedHashMap<>();
@@ -214,7 +249,7 @@ public class BooksRepository implements BooksDataSource {
     }
 
     @Override
-    public void refreshBook() {
+    public void refreshBooks() {
         mBooksCacheIsDirty = true;
     }
 
@@ -227,6 +262,7 @@ public class BooksRepository implements BooksDataSource {
             mCachedListItems = new LinkedHashMap<>();
         }
         mCachedListItems.clear();
+        mCachedBooks.clear();
     }
 
     @Override
@@ -235,6 +271,7 @@ public class BooksRepository implements BooksDataSource {
         mBooksLocalDataSource.deleteBook(checkNotNull(bookId));
 
         mCachedListItems.remove(bookId);
+        mCachedBooks.remove(bookId);
     }
 
     private void getBooksFromRemoteDataSource(@NonNull final LoadBooksListCallback callback) {

@@ -166,7 +166,7 @@ public class BooksViewModel extends AndroidViewModel {
         }
         if (forceUpdate) {
 
-            mBooksRepository.refreshBook();
+            mBooksRepository.refreshBooks();
         }
 
         mBooksRepository.getBooks(new BooksDataSource.LoadBooksListCallback() {

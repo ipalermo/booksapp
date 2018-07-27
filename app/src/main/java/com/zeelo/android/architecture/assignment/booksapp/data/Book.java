@@ -37,6 +37,9 @@ public final class Book {
     @SerializedName("volumeInfo")
     private VolumeInfo volumeInfo;
 
+    @ColumnInfo(name = "favorite")
+    private boolean mFavorite;
+
     public Book(){}
 
     /**
@@ -47,21 +50,36 @@ public final class Book {
      */
     @Ignore
     public Book(@Nullable String title, @Nullable String description) {
-        this(title, UUID.randomUUID().toString(), description);
+        this(title, UUID.randomUUID().toString(), description, false);
     }
 
     /**
-     * Use this constructor to create a BookListItem if the BookListItem already has an id (copy of another
-     * BookListItem).
+     * Use this constructor to create a Book if the Book already has an id (copy of another
+     * Book)
      *
      * @param title title of the book
      * @param id    id of the book
      * @param description  description of the book
      */
+    @Ignore
     public Book(@Nullable String title, @NonNull String id, @Nullable String description) {
+        this(title, id, description, false);
+    }
+
+    /**
+     * Use this constructor to create a Book if the Book already has an id (copy of another
+     * Book).
+     *
+     * @param title title of the book
+     * @param id    id of the book
+     * @param description  description of the book
+     * @param favorite   true if the book is favorite
+     */
+    public Book(@Nullable String title, @NonNull String id, @Nullable String description, boolean favorite) {
         this.id = id;
         this.volumeInfo = new VolumeInfo(title);
         this.volumeInfo.setDescription(description);
+        this.mFavorite = favorite;
     }
 
     @NonNull
@@ -89,6 +107,15 @@ public final class Book {
 
     public void setVolumeInfo(@Nullable VolumeInfo volumeInfo) {
         this.volumeInfo = volumeInfo;
+    }
+
+
+    public boolean isFavorite() {
+        return mFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.mFavorite = favorite;
     }
 
     @Override

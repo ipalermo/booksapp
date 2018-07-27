@@ -30,7 +30,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -68,12 +67,10 @@ public class BooksViewModelTest {
         // Get a reference to the class under test
         mBooksViewModel = new BooksViewModel(mContext, mBooksRepository);
 
-        // We initialise the books to 3, with one active and two favorited
         BOOKS = Lists.newArrayList(new BookListItem("Title1", "Description1"),
-                new BookListItem("Title2", "Description2", true), new BookListItem("Title3", "Description3", true));
+                new BookListItem("Title2", "id2", "link2"), new BookListItem("Title3", "Description3", "link3"));
 
         mBooksViewModel.getSnackbarMessage().removeObservers(TestUtils.TEST_OBSERVER);
-
     }
 
     private void setupContext() {
@@ -112,44 +109,6 @@ public class BooksViewModelTest {
     }
 
     @Test
-    public void loadActiveBooksFromRepositoryAndLoadIntoView() {
-        // Given an initialized BooksViewModel with initialized books
-        // When loading of Books is requested
-        mBooksViewModel.setFiltering(BooksFilterType.NOT_FAVORITED_BOOKS);
-        mBooksViewModel.loadBooks(true);
-
-        // Callback is captured and invoked with stubbed books
-        verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
-
-        // Then progress indicator is hidden
-        assertFalse(mBooksViewModel.dataLoading.get());
-
-        // And data loaded
-        assertFalse(mBooksViewModel.items.isEmpty());
-        assertTrue(mBooksViewModel.items.size() == 1);
-    }
-
-    @Test
-    public void loadCompletedBooksFromRepositoryAndLoadIntoView() {
-        // Given an initialized BooksViewModel with initialized books
-        // When loading of Books is requested
-        mBooksViewModel.setFiltering(BooksFilterType.FAVORITED_BOOKS);
-        mBooksViewModel.loadBooks(true);
-
-        // Callback is captured and invoked with stubbed books
-        verify(mBooksRepository).getBooks(mLoadBooksCallbackCaptor.capture());
-        mLoadBooksCallbackCaptor.getValue().onBooksListLoaded(BOOKS);
-
-        // Then progress indicator is hidden
-        assertFalse(mBooksViewModel.dataLoading.get());
-
-        // And data loaded
-        assertFalse(mBooksViewModel.items.isEmpty());
-        assertTrue(mBooksViewModel.items.size() == 2);
-    }
-
-    @Test
     public void clickOnFab_ShowsAddBookUi() {
 
         Observer<Void> observer = mock(Observer.class);
@@ -161,16 +120,6 @@ public class BooksViewModelTest {
 
         // Then the event is triggered
         verify(observer).onChanged(null);
-    }
-
-    @Test
-    public void clearCompletedBooks_ClearsBooks() {
-        // When favorited books are cleared
-        mBooksViewModel.clearCompletedBooks();
-
-        // Then repository is called and the view is notified
-        verify(mBooksRepository).clearCompletedBooks();
-        verify(mBooksRepository).getBooks(any(LoadBooksListCallback.class));
     }
 
     @Test

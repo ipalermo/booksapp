@@ -8,7 +8,7 @@ import android.content.res.Resources;
 
 import com.zeelo.android.architecture.assignment.booksapp.R;
 import com.zeelo.android.architecture.assignment.booksapp.SnackbarMessage;
-import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
+import com.zeelo.android.architecture.assignment.booksapp.data.Book;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -64,7 +64,7 @@ public class BookDetailViewModelTest {
 
     private BookDetailViewModel mBookDetailViewModel;
 
-    private BookListItem mBook;
+    private Book mBook;
 
     @Before
     public void setupBooksViewModel() {
@@ -74,7 +74,7 @@ public class BookDetailViewModelTest {
 
         setupContext();
 
-        mBook = new BookListItem(TITLE_TEST, DESCRIPTION_TEST);
+        mBook = new Book(TITLE_TEST, DESCRIPTION_TEST);
 
         // Get a reference to the class under test
         mBookDetailViewModel = new BookDetailViewModel(mContext, mBooksRepository);
@@ -88,12 +88,12 @@ public class BookDetailViewModelTest {
     }
 
     @Test
-    public void getActiveBookFromRepositoryAndLoadIntoView() {
+    public void getNotFavoriteBookFromRepositoryAndLoadIntoView() {
         setupViewModelRepositoryCallback();
 
         // Then verify that the view was notified
         assertEquals(mBookDetailViewModel.book.get().getTitle(), mBook.getTitle());
-        assertEquals(mBookDetailViewModel.book.get().getDescription(), mBook.getDescription());
+        assertEquals(mBookDetailViewModel.book.get().getVolumeInfo().getDescription(), mBook.getVolumeInfo().getDescription());
     }
 
     @Test
@@ -108,29 +108,29 @@ public class BookDetailViewModelTest {
     }
 
     @Test
-    public void completeBook() {
+    public void favoriteBook() {
         setupViewModelRepositoryCallback();
 
-        // When the ViewModel is asked to complete the book
-        mBookDetailViewModel.setCompleted(true);
+        // When the ViewModel is asked to favorite the book
+        mBookDetailViewModel.setFavorited(true);
 
         // Then a request is sent to the book repository and the UI is updated
-        verify(mBooksRepository).completeBook(mBook);
+        verify(mBooksRepository).favoriteBook(mBook);
         assertThat(mBookDetailViewModel.getSnackbarMessage().getValue(),
-                is(R.string.book_marked_complete));
+                is(R.string.book_marked_favorite));
     }
 
     @Test
     public void activateBook() {
         setupViewModelRepositoryCallback();
 
-        // When the ViewModel is asked to complete the book
-        mBookDetailViewModel.setCompleted(false);
+        // When the ViewModel is asked to set book as not favorite
+        mBookDetailViewModel.setFavorited(false);
 
         // Then a request is sent to the book repository and the UI is updated
-        verify(mBooksRepository).activateBook(mBook);
+        verify(mBooksRepository).unFavoriteBook(mBook);
         assertThat(mBookDetailViewModel.getSnackbarMessage().getValue(),
-                is(R.string.book_marked_active));
+                is(R.string.book_removed_favorite));
     }
 
     @Test

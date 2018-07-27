@@ -69,7 +69,7 @@ public class FakeBooksRemoteDataSource implements BooksDataSource {
         BOOKS_LIST_SERVICE_DATA.put(book.getId(), new BookListItem(book.getTitle(), book.getId(), BOOK_DETAILS_API_PATH + book.getId()));
     }
 
-    public void refreshBook() {
+    public void refreshBooks() {
         // Not required because the {@link BooksRepository} handles the logic of refreshing the
         // books from all the available data sources.
     }

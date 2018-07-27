@@ -29,18 +29,18 @@ public class StatisticsViewModel extends AndroidViewModel {
 
     public final ObservableBoolean error = new ObservableBoolean(false);
 
-    public final ObservableField<String> numberOfActiveBooks = new ObservableField<>();
+    public final ObservableField<String> numberOfNotFavoriteBooks = new ObservableField<>();
 
-    public final ObservableField<String> numberOfCompletedBooks = new ObservableField<>();
+    public final ObservableField<String> numberOfFavoriteBooks = new ObservableField<>();
 
     /**
      * Controls whether the stats are shown or a "No data" message.
      */
     public final ObservableBoolean empty = new ObservableBoolean();
 
-    private int mNumberOfActiveBooks = 0;
+    private int mNumberOfNotFavoriteBooks = 0;
 
-    private int mNumberOfCompletedBooks = 0;
+    private int mNumberOfFavoriteBooks = 0;
 
     private final Context mContext;
 
@@ -69,8 +69,8 @@ public class StatisticsViewModel extends AndroidViewModel {
             @Override
             public void onDataNotAvailable() {
                 error.set(true);
-                mNumberOfActiveBooks = 0;
-                mNumberOfCompletedBooks = 0;
+                mNumberOfNotFavoriteBooks = 0;
+                mNumberOfFavoriteBooks = 0;
                 updateDataBindingObservables();
             }
         });
@@ -80,14 +80,28 @@ public class StatisticsViewModel extends AndroidViewModel {
      * Called when new data is ready.
      */
     private void computeStats(List<BookListItem> books) {
+//        int favorite = 0;
+//        int notFavorite = 0;
+//
+//        for (BookListItem bookItem : books) {
+//            if (bookItem.isFavorite()) {
+//                favorite += 1;
+//            } else {
+//                notFavorite += 1;
+//            }
+//        }
+//        mNumberOfFavoriteBooks = favorite;
+//        mNumberOfNotFavoriteBooks = notFavorite;
+//
+        updateDataBindingObservables();
     }
 
     private void updateDataBindingObservables() {
-        numberOfCompletedBooks.set(
-                mContext.getString(R.string.statistics_favorite_books, mNumberOfCompletedBooks));
-        numberOfActiveBooks.set(
-                mContext.getString(R.string.statistics_not_fav_books, mNumberOfActiveBooks));
-        empty.set(mNumberOfActiveBooks + mNumberOfCompletedBooks == 0);
+        numberOfFavoriteBooks.set(
+                mContext.getString(R.string.statistics_favorite_books, mNumberOfFavoriteBooks));
+        numberOfNotFavoriteBooks.set(
+                mContext.getString(R.string.statistics_not_fav_books, mNumberOfNotFavoriteBooks));
+        empty.set(mNumberOfNotFavoriteBooks + mNumberOfFavoriteBooks == 0);
         dataLoading.set(false);
 
     }

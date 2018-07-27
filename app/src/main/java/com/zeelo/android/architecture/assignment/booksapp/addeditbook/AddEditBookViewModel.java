@@ -27,6 +27,7 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
 
     public final ObservableField<String> title = new ObservableField<>();
     public final ObservableField<String> description = new ObservableField<>();
+    public final ObservableField<Boolean> favorite = new ObservableField<>();
 
     public final ObservableBoolean dataLoading = new ObservableBoolean(false);
 
@@ -77,6 +78,7 @@ public class AddEditBookViewModel extends AndroidViewModel implements BooksDataS
         title.set(book.getTitle());
         if (book.getVolumeInfo() != null) {
             description.set(book.getVolumeInfo().getDescription());
+            favorite.set(book.isFavorite());
         }
 
         dataLoading.set(false);

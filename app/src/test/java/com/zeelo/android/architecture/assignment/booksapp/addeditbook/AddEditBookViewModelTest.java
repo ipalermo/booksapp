@@ -5,7 +5,7 @@ package com.zeelo.android.architecture.assignment.booksapp.addeditbook;
 import android.app.Application;
 import android.arch.core.executor.testing.InstantTaskExecutorRule;
 
-import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
+import com.zeelo.android.architecture.assignment.booksapp.data.Book;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksDataSource;
 import com.zeelo.android.architecture.assignment.booksapp.data.source.BooksRepository;
 
@@ -59,17 +59,17 @@ public class AddEditBookViewModelTest {
     @Test
     public void saveNewBookToRepository_showsSuccessMessageUi() {
         // When the ViewModel is asked to save a book
-        mAddEditBookViewModel.link.set("Some BookListItem Description");
+        mAddEditBookViewModel.description.set("Some BookListItem Description");
         mAddEditBookViewModel.title.set("New BookListItem Title");
         mAddEditBookViewModel.saveBook();
 
         // Then a book is saved in the repository and the view updated
-        verify(mBooksRepository).saveBook(any(BookListItem.class)); // saved to the model
+        verify(mBooksRepository).saveBook(any(Book.class)); // saved to the model
     }
 
     @Test
     public void populateBook_callsRepoAndUpdatesView() {
-        BookListItem testBook = new BookListItem("TITLE", "DESCRIPTION", "1");
+        Book testBook = new Book("TITLE","1","DESCRIPTION");
 
         // Get a reference to the class under test
         mAddEditBookViewModel = new AddEditBookViewModel(
@@ -87,6 +87,6 @@ public class AddEditBookViewModelTest {
 
         // Verify the fields were updated
         assertThat(mAddEditBookViewModel.title.get(), is(testBook.getTitle()));
-        assertThat(mAddEditBookViewModel.link.get(), is(testBook.getDescription()));
+        assertThat(mAddEditBookViewModel.description.get(), is(testBook.getVolumeInfo().getDescription()));
     }
 }

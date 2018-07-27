@@ -34,8 +34,16 @@ public interface BooksDataSource {
     void getBookDetails(@NonNull String bookId, @NonNull GetBookDetailsCallback callback);
 
     void saveBook(@NonNull Book book);
+
+    void favoriteBook(@NonNull Book book);
+
+    void favoriteBook(@NonNull String bookId);
+
+    void unFavoriteBook(@NonNull Book book);
+
+    void unFavoriteBook(@NonNull String bookId);
     
-    void refreshBook();
+    void refreshBooks();
 
     void deleteAllBooks();
 

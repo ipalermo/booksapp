@@ -2,6 +2,7 @@
 package com.zeelo.android.architecture.assignment.booksapp.data.source;
 
 import com.google.common.collect.Lists;
+import com.zeelo.android.architecture.assignment.booksapp.data.Book;
 import com.zeelo.android.architecture.assignment.booksapp.data.BookListItem;
 
 import org.junit.After;
@@ -16,7 +17,6 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.never;
@@ -28,14 +28,16 @@ import static org.mockito.Mockito.verify;
  */
 public class BooksRepositoryTest {
 
-    private final static String TASK_TITLE = "title";
+    private final static String BOOK_ID = "id1";
 
-    private final static String TASK_TITLE2 = "title2";
+    private final static String BOOK_TITLE = "title";
 
-    private final static String TASK_TITLE3 = "title3";
+    private final static String BOOK_TITLE2 = "title2";
 
-    private static List<BookListItem> BOOKS = Lists.newArrayList(new BookListItem("Title1", "Description1"),
-            new BookListItem("Title2", "Description2"));
+    private final static String BOOK_TITLE3 = "title3";
+
+    private static List<BookListItem> BOOKS = Lists.newArrayList(new BookListItem("Title1", "Id1"),
+            new BookListItem("Title2", "Id2"));
 
     private BooksRepository mBooksRepository;
 
@@ -95,7 +97,7 @@ public class BooksRepositoryTest {
     @Test
     public void saveBook_savesBookToServiceAPI() {
         // Given a stub book with title and link
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description");
+        Book newBook = new Book(BOOK_TITLE, "Some Book Description");
 
         // When a book is saved to the books repository
         mBooksRepository.saveBook(newBook);
@@ -103,114 +105,77 @@ public class BooksRepositoryTest {
         // Then the service API and persistent repository are called and the cache is updated
         verify(mBooksRemoteDataSource).saveBook(newBook);
         verify(mBooksLocalDataSource).saveBook(newBook);
+        assertThat(mBooksRepository.mCachedBooks.size(), is(1));
         assertThat(mBooksRepository.mCachedListItems.size(), is(1));
     }
 
     @Test
-    public void completeBook_completesBookToServiceAPIUpdatesCache() {
-        // Given a stub active book with title and link added in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description");
+    public void favoriteBook_favoritesBookToServiceAPIUpdatesCache() {
+        // Given a stub not favorite book with title and description added in the repository
+        Book newBook = new Book(BOOK_TITLE, "Some Book Description");
         mBooksRepository.saveBook(newBook);
 
-        // When a book is favorited to the books repository
-        mBooksRepository.completeBook(newBook);
+        // When a book is favorite on the books repository
+        mBooksRepository.favoriteBook(newBook);
 
         // Then the service API and persistent repository are called and the cache is updated
-        verify(mBooksRemoteDataSource).completeBook(newBook);
-        verify(mBooksLocalDataSource).completeBook(newBook);
-        assertThat(mBooksRepository.mCachedListItems.size(), is(1));
-        assertThat(mBooksRepository.mCachedListItems.get(newBook.getId()).isActive(), is(false));
+        verify(mBooksRemoteDataSource).favoriteBook(newBook);
+        verify(mBooksLocalDataSource).favoriteBook(newBook);
+        assertThat(mBooksRepository.mCachedBooks.size(), is(1));
+        assertThat(mBooksRepository.mCachedBooks.get(newBook.getId()).isFavorite(), is(true));
     }
 
     @Test
-    public void completeBookId_completesBookToServiceAPIUpdatesCache() {
-        // Given a stub active book with title and link added in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description");
+    public void unfavoriteBook_unfavoritesBookToServiceAPIUpdatesCache() {
+        // Given a stub favorite book with title and description in the repository
+        Book newBook = new Book(BOOK_TITLE, "Some Book Description");
+        newBook.setFavorite(true);
         mBooksRepository.saveBook(newBook);
 
-        // When a book is favorited using its id to the books repository
-        mBooksRepository.completeBook(newBook.getId());
+        // When a favorite book is set as not favorite in the books repository
+        mBooksRepository.unFavoriteBook(newBook);
 
         // Then the service API and persistent repository are called and the cache is updated
-        verify(mBooksRemoteDataSource).completeBook(newBook);
-        verify(mBooksLocalDataSource).completeBook(newBook);
-        assertThat(mBooksRepository.mCachedListItems.size(), is(1));
-        assertThat(mBooksRepository.mCachedListItems.get(newBook.getId()).isActive(), is(false));
+        verify(mBooksRemoteDataSource).unFavoriteBook(newBook);
+        verify(mBooksLocalDataSource).unFavoriteBook(newBook);
+        assertThat(mBooksRepository.mCachedBooks.size(), is(1));
+        assertThat(mBooksRepository.mCachedBooks.get(newBook.getId()).isFavorite(), is(false));
     }
 
     @Test
-    public void activateBook_activatesBookToServiceAPIUpdatesCache() {
-        // Given a stub favorited book with title and link in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description", true);
+    public void unfavoriteBookId_unfavoritesBookToServiceAPIUpdatesCache() {
+        // Given a stub favorite book with title and description in the repository
+        Book newBook = new Book(BOOK_TITLE, "Some Book Description");
         mBooksRepository.saveBook(newBook);
 
-        // When a favorited book is activated to the books repository
-        mBooksRepository.activateBook(newBook);
+        // When a favorite book is set as not favorite in the books repository
+        mBooksRepository.unFavoriteBook(newBook.getId());
 
         // Then the service API and persistent repository are called and the cache is updated
-        verify(mBooksRemoteDataSource).activateBook(newBook);
-        verify(mBooksLocalDataSource).activateBook(newBook);
-        assertThat(mBooksRepository.mCachedListItems.size(), is(1));
-        assertThat(mBooksRepository.mCachedListItems.get(newBook.getId()).isActive(), is(true));
-    }
-
-    @Test
-    public void activateBookId_activatesBookToServiceAPIUpdatesCache() {
-        // Given a stub favorited book with title and link in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description", true);
-        mBooksRepository.saveBook(newBook);
-
-        // When a favorited book is activated with its id to the books repository
-        mBooksRepository.activateBook(newBook.getId());
-
-        // Then the service API and persistent repository are called and the cache is updated
-        verify(mBooksRemoteDataSource).activateBook(newBook);
-        verify(mBooksLocalDataSource).activateBook(newBook);
-        assertThat(mBooksRepository.mCachedListItems.size(), is(1));
-        assertThat(mBooksRepository.mCachedListItems.get(newBook.getId()).isActive(), is(true));
+        verify(mBooksRemoteDataSource).unFavoriteBook(newBook);
+        verify(mBooksLocalDataSource).unFavoriteBook(newBook);
+        assertThat(mBooksRepository.mCachedBooks.size(), is(1));
+        assertThat(mBooksRepository.mCachedBooks.get(newBook.getId()).isFavorite(), is(false));
     }
 
     @Test
     public void getBook_requestsSingleBookFromLocalDataSource() {
         // When a book is requested from the books repository
-        mBooksRepository.getBookDetails(TASK_TITLE, mGetBookDetailsCallback);
+        mBooksRepository.getBookDetails(BOOK_ID, mGetBookDetailsCallback);
 
         // Then the book is loaded from the database
-        verify(mBooksLocalDataSource).getBookDetails(eq(TASK_TITLE), any(
+        verify(mBooksLocalDataSource).getBookDetails(eq(BOOK_ID), any(
                 BooksDataSource.GetBookDetailsCallback.class));
     }
 
     @Test
-    public void deleteCompletedBooks_deleteCompletedBooksToServiceAPIUpdatesCache() {
-        // Given 2 stub favorited books and 1 stub active books in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description", true);
-        mBooksRepository.saveBook(newBook);
-        BookListItem newBook2 = new BookListItem(TASK_TITLE2, "Some BookListItem Description");
-        mBooksRepository.saveBook(newBook2);
-        BookListItem newBook3 = new BookListItem(TASK_TITLE3, "Some BookListItem Description", true);
-        mBooksRepository.saveBook(newBook3);
-
-        // When a favorited books are cleared to the books repository
-        mBooksRepository.clearCompletedBooks();
-
-
-        // Then the service API and persistent repository are called and the cache is updated
-        verify(mBooksRemoteDataSource).clearCompletedBooks();
-        verify(mBooksLocalDataSource).clearCompletedBooks();
-
-        assertThat(mBooksRepository.mCachedListItems.size(), is(1));
-        assertTrue(mBooksRepository.mCachedListItems.get(newBook2.getId()).isActive());
-        assertThat(mBooksRepository.mCachedListItems.get(newBook2.getId()).getTitle(), is(TASK_TITLE2));
-    }
-
-    @Test
     public void deleteAllBooks_deleteBooksToServiceAPIUpdatesCache() {
-        // Given 2 stub favorited books and 1 stub active books in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description", true);
+        // Given 2 stub favorite books and 1 stub not favorite books in the repository
+        Book newBook = new Book(BOOK_TITLE, "1", "Some BookListItem Description", true);
         mBooksRepository.saveBook(newBook);
-        BookListItem newBook2 = new BookListItem(TASK_TITLE2, "Some BookListItem Description");
+        Book newBook2 = new Book(BOOK_TITLE2, "2", "Some BookListItem Description", true);
         mBooksRepository.saveBook(newBook2);
-        BookListItem newBook3 = new BookListItem(TASK_TITLE3, "Some BookListItem Description", true);
+        Book newBook3 = new Book(BOOK_TITLE3, "3", "Some BookListItem Description", false);
         mBooksRepository.saveBook(newBook3);
 
         // When all books are deleted to the books repository
@@ -226,9 +191,9 @@ public class BooksRepositoryTest {
     @Test
     public void deleteBook_deleteBookToServiceAPIRemovedFromCache() {
         // Given a book in the repository
-        BookListItem newBook = new BookListItem(TASK_TITLE, "Some BookListItem Description", true);
+        Book newBook = new Book(BOOK_TITLE, "1", "Some Book Description", true);
         mBooksRepository.saveBook(newBook);
-        assertThat(mBooksRepository.mCachedListItems.containsKey(newBook.getId()), is(true));
+        assertThat(mBooksRepository.mCachedBooks.containsKey(newBook.getId()), is(true));
 
         // When deleted
         mBooksRepository.deleteBook(newBook.getId());
@@ -238,13 +203,13 @@ public class BooksRepositoryTest {
         verify(mBooksLocalDataSource).deleteBook(newBook.getId());
 
         // Verify it's removed from repository
-        assertThat(mBooksRepository.mCachedListItems.containsKey(newBook.getId()), is(false));
+        assertThat(mBooksRepository.mCachedBooks.containsKey(newBook.getId()), is(false));
     }
 
     @Test
     public void getBooksWithDirtyCache_booksAreRetrievedFromRemote() {
         // When calling getBooks in the repository with dirty cache
-        mBooksRepository.refreshBook();
+        mBooksRepository.refreshBooks();
         mBooksRepository.getBooks(mLoadBooksListCallback);
 
         // And the remote data source has data available
@@ -306,7 +271,7 @@ public class BooksRepositoryTest {
     @Test
     public void getBooks_refreshesLocalDataSource() {
         // Mark cache as dirty to force a reload of data from remote data source.
-        mBooksRepository.refreshBook();
+        mBooksRepository.refreshBooks();
 
         // When calling getBooks in the repository
         mBooksRepository.getBooks(mLoadBooksListCallback);
@@ -315,7 +280,7 @@ public class BooksRepositoryTest {
         setBooksAvailable(mBooksRemoteDataSource, BOOKS);
 
         // Verify that the data fetched from the remote data source was saved in local.
-        verify(mBooksLocalDataSource, times(BOOKS.size())).saveBook(any(BookListItem.class));
+        verify(mBooksLocalDataSource, times(BOOKS.size())).saveBook(any(Book.class));
     }
 
     /**
@@ -356,7 +321,7 @@ public class BooksRepositoryTest {
         mBookCallbackCaptor.getValue().onDataNotAvailable();
     }
 
-    private void setBookAvailable(BooksDataSource dataSource, BookListItem book) {
+    private void setBookAvailable(BooksDataSource dataSource, Book book) {
         verify(dataSource).getBookDetails(eq(book.getId()), mBookCallbackCaptor.capture());
         mBookCallbackCaptor.getValue().onBookDetailsLoaded(book);
     }

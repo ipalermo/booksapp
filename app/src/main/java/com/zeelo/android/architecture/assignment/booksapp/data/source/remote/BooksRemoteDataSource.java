@@ -81,7 +81,31 @@ public class BooksRemoteDataSource implements BooksDataSource {
         }
     }
 
-    public void refreshBook() {
+    @Override
+    public void favoriteBook(@NonNull Book book) {
+        Book favoriteBook = new Book(book.getTitle(), book.getVolumeInfo().getDescription(), book.getId(), true);
+        BOOK_SERVICE_DATA.put(book.getId(), favoriteBook);
+    }
+
+    @Override
+    public void favoriteBook(@NonNull String bookId) {
+        // Not required for the remote data source because the {@link BooksRepository} handles
+        // converting from a {@code bookId} to a {@link book} using its cached data.
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull Book book) {
+        Book notFavoriteBook = new Book(book.getTitle(), book.getId(), book.getVolumeInfo().getDescription(), false);
+        BOOK_SERVICE_DATA.put(book.getId(), notFavoriteBook);
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull String bookId) {
+        // Not required for the remote data source because the {@link BooksRepository} handles
+        // converting from a {@code bookId} to a {@link book} using its cached data.
+    }
+
+    public void refreshBooks() {
         // Not required because the {@link BooksRepository} handles the logic of refreshing the
         // books from all the available data sources.
     }

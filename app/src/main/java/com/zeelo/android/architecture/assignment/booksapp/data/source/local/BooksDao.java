@@ -77,6 +77,15 @@ public interface BooksDao {
     int updateBook(Book book);
 
     /**
+     * Update the complete status of a task
+     *
+     * @param bookId    id of the book
+     * @param favorite status to be updated
+     */
+    @Query("UPDATE book SET favorite = :favorite WHERE id = :bookId")
+    void updateCompleted(String bookId, boolean favorite);
+
+    /**
      * Delete a book by id.
      *
      * @return the number of books deleted. This should always be 1.

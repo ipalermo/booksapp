@@ -125,7 +125,43 @@ public class BooksLocalDataSource implements BooksDataSource {
     }
 
     @Override
-    public void refreshBook() {
+    public void favoriteBook(@NonNull final Book book) {
+        Runnable favoriteRunnable = new Runnable() {
+            @Override
+            public void run() {
+                mBooksDao.updateCompleted(book.getId(), true);
+            }
+        };
+
+        mAppExecutors.diskIO().execute(favoriteRunnable);
+    }
+
+    @Override
+    public void favoriteBook(@NonNull String bookId) {
+        // Not required for the local data source because the {@link BooksRepository} handles
+        // converting from a {@code bookId} to a {@link book} using its cached data.
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull final Book book) {
+        Runnable favoriteRunnable = new Runnable() {
+            @Override
+            public void run() {
+                mBooksDao.updateCompleted(book.getId(), false);
+            }
+        };
+
+        mAppExecutors.diskIO().execute(favoriteRunnable);
+    }
+
+    @Override
+    public void unFavoriteBook(@NonNull String bookId) {
+        // Not required for the local data source because the {@link BooksRepository} handles
+        // converting from a {@code bookId} to a {@link book} using its cached data.
+    }
+
+    @Override
+    public void refreshBooks() {
         // Not required because the {@link BooksRepository} handles the logic of refreshing the
         // books from all the available data sources.
     }
